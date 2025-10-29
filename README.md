@@ -24,7 +24,7 @@ This webpage will showcase different masterpieces across Europe during the renai
 ### Wireframes
 #### Home
 #### ![Homepage1](./asset/homepage.png "homepage1")
-#### ![Homepage2](../asset/homepage-no-menu.png "homepage2")
+#### ![Homepage2](./asset/homepage-no-menu.png "homepage2")
 
 #### Art Style
 #### ![Themes](./asset/themes.png "themes")
