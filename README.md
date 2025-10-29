@@ -1,6 +1,6 @@
 # WDProjLithiumCelisMagbanua
-# Title
-## subtitle
+# Rebirth of Art
+## Exploring the Artistic Revival of Europe
 ### Logo
 ### ![Logo](./asset/logo-project.png " logo")
 *****
