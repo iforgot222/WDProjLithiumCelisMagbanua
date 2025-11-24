@@ -10,11 +10,64 @@
     <link rel="stylesheet" href="themes.css">
     <link rel="icon" href="../asset/logo-project.png" sizes="32x32" type="image/png" />
     <script src="script.js"defer></script>
+  <style>
+  </style>
 </head>
-<style>
-</style>
-
-<script>
-
-</script>
+<body>
+  <h1> Sample Quiz in HTML/JS </h1>
+  <h3> Score: <span id="score"> 0</span> </h3>
+  <!-- radio button value="1" indicates correct answer and allotted point -->
+  <div>
+    <p> 1. What is HTML? </p>
+      <input type="radio" name="q1" value="0"> HTML describes the structure of a webpage<br/>
+      <input type="radio" name="q1" value="0"> HTML is the standard markup language mainly used to create web pages<br/>
+      <input type="radio" name="q1" value="0"> HTML consists of a set of elements that helps the browser how to view the content<br/>
+      <input type="radio" name="q1" value="1"> All of the mentioned<br/>
+  </div>
+  <div>
+    <p> 2. Who is the father of HTML? </p>
+      <input type="radio" name="q2" value="0"> Rasmus Lerdorf<br/>
+      <input type="radio" name="q2" value="1"> Tim Berners-Lee<br/>
+      <input type="radio" name="q2" value="0"> Brendan Eich<br/>
+      <input type="radio" name="q2" value="0"> Sergey Brin<br/>
+  </div>
+  <div>
+    <p>3. What is DOM in HTML? </p>
+      <input type="radio" name="q3" value="0"> Language dependent application programming<br/>
+      <input type="radio" name="q3" value="0"> Hierarchy of objects in ASP.NET<br/>
+      <input type="radio" name="q3" value="0"> Application programming interface<br/>
+      <input type="radio" name="q3" value="1"> Convention for representing and interacting with objects in html documents<br/>
+  </div>
+  <div>
+    <p>4. Which element is used for or styling HTML5 layout? </p>
+      <input type="radio" name="q4" value="1"> CSS<br/>
+      <input type="radio" name="q4" value="0"> jQuery<br/>
+      <input type="radio" name="q4" value="0"> JavaScript<br/>
+      <input type="radio" name="q4" value="0"> PHP<br/>
+  </div>
+  <div>
+    <p> 5. Which attribute specifies a unique alphanumeric identifier to be associated with an element?</p>
+      <input type="radio" name="q5" value="0"> type<br/>
+      <input type="radio" name="q5" value="0"> article<br/>
+      <input type="radio" name="q5" value="1"> id<br/>
+      <input type="radio" name="q5" value="0"> class<br/>
+  </div>
+  <div>
+    <button onclick="scoreQuiz()"> Submit </button>
+  </div>
+  <script>
+      function scoreQuiz() { // function executes when button is clicked
+        // read all radio buttons and place them in answers as an array
+        let answers = document.querySelectorAll("input[type=radio]");
+        let totalScore = 0;
+        for (i in answers) { // loops trough the answers array using index i
+          // get the sum of the value of checked radio buttons
+          if (answers[i].checked)
+            totalScore += Number(answers[i].value);
+        }
+        // output the score on the browser
+        score.innerHTML = totalScore;
+      }
+  </script>
+</body>
 </html>
