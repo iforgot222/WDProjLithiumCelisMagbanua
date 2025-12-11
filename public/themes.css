@@ -1,4 +1,5 @@
-
-html {
-    background-image: url("placeholder-bg.png");
-}
+.paintings-style :hover {
+            transform: scale(1.05);
+            opacity: 0.8;
+            transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+        }
