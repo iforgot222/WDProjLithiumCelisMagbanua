@@ -17,6 +17,24 @@
             opacity: 0.8;
             transition: transform 0.5s ease-out, opacity 0.5s ease-out;
         }
+        .artist1-works {
+            display: flex;
+        }
+
+        .flex-container {
+  display: flex; /* Makes the div a flex container */
+  justify-content: space-around; /* Distributes space around items (optional) */
+  padding: 0px;
+}
+
+.column {
+  flex: 1; /* Shorthand for flex-grow, flex-shrink, and flex-basis, making columns equal width */
+  padding: 0px;
+  margin: 5px;
+  align-items: center; 
+  border: 1px solid red;
+
+}
     </style>
 
 </head>
@@ -30,10 +48,11 @@
         <h2> Artists </h2>
     </header>
 
+    
     <h1> Artists </h1>
     <section class="artist1">
         <div class="artist1-info">
-            <img src="./img/caravaggio.png" alt="Artist 1 Picture"/>
+            <img src="../img/caravaggio.png" alt="Artist 1 Picture"/>
             <h2> Michelangelo Merisi da Caravaggio (Caravaggio) </h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien 
@@ -44,17 +63,31 @@
                 nostra inceptos himenaeos.
             </p>
         </div>
-        <div class="artist1-works">
-            <h1> Famous Art Works Include... </h1>
-            <img src="../../img/artist1.png" alt="Artist 1 Picture"/> <h2> Title of Artwork </h2>
-            <img src="../../img/artist1.png" alt="Artist 1 Picture"/> <h2> Title of Artwork </h2>
-            <img src="../../img/artist1.png" alt="Artist 1 Picture"/> <h2> Title of Artwork </h2>
+        
+        <div class="artist1-works" style=" display: flex; flex-direction: column;">
+            <h1 style="display: block;"> Famous Art Works Include... </h1>
+            <div class="flex-container">
+            <div class="column" style=" align-items: center; ">
+                <img src="../img/narcissus.png" style="width: 100%;"; alt="Narcissus"/> <h2> Narcissus </h2>
+            </div>
+            <div class="column" style=" align-items: center; ">
+            
+                    <img src="../img/bacchus.png"  style="width: 100%; " alt="Young Sick Bacchus"> <h2> Young Sick Bacchus </h2>
+                            
+            </div>
+            <div class="column">
+                <img src="../img/david.png"   style="width: 100%;"; alt="David with the head of Goliath"/> <h2> David with the head of Goliath </h2>
+            </div>
+            </div>
+          
+          
         </div>
+
     </section>
 
     <section class="artist">
         <div class="artist2-info">
-            <img src="../../img/raphael.jpg" alt="Artist 2 Picture"/>
+            <img src="../../img/raphael.jpg" style="width:426px"; alt="Artist 2 Picture"/>
             <h2> Raffaelo Sanzio (Raphael) </h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien 
