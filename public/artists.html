@@ -10,6 +10,21 @@
     <link rel="stylesheet" href="themes.css">
     <link rel="icon" href="../asset/logo-project.png" sizes="32x32" type="image/png" />
     <script src="script.js"defer></script>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+        .artist1 {
+            justify-content: left;
+        }
+        footer {
+            display: flex;
+            justify-content: center;
+        }
+        .contact1, .contact2 {
+            margin-right: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,8 +37,8 @@
     <h1> Artists </h1>
     <section class="artist1">
         <div class="artist1-info">
-            <img src="../../img/artist1.png" alt="Artist 1 Picture"/>
-            <h2> Full Name </h2>
+            <img src="./img/caravaggio.png" alt="Artist 1 Picture"/>
+            <h2> Michelangelo Merisi da Caravaggio (Caravaggio) </h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien 
                 vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus 
@@ -43,8 +58,8 @@
 
     <section class="artist">
         <div class="artist2-info">
-            <img src="../../img/artist2.png" alt="Artist 2 Picture"/>
-            <h2> Full Name </h2>
+            <img src="../../img/raphael.jpg" alt="Artist 2 Picture"/>
+            <h2> Raffaelo Sanzio (Raphael) </h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien 
                 vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus 
@@ -63,10 +78,10 @@
     </section>
 
     <footer>
-        <p> <a href="b2029nmmagbanua@pshs.edu.ph">Nikki Magbanua </a></p>
-        <p> <a href="b2029sercelis@pshs.edu.ph">Sabrielle Ellise Celis </a></p>
-        <p>© 2024 Rebirth of Art. All rights reserved.</p>
-        <p> <a href="sources.html">Sources </a></p>
+        <p class="contact1"> <a href="b2029nmmagbanua@pshs.edu.ph">Nikki Magbanua </a></p><br>
+        <p class="contact2"> <a href="b2029sercelis@pshs.edu.ph">Sabrielle Ellise Celis </a></p>
+        <p id="copyright">© 2024 Rebirth of Art. All rights reserved.</p>
+        <p id="sources"> <a href="sources.html">Sources </a></p>
     </footer>
 
 </body>
