@@ -10,6 +10,31 @@
     <link rel="stylesheet" href="themes.css">
     <link rel="icon" href="../../asset/logo-project.png" sizes="32x32" type="image/png" />
     <script src="script.js"defer></script>
+    <style>
+        .paintings-style :hover {
+            transform: scale(1.05);
+            opacity: 0.8;
+            transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+        }
+
+        body {
+            margin: 0;
+            padding-inline: 2rem;  
+            font-size: 16px;       /* base font size */
+        }
+
+        /* Header layout */
+        header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-top: 2rem;
+        }
+
+        header .right {
+            margin-left: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,7 +43,7 @@
             <img src="../../../asset/logo-project.png" alt="Logo" width="74rem" height="75rem" />
         </a>
         <h1 style="font-size: 36px"> Rebirth of Art </h1>
-        <h2> Art Styles: Chiaroscuro </h2>
+        <h2 class="right"> Art Styles: Chiaroscuro </h2>
     </header>
 
     <section>
