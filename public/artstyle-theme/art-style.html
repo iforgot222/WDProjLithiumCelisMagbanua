@@ -37,19 +37,38 @@
         }
 
         /* Layout for art styles and themes sections */
+
         nav {
             display: flex;
         }
 
         nav > div {
             text-align: center;
-            margin: 0 10px; /* space between items */
+            margin: 0 10px; 
         }
 
         nav img {
             display: block;
             width: 100%;
             height: auto;
+        }
+
+        /*DISEGNO AND COLORITO SECTION*/
+
+        .disegno-colorito {
+            display: flex;
+            justify-content: center; 
+            gap: 2rem;               
+            padding: 1rem           
+        }
+
+        .disegno-colorito div img {
+            width: 35rem;  
+            height: auto;  
+        }
+
+        .disegno-colorito div {
+            text-align: center;
         }
 
 
@@ -115,21 +134,23 @@
 
         <h1> Disegno v.s. Colorito</h1>
         /*ADD IMAGES*/
-        <div>
-            <img src="../../img/painting-no-frame/disegno.png" alt="Disegno" height="400rem" />
-            <h2> Disegno </h2>
-            <p>Italian word for “drawing”, priority of illustration, sketching, and drawing over colourism.
-                 Example: Study for the Disputation of the Holy Sacrament: twenty clerics and ecclesiastics 
-                 discussing (1483-1520) by Raphael.
-            </p>
-        </div>
-        <div></div>
-            <img src="../../img/painting-no-frame/creation-of-adam.jpg" alt="Creation od Adam Painting" height="400rem" />
-            <h2> Colorito </h2>
-            <p>
-                Italian word for “colouring”, priority of tone, pigments, and hues in painting.
-                Example: The Assumption of the Virgin (1516-1518) by Titian.
-            </p>
+        <div class="disegno-colorito">
+            <div>
+                <img src="../../img/painting-no-frame/disegno.png" alt="Disegno" height="400rem" />
+                <h2> Disegno </h2>
+                <p>Italian word for “drawing”, priority of illustration, sketching, and drawing over colourism.
+                    Example: Study for the Disputation of the Holy Sacrament: twenty clerics and ecclesiastics 
+                    discussing (1483-1520) by Raphael.
+                </p>
+            </div>
+            <div>
+                <img src="../../img/painting-no-frame/creation-of-adam.jpg" alt="Creation od Adam Painting" height="400rem" />
+                <h2> Colorito </h2>
+                <p>
+                    Italian word for “colouring”, priority of tone, pigments, and hues in painting.
+                    Example: The Assumption of the Virgin (1516-1518) by Titian.
+                </p>
+            </div>
         </div>
     </section>
 
