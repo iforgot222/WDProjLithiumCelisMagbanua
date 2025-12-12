@@ -4,7 +4,7 @@ body {
     font-size: 16px;       /* base font size */
 }
 
-        /* Header layout */
+/* Header layout */
 header {
     display: flex;
     align-items: center;
@@ -14,4 +14,26 @@ header {
 
 header .right {
     margin-left: auto;
+}
+
+/*footer layout*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;            
+    padding: 10px;
+}
+
+footer .left {
+    text-align: left;
+}
+
+footer .center {
+    text-align: center;
+    flex: 1; 
+}
+
+footer .right {
+    text-align: right;
 }
