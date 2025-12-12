@@ -6,10 +6,35 @@
     <meta name="description" content="artstyle">
     <meta name="keywords" content="Artstyle Page">
     <meta name="author" content="Nikki Magbanua & Sabrielle Celis">
-    <title>Artstyle</title>
+    <title>Art Theme: Portraiture</title>
     <link rel="stylesheet" href="themes.css">
     <link rel="icon" href="../../asset/logo-project.png" sizes="32x32" type="image/png" />
     <script src="script.js"defer></script>
+    <style>
+        .paintings-style :hover {
+            transform: scale(1.05);
+            opacity: 0.8;
+            transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+        }
+
+        body {
+            margin: 0;
+            padding-inline: 2rem;  
+            font-size: 16px;       /* base font size */
+        }
+
+        /* Header layout */
+        header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-top: 2rem;
+        }
+
+        header .right {
+            margin-left: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,24 +43,23 @@
             <img src="../../../asset/logo-project.png" alt="Logo" width="74rem" height="75rem" />
         </a>
         <h1 style="font-size: 36px"> Rebirth of Art </h1>
-        <h2> Art Themes: Contrapposto </h2>
+        <h2 class="right"> Art Themes: Potraiture </h2>
     </header>
 
     <section>
-        <h1> Contrapposto </h1>
+        <h1> Portraiture </h1>
         <p style="font-size: 1.2rem;">
-            (derived from “counterpoise”) This art theme is commonly referred to a type of pose 
-            in classical and Renaissance art wherein a standing person shifts their weight onto 
-            one leg, so that their hip rises in the opposite direction. This creates an effect that 
-            emphasizes the natural curvature on the body with the sense of relaxed theatricality. 
-            Additionally, this style was firstly adopted by Kouros sculptures of Ancient Greece but 
-            was revived late in the classical era. Example: Birth of Venus by Sandro Botticelli. 
-
+            Portraiture, as a common Renaissance art theme, emphasizes on humanism and secularization 
+            by depicting its muse in its truest form. This art theme was characterized by painting the 
+            likeness of the subject by meticulously adding symbolism (e.g. clothing, objects, jewelry, 
+            etc.) while mimicking the physical features with accuracy.  Additionally,  renaissance 
+            artworks under Portraiture commonly adopt a three-quarter view as artists felt it was more 
+            dynamic and “dramatic” to do so. Example: Lady with an Ermine by Leonardo Da Vinci.
         </p>
 
 
         <!--WHERE A ZOOM IN TO SECTION ANIMATION WILL BE SOON IMPLEMENTED-->
-        <img src="../../../img/painting-no-frame/birth-of-venus.avif" alt="Birth of Venus" />
+        <img src="../../../img/painting-no-frame/lady-with-an-ermine.jpg" alt="Birth of Venus" />
     </section>
 
     <footer>
