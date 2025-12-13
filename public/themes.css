@@ -6,6 +6,10 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed; */
+    margin: 0;
+}
+
+.content{
     display: flex;
     margin: 0;
     padding-inline: 2rem;  
@@ -28,11 +32,29 @@ header {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding-top: 2rem;
+    background-color:gray; /*placeholder*/
+    padding: 1em 2rem 0rem 2rem;
+    margin-bottom: 0rem;
 }
 
 header .right {
     margin-left: auto;
+}
+
+.navigation-bar {
+    display: flex;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    justify-content: center;
+    background-color: rgb(189, 189, 189); /*placeholder*/
+}
+
+.navigation-bar a {
+    text-decoration: none;
+    padding: 0rem 2rem;;
+    font-size: 1.1rem;
+    font-style: bold;
+    color: black;
+    font-family: serif;
 }
 
 /*footer layout*/
@@ -42,6 +64,8 @@ footer {
     justify-content: space-between;
     align-items: center;            
     padding: 10px;
+    background-color:gray; /*placeholder*/
+    padding: 1em 2rem 1rem 2rem;
 }
 
 footer .left {
@@ -55,4 +79,22 @@ footer .center {
 
 footer .right {
     text-align: right;
+}
+
+/*text content for art style and theme pages */
+
+.content {
+    padding: 0rem 9rem 3rem 9rem;
+}
+
+.content > p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.title-style {
+    font-size: 3.9rem;
+    font-style: italic;
+    margin-bottom: -0.7rem;
 }

@@ -12,29 +12,6 @@
     <script src="script.js"defer></script>
 
     <style>
-        .paintings-style :hover {
-            transform: scale(1.05);
-            opacity: 0.8;
-            transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-        }
-
-        body {
-            margin: 0;
-            padding-inline: 2rem;  
-            font-size: 16px;       /* base font size */
-        }
-
-        /* Header layout */
-        header {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding-top: 2rem;
-        }
-
-        header .right {
-            margin-left: auto;
-        }
         .artist1-works {
             display: flex;
         }
@@ -66,63 +43,75 @@
         <h2 class="right">Artists</h2>
     </header>
 
-    
-    <h1> Artists </h1>
-    <section class="artist1">
-        <div class="artist1-info">
-            <img src="../img/caravaggio.png" alt="Artist 1 Picture"/>
-            <h2> Michelangelo Merisi da Caravaggio (Caravaggio) </h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien 
-                vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus 
-                leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus 
-                bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut 
-                hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia 
-                nostra inceptos himenaeos.
-            </p>
+
+    <nav class="navigation-bar"> 
+        <div>  
+            <a href="./artstyle-theme/art-style.html"> ART STYLE </a>     
+            <a href="artists.html">ARTISTS </a>   
+            <a href="History.html"> HISTORY </a> 
+            <a href="mini-quiz.html"> MINI QUIZ </a>  
+            <a href="sources.html"> SOURCES </a>
         </div>
-        
-        <div class="artist1-works" style=" display: flex; flex-direction: column;">
-            <h1 style="display: block;"> Famous Art Works Include... </h1>
-            <div class="flex-container">
-            <div class="column" style=" align-items: center; ">
-                <img src="../img/narcissus.png" style="width: 100%;"; alt="Narcissus"/> <h2> Narcissus </h2>
+    </nav>
+
+    <div class="content">
+        <h1> Artists </h1>
+        <section class="artist1">
+            <div class="artist1-info">
+                <img src="../img/caravaggio.png" alt="Artist 1 Picture"/>
+                <h2> Michelangelo Merisi da Caravaggio (Caravaggio) </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien 
+                    vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus 
+                    leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus 
+                    bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut 
+                    hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia 
+                    nostra inceptos himenaeos.
+                </p>
             </div>
-            <div class="column" style=" align-items: center; ">
             
-                    <img src="../img/bacchus.png"  style="width: 100%; " alt="Young Sick Bacchus"> <h2> Young Sick Bacchus </h2>
-                            
+            <div class="artist1-works" style=" display: flex; flex-direction: column;">
+                <h1 style="display: block;"> Famous Art Works Include... </h1>
+                <div class="flex-container">
+                <div class="column" style=" align-items: center; ">
+                    <img src="../img/narcissus.png" style="width: 100%;"; alt="Narcissus"/> <h2> Narcissus </h2>
+                </div>
+                <div class="column" style=" align-items: center; ">
+                
+                        <img src="../img/bacchus.png"  style="width: 100%; " alt="Young Sick Bacchus"> <h2> Young Sick Bacchus </h2>
+                                
+                </div>
+                <div class="column">
+                    <img src="../img/david.png"   style="width: 100%;"; alt="David with the head of Goliath"/> <h2> David with the head of Goliath </h2>
+                </div>
+                </div>
+            
+            
             </div>
-            <div class="column">
-                <img src="../img/david.png"   style="width: 100%;"; alt="David with the head of Goliath"/> <h2> David with the head of Goliath </h2>
-            </div>
-            </div>
-          
-          
-        </div>
 
-    </section>
+        </section>
 
-    <section class="artist">
-        <div class="artist2-info">
-            <img src="../../img/raphael.jpg" style="width:426px"; alt="Artist 2 Picture"/>
-            <h2> Raffaelo Sanzio (Raphael) </h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien 
-                vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus 
-                leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus 
-                bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut 
-                hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia 
-                nostra inceptos himenaeos.
-            </p>
-        </div>
-        <div class="artist2-works">
-            <h1> Famous Art Works Include... </h1>
-            <img src="../../img/artist2.png" alt="Artist 2 Picture"/> <h2> Title of Artwork </h2>
-            <img src="../../img/artist2.png" alt="Artist 2 Picture"/> <h2> Title of Artwork </h2>
-            <img src="../../img/artist2.png" alt="Artist 2 Picture"/> <h2> Title of Artwork </h2>
-        </div>
-    </section>
+        <section class="artist">
+            <div class="artist2-info">
+                <img src="../../img/raphael.jpg" style="width:426px"; alt="Artist 2 Picture"/>
+                <h2> Raffaelo Sanzio (Raphael) </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien 
+                    vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus 
+                    leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus 
+                    bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut 
+                    hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia 
+                    nostra inceptos himenaeos.
+                </p>
+            </div>
+            <div class="artist2-works">
+                <h1> Famous Art Works Include... </h1>
+                <img src="../../img/artist2.png" alt="Artist 2 Picture"/> <h2> Title of Artwork </h2>
+                <img src="../../img/artist2.png" alt="Artist 2 Picture"/> <h2> Title of Artwork </h2>
+                <img src="../../img/artist2.png" alt="Artist 2 Picture"/> <h2> Title of Artwork </h2>
+            </div>
+        </section>
+    </div>
 
     <footer>
         <div class="left-footer">
