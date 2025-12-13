@@ -1,12 +1,24 @@
 
 body {
+    /*
+    background-image: url('../asset/bg1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; */
+    display: flex;
     margin: 0;
     padding-inline: 2rem;  
     font-size: 16px;       /* base font size */
+    flex-direction: column;
+    /*TEXT FORMAT*/
+    font-family: 'Times New Roman', Times, serif;
+    /*color: #f7e371;*/
 }
+/* Paintings Animation */
 
 .paintings-style :hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     opacity: 0.8;
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }

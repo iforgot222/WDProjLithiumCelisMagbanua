@@ -12,16 +12,11 @@
     <script src="script.js"defer></script>
 
     <style>
-        .paintings-style :hover {
-            transform: scale(1.05);
-            opacity: 0.8;
-            transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-        }
+        /*TEXT STUFF*/
 
-        body {
-            margin: 0;
-            padding-inline: 2rem;  
-            font-size: 16px;       /* base font size */
+        section {
+            padding-left: 5.5rem;
+            padding-right: 5.5rem;
         }
 
         /* Layout for art styles and themes sections */
@@ -30,17 +25,17 @@
             display: flex;
         }
 
-        nav > div {
+        nav > div > p{
             text-align: center;
-            margin: 0 10px; 
+            padding-left: 1rem;
+            padding-right: 1rem; 
         }
 
         nav img {
             display: block;
             width: 100%;
-            height: auto;
+            height: fixed;
         }
-
         /*DISEGNO AND COLORITO SECTION*/
 
         .disegno-colorito {
@@ -75,12 +70,12 @@
     </header>
 
     <section class="artstyles">
-        <h1>Four Canonical Painting Modes</h1>
+        <h1 style="font-size: 3rem; font-style: italic;">Four Canonical Painting Modes</h1>
         
         <nav>
             <div>
                 <a class="paintings-style" href="style/cangiante.html">
-                    <img src="../../img/painting-frames/daniel-frame.png" alt="Prophet of Daniel Painting" width="350rem" height="350rem"/>
+                    <img src="../../img/painting-frames/daniel-frame.png" alt="Prophet of Daniel Painting" height="270rem"/>
                 </a>
                 <h2>Cangiante</h2>
                 <p>
@@ -90,7 +85,7 @@
             </div>
             <div>
                 <a class="paintings-style" href="style/chiaroscuro.html">
-                    <img src="../../img/painting-frames/supper-at-emmaus-frame.png" alt="Supper at Emmaus Painting" width="450rem" height="450rem"/>
+                    <img src="../../img/painting-frames/supper-at-emmaus-frame.png" alt="Supper at Emmaus Painting" height="265rem"/>
                 </a>
                 <h2>Chiaroscuro</h2>
                 <p>
@@ -100,7 +95,7 @@
             </div>
             <div>
                 <a class="paintings-style" href="style/sfumato.html">
-                    <img src="../../img/painting-frames/holy-night-frame.png" alt="Holy Night Painting" width="350rem" height="350rem"/>
+                    <img src="../../img/painting-frames/holy-night-frame.png" alt="Holy Night Painting" height="270rem"/>
                 </a>
                 <h2>Sfumato</h2>
                 <p>
@@ -110,7 +105,7 @@
             </div>
             <div>
                 <a class="paintings-style" href="style/unione.html">
-                    <img src="../../img/painting-frames/saint-catherine-frame.png" alt="Saint Catherine Painting" width="350rem" height="350rem"/>
+                    <img src="../../img/painting-frames/saint-catherine-frame.png" alt="Saint Catherine Painting" height="270rem"/>
                 </a>
                 <h2>Unione</h2>
                 <p>
@@ -146,39 +141,39 @@
         <h1>Art Themes</h1>
         <nav>
             <div>
-                <a class="paintings-style" href="theme/contrapposto.html">
-                    <img src="../../img/painting-frames/birth-venus-frame.png" alt="Birth of Venus Painting" height="450rem" width="450rem"/>
-                </a>
-                <h2>Contrapposto</h2>
-            </div>
-
-            <div>
-                <a class="paintings-style" href="theme/naturalism.html">
-                    <img src="../../img/painting-frames/urbino-venus-frame.png" alt="Urbino of Venus Painting" height="450rem" width="450rem"/>
-                </a>
-                <h2>Naturalism</h2>
-            </div>
-
-            <div>
                 <a class="paintings-style" href="theme/perspective.html">
-                    <img src="../../img/painting-frames/school-athens-frame.png" alt="School of Athens Painting" height="450rem" width="450rem"/>
+                    <img src="../../img/painting-frames/school-athens-frame.png" alt="School of Athens Painting"/>
                 </a>
                 <h2>Linear Perspective</h2>
             </div>
-        </nav>
-        <nav>
+
             <div>
                 <a class="paintings-style" href="theme/portraiture.html">
-                    <img src="../../img/painting-frames/erbine-lady-frame.png" alt="Lady with an Ermine Painting" height="300rem" width="300rem"/>
+                    <img src="../../img/painting-frames/erbine-lady-frame.png" alt="Lady with an Ermine Painting"/>
                 </a>
                 <h2>Portraiture</h2>
             </div>
 
             <div>
                 <a class="paintings-style" href="theme/religious.html">
-                    <img src="../../img/painting-frames/last-supper-frame.png" alt="Last Supper Painting" height="500rem" width="500rem"/>
+                    <img src="../../img/painting-frames/last-supper-frame.png" alt="Last Supper Painting"/>
                 </a>
                 <h2>Religious</h2>
+            </div>
+        </nav>
+        <nav>
+            <div>
+                <a class="paintings-style" href="theme/contrapposto.html">
+                    <img src="../../img/painting-frames/birth-venus-frame.png" alt="Birth of Venus Painting" />
+                </a>
+                <h2>Contrapposto</h2>
+            </div>
+            
+            <div>
+                <a class="paintings-style" href="theme/naturalism.html">
+                    <img src="../../img/painting-frames/urbino-venus-frame.png" alt="Urbino of Venus Painting"/>
+                </a>
+                <h2>Naturalism</h2>
             </div>
         </nav>
     </section>
