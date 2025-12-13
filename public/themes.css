@@ -13,7 +13,7 @@ body {
     display: flex;
     margin: 0;
     padding-inline: 2rem;  
-    font-size: 16px;       /* base font size */
+    font-size: 18px;       /* base font size */
     flex-direction: column;
     /*TEXT FORMAT*/
     font-family: 'Times New Roman', Times, serif;

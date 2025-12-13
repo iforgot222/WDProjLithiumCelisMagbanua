@@ -17,19 +17,38 @@
         }
 
         .flex-container {
-  display: flex; /* Makes the div a flex container */
-  justify-content: space-around; /* Distributes space around items (optional) */
-  padding: 0px;
-}
+            display: flex; /* Makes the div a flex container */
+            justify-content: space-around; /* Distributes space around items (optional) */
+            padding: 0px;
+            }
 
-.column {
-  flex: 1; /* Shorthand for flex-grow, flex-shrink, and flex-basis, making columns equal width */
-  padding: 0px;
-  margin: 5px;
-  align-items: center; 
-  border: 1px solid red;
+        .column {
+            flex: 1; /* Shorthand for flex-grow, flex-shrink, and flex-basis, making columns equal width */
+            padding: 0px;
+            margin: 5px;
+            align-items: center; 
+            border: 1px solid red;
 
-}
+        }
+
+    /*Artist and Description Section*/
+        /*Caravaggio Section*/
+        .artist1-info, .artist2-info {
+            max-width: 900px;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        .artist1-info img, .artist2-info img { 
+            height: 500px; 
+            width: auto;
+        }
+        .artist1-info::after, .artist2-info::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
     </style>
 
 </head>
@@ -57,16 +76,23 @@
     <div class="content">
         <h1> Artists </h1>
         <section class="artist1">
-            <div class="artist1-info">
-                <img src="../img/caravaggio.png" alt="Artist 1 Picture"/>
-                <h2> Michelangelo Merisi da Caravaggio (Caravaggio) </h2>
+            <div class="artist1-info" style="text-align: right;">
+                <img style="float: left; margin: 0 1.5rem 0.2rem 0;" src="../img/painting-frames/caravaggio-frame.png" alt="Caravaggio by Simon Vouet"/>
+                <h2 style="margin-top: 0; text-align: left; font-style: italic; font-size: 2.5rem;"> Michelangelo Merisi da Caravaggio </h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien 
-                    vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus 
-                    leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus 
-                    bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut 
-                    hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia 
-                    nostra inceptos himenaeos.
+                    Michelangelo Merisi da Caravaggio, or simply Caravaggio, was an Italian Painter born in Milan, Italy, on September 29, 1571 until 
+                    passing later on July 18, 1610. As an artist, Caravaggio was known as a revolutionary 
+                    painter for the time of the renaissance as, unlike other artists who depicted the 
+                    idealization of humans and religious experience, he painted in intense realism and 
+                    strong contrasts between light and dark, or namely chiaroscuro. He was one of the first 
+                    painters to use and master the technique, chiaroscuro, which later became the inspiration 
+                    for Baroque art. Additionally, he is known for the unsettling atmosphere and realism in 
+                    his style in painting the stories of the bible. However, Caravaggio was not only limited 
+                    to painting Biblical themes, but depictions of death and sexual themes– which made his 
+                    works to be rejected and considered vulgar and controversial by the church. Caravaggio’s first major piece was <em>The Fortune Teller</em>, and was introduced as a new style 
+                    to other Roman artists; albeit became the footprint for artistic ranges in Roman Art. 
+                    Whilst, Caravaggio’s most famous work is <em>The Calling Of Saint Matthew</em>, depicting the 
+                    biblical event when Jesus calls Saint Matthew to become his apostle (Caravaggio.org, n.d.).
                 </p>
             </div>
             
@@ -92,9 +118,9 @@
         </section>
 
         <section class="artist">
-            <div class="artist2-info">
-                <img src="../../img/raphael.jpg" style="width:426px"; alt="Artist 2 Picture"/>
-                <h2> Raffaelo Sanzio (Raphael) </h2>
+            <div class="artist2-info" style="text-align: right;">
+                <img style="float: right; margin: 0 0 1rem 1.5rem;" src="../../img/raphael.jpg" style="width:426px"; alt="Artist 2 Picture"/>
+                <h2 style="margin-top: 0; text-align: right; font-style: italic; font-size: 2.5rem;"> Raffaelo Sanzio (Raphael) </h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien 
                     vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus 
