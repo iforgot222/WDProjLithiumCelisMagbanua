@@ -12,29 +12,32 @@
     <script src="script.js"defer></script>
 
     <style>
-        .artist1-works {
+        .artist1-works img{
             display: flex;
+            border-radius: 10px;
         }
 
         .flex-container {
-            display: flex; /* Makes the div a flex container */
-            justify-content: space-around; /* Distributes space around items (optional) */
+            display: flex; 
+            justify-content: space-around;
             padding: 0px;
             }
 
         .column {
-            flex: 1; /* Shorthand for flex-grow, flex-shrink, and flex-basis, making columns equal width */
-            padding: 0px;
+            flex: 1; 
+            padding: 0 0 3rem 0;
             margin: 5px;
-            align-items: center; 
-            border: 1px solid red;
+            text-align: center;
 
         }
 
+        .column > p {
+            margin-top: -1rem;
+        }
+
     /*Artist and Description Section*/
-        /*Caravaggio Section*/
         .artist1-info, .artist2-info {
-            max-width: 900px;
+            max-width: 1000px;
             line-height: 1.6;
             font-size: 1.1rem;
         }
@@ -89,37 +92,39 @@
                     for Baroque art. Additionally, he is known for the unsettling atmosphere and realism in 
                     his style in painting the stories of the bible. However, Caravaggio was not only limited 
                     to painting Biblical themes, but depictions of death and sexual themes– which made his 
-                    works to be rejected and considered vulgar and controversial by the church. Caravaggio’s first major piece was <em>The Fortune Teller</em>, and was introduced as a new style 
+                    works to be rejected and considered vulgar and controversial by the church. While the many 
+                    oeuvres he created were seen as crude and sold for little, Caravaggio continued to paint in 
+                    his own distinctive style, which was revolutionary in itself as no other artist was as bold as 
+                    him. Caravaggio’s first major piece was <em>The Fortune Teller</em>, and was introduced as a new style 
                     to other Roman artists; albeit became the footprint for artistic ranges in Roman Art. 
                     Whilst, Caravaggio’s most famous work is <em>The Calling Of Saint Matthew</em>, depicting the 
                     biblical event when Jesus calls Saint Matthew to become his apostle (Caravaggio.org, n.d.).
                 </p>
             </div>
             
-            <div class="artist1-works" style=" display: flex; flex-direction: column;">
+            <div class="artist1-works" style=" display: flex; flex-direction: column; max-width:1000px">
                 <h1 style="display: block;"> Famous Art Works Include... </h1>
                 <div class="flex-container">
-                <div class="column" style=" align-items: center; ">
-                    <img src="../img/painting-no-frame/narcissus.png" style="width: 100%;"; alt="Narcissus"/> <h2> Narcissus </h2>
-                </div>
-                <div class="column" style=" align-items: center; ">
-                
+                    <div class="column" style=" align-items: center; ">
+                        <img src="../img/painting-no-frame/narcissus.png" style="width: 100%;"; alt="Narcissus"/> <h2> Narcissus </h2>
+                        <p>(1597-1599)</p>
+                    </div>
+                    <div class="column" style=" align-items: center; ">
                         <img src="../img/painting-no-frame/bacchus.png"  style="width: 100%; " alt="Young Sick Bacchus"> <h2> Young Sick Bacchus </h2>
-                                
+                        <p>(1593-1594)</p>
+                    </div>
+                    <div class="column">
+                        <img src="../img/painting-no-frame/david.png"   style="width: 100%;"; alt="David with the head of Goliath"/> <h2> David with the head of Goliath </h2>
+                        <p>(1609-1610)</p>
+                    </div>
                 </div>
-                <div class="column">
-                    <img src="../img/painting-no-frame/david.png"   style="width: 100%;"; alt="David with the head of Goliath"/> <h2> David with the head of Goliath </h2>
-                </div>
-                </div>
-            
-            
             </div>
 
         </section>
 
         <section class="artist">
             <div class="artist2-info" style="text-align: left;">
-                <img style="float: right; margin: 0 0 1rem 1.5rem;" src="../img/painting-no-frame/raphael.png" style="width:426px"; alt="Artist 2 Picture"/>
+                <img style="float: right; margin: 0 0 1rem 1.5rem;" src="../img/painting-frames/raphael-frame.png" style="width:426px"; alt="Artist 2 Picture"/>
                 <h2 style="margin-top: 0; text-align: right; font-style: italic; font-size: 2.5rem;"> Raffaelo Sanzio (Raphael) </h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien 
