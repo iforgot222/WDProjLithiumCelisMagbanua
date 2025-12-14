@@ -1,47 +1,47 @@
 const questions = [
     {
-        question: "What is Renaissance translated to in French?",
+        question: "1. What is Renaissance translated to in French?",
         answers: [
-            { text: "A", correct: false},
-            { text: "b", correct: true},
-            { text: "c", correct: false},
-            { text: "d", correct: false},
+            { text: "Revival", correct: false},
+            { text: "Renewal", correct: false},
+            { text: "Rebirth", correct: true},
+            { text: "Restore", correct: false},
         ]
     },
     {
-        question: "question b",
+        question: "2. Which known family were crucial patrons in the Renaissance?",
         answers: [
-            { text: "A", correct: false},
-            { text: "b", correct: true},
-            { text: "c", correct: false},
-            { text: "d", correct: false},
+            { text: "Medici Family", correct: true},
+            { text: "Sforza Family", correct: true},
+            { text: "Este Family", correct: false},
+            { text: "Gonzaga Family", correct: false},
         ]
     },
     {
-        question: "question c",
+        question: "3. Who was given the title: “Father of the Renaissance”?",
         answers: [
-            { text: "A", correct: false},
-            { text: "b", correct: true},
-            { text: "c", correct: false},
-            { text: "d", correct: false},
+            { text: "Dante Alighieri", correct: false},
+            { text: "Francesco Petrarch", correct: true},
+            { text: "Giotto Di Bondone", correct: false},
+            { text: "Leonardo Da Vinci", correct: false},
         ]
     },
     {
-        question: "question d",
+        question: "4. Where was the birthplace of the Renaissance?",
         answers: [
-            { text: "A", correct: false},
-            { text: "b", correct: true},
-            { text: "c", correct: false},
-            { text: "d", correct: false},
+            { text: "Florence, Italy", correct: true},
+            { text: "Paris, France", correct: false},
+            { text: "Berlin, Germany", correct: false},
+            { text: "Madrid, Spain", correct: false},
         ]
     },
     {
-        question: "question e",
+        question: "5. Which of the Four Canonical Painting Modes emphasized light and shadow?",
         answers: [
-            { text: "A", correct: false},
-            { text: "b", correct: true},
-            { text: "c", correct: false},
-            { text: "d", correct: false},
+            { text: "Unione", correct: false},
+            { text: "Cangiante", correct: false},
+            { text: "Chiaroscuro", correct: true},
+            { text: "Sfumato", correct: false},
         ]
     }
 ];
