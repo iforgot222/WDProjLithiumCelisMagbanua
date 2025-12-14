@@ -17,6 +17,20 @@
             padding: 1rem 0 1rem 2rem 1rem;
             margin-top: -1.8rem;
         }
+
+        /*formatting for image row in realism section*/
+        .img-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 2rem;
+        }
+        .img-row img {
+            height: 27.5rem; 
+            border-radius: 8px;
+            width: auto;     
+        }
+
     </style>
 </head>
 
@@ -49,15 +63,17 @@
             popularized in the 19th century in response to the Industrial Revolution.
         </p>   
         <!--Realism Image Section-->
-        <img src="" alt="" />
-        <img src="" alt="" />
+        <div class="img-row">
+            <img src="../../../img/painting-no-frame/angelus.jpg" alt="The Angelus by Francois Millet" />
+            <img src="../../../img/painting-no-frame/death-playing-fiddle.jpg" alt="Self-Portrait of Death PLaying the Fiddle by Arnold Boecklin" />
+        </div>
     </div>
 
     <!--Naturalism Image Section-->
     <div class="content"> 
         <h1 style="font-style: italic; margin-bottom: -0.8rem; margin-left: -3rem;"> Venus of Urbino by Titian </h1>
         <p> Click the Buttons to Analyze! </p>
-        <img class=".imganimation" src="../../../img/painting-no-frame/venus-of-urbino.jpg" alt=" Venus of Urbino" />
+        <img class="imganimation" src="../../../img/painting-no-frame/venus-of-urbino.jpg" alt=" Venus of Urbino" />
         <!--Hi Ma'am, this section will be updated with a zoom-in animation (similarly to the f1 Website) 
         that would incorporate JS and what we'll learn in the 3rd Quarter. There will be Additional Text 
         content once the animations are added.-->
