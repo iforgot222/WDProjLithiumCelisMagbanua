@@ -21,10 +21,18 @@ body {
 }
 
 /*Image Animation */
-.paintings-style :hover {
-    transform: scale(1.08);
+.paintings-style {
+    display: inline-block; 
+}
+.paintings-style img {
+    display:block;
+    transform: scale(1);
+    opacity: 1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.paintings-style:hover img{
+    transform: scale(1.05);
     opacity: 0.8;
-    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
 
 /*Image Animation for Artstyles Subpages: Zoom In Effect*/
