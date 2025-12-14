@@ -32,6 +32,7 @@ body {
 }
 
 .btn {
+    border-color: black; /*placeholder*/
     font-weight: 500;
     width: 100%;
     border: 1px solid;
@@ -43,9 +44,13 @@ body {
     transition: all 0.3s;
 }
 
-.btn:hover {
+.btn:hover:not([disabled]) {
     background: black; /*placeholder*/
     color: white; /*placeholder*/
+}
+
+.btn:disabled {
+    cursor: no-drop;
 }
 
 #next-btn {
@@ -61,4 +66,10 @@ body {
     display: none;
 }
 
+.correct {
+    background: rgb(122, 252, 122);
+}
 
+.incorrect {
+    background: rgb(252, 97, 97);
+}
