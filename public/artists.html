@@ -12,6 +12,24 @@
     <script src="script.js"defer></script>
 
     <style>
+    /*Artist and Description Section*/
+        .artist1-info, .artist2-info {
+            max-width: 1000px;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        .artist1-info img, .artist2-info img { 
+            height: 500px; 
+            width: auto;
+        }
+        .artist1-info::after, .artist2-info::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+    /*Artist's Work Section*/
         .artist1-works img, .artist2-works img {
             display: flex;
             border-radius: 10px;
@@ -35,23 +53,6 @@
 
         .column > p {
             margin-top: -1rem;
-        }
-
-    /*Artist and Description Section*/
-        .artist1-info, .artist2-info {
-            max-width: 1000px;
-            line-height: 1.6;
-            font-size: 1.1rem;
-        }
-
-        .artist1-info img, .artist2-info img { 
-            height: 500px; 
-            width: auto;
-        }
-        .artist1-info::after, .artist2-info::after {
-            content: "";
-            display: block;
-            clear: both;
         }
 
     </style>
@@ -79,7 +80,6 @@
     </nav>
 
     <div class="content">
-        <h1> Artists </h1>
         <section class="artist1">
             <div class="artist1-info" style="text-align: right;">
                 <img style="float: left; margin: 0 1.5rem 0.2rem 0;" src="../img/painting-frames/caravaggio-frame.png" alt="Caravaggio by Simon Vouet"/>
@@ -154,12 +154,15 @@
                 <div class="flex-container">
                     <div class="column">
                         <img src="../img/painting-no-frame/sistine-madonna.jpg" alt="Sistine Madonna Painting"/> <h2> Sistine Madonna </h2>
+                        <p>(1512)</p>
                     </div>
                     <div class="column">
                         <img src="../img/painting-no-frame/transfiguration.jpg" alt="Transfiguration Painting"/> <h2> The Transfiguration </h2>
+                        <p>(1520)</p>
                     </div>
                     <div class="column">
                         <img src="../img/painting-no-frame/donna-velata.jpg" alt="La Donna Velata Painting"/> <h2> La Donna Velata </h2>
+                        <p>(1516)</p>
                     </div>
                 </div>
             </div>
@@ -171,7 +174,7 @@
             <p> Sabrielle Ellise Celis: b2029sercelis@pshs.edu.ph </p>
         </div>
         <div class="center-footer"></div><p>© 2025 Rebirth of Art. All rights reserved. Note: All images in this website are NOT ORIGINAL CONTENT.</p></div>
-        <div class="right-footer"><p> <a href="../sources.html">Sources </a></p></div>
+        <div class="right-footer"><p> <a href="sources.html">Sources </a></p></div>
     </footer>
 
 </body>
