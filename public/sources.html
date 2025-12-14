@@ -15,15 +15,24 @@
         .container {
             display: flex;
             gap: 2rem;
-            max-width: 57rem;
-            margin: 0 auto;
+            max-width: 1200px;
+            margin: 0 auto;          
+            padding: 0 2rem;        
         }
+
 
         .col1,
         .col2 {
-            flex: 1 1 0;
+            flex: 1;
             min-width: 0;
+            overflow-wrap: break-word;
         }
+
+        .col1 a,
+        .col2 a {
+            word-break: break-all;
+        }
+
     </style>
 </head>
 
@@ -54,28 +63,50 @@
         <div class="container">
             <div class="col1">
                 <h2>Artstyles & Themes </h2>
-                <p>Britannica Editors. (2025, December 6). <em>Chiaroscuro.</em> Encyclopedia Britannica.<a href="https://www.britannica.com/art/chiaroscuro">https://www.britannica.com/art/chiaroscuro</a></p>
-                <p>Caravaggio. (1601). <em>Supper at Emmaus</em> [Painting]. The National Gallery, London, UK. <a href= "https://www.nationalgallery.org.uk/paintings/michelangelo-merisi-da-caravaggio-the-supper-at-emmaus">https://www.nationalgallery.org.uk/paintings/michelangelo-merisi-da-caravaggio-the-supper-at-emmaus</a></p>
-                <p>Academy, W. A. (2018, June 15).<em>Painting techniques - Cangiante - Web Art Academy.</em> Web Art Academy.<a href= "https://webartacademy.com/painting-techniques-cangiante">https://webartacademy.com/painting-techniques-cangiante</a></p>
-                <p>Britannica Editors. (2016, April 10).<em>Sfumato.</em> Encyclopedia Britannica.<a href="https://www.britannica.com/art/sfumato"></a>https://www.britannica.com/art/sfumato</p>
-                <p>Correggio. (1522–1530).<em>The  Holy Night</em> [Painting]. Old Masters Picture  Art  Gallery, Dresden State Art Museum, Dresden<a href="https://www.nationalgallery.org.uk/paintings/michelangelo-merisi-da-caravaggio-the-supper-at-emmaus"></a>https://www.nationalgallery.org.uk/paintings/michelangelo-merisi-da-caravaggio-the-supper-at-emmaus</p>
-                <p>Alberts, M. (2018, May 16).<em> The four canonical painting styles from the Renaissance: 3. Unione.</em><a href="https://www.mikealbertsart.com/blog-6/the-four-canonical-styles-from-the-renaissance-3-unione"></a>https://www.mikealbertsart.com/blog-6/the-four-canonical-styles-from-the-renaissance-3-unione</p>
-                <p>Raphael. (1483—1520).<em> Saint Catherine of Alexandria</em> [Painting]. The National Gallery, London, UK. <a href="https://www.nationalgallery.org.uk/paintings/raphael-saint-catherine-of-alexandria"></a>https://www.nationalgallery.org.uk/paintings/raphael-saint-catherine-of-alexandria</p>
-                <p>Lesso, R. (2023, March 8).<em> What Does the Art Term Contrapposto Mean? (7 Key Examples).</em> The Collector. <a href="https://www.thecollector.com/what-does-contrapposto-mean-with-examples/"></a>https://www.thecollector.com/what-does-contrapposto-mean-with-examples/</p>
-                <p>Blumberg, Naomi. (2025, May 3).<em> Linear Perspective.</em> Encyclopedia Britannica. <a href="https://www.britannica.com/art/linear-perspective"></a>https://www.britannica.com/art/linear-perspective</p>
-                <p>Raphael. (1509–1511).<em> School of Athens</em> [Painting]. Mvsei Vatican, Italy.<a href="https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/stanze-di-raffaello/stanza-della-segnatura/scuola-di-atene.html"></a>https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/stanze-di-raffaello/stanza-della-segnatura/scuola-di-atene.html</p>
-                <p>Deguzman, K. (2023, September 24). <em>What is Naturalism in Art– History, Style & Examples.</em> StudioBinder.<a href="https://www.studiobinder.com/blog/what-is-naturalism-in-art-definition/"></a>https://www.studiobinder.com/blog/what-is-naturalism-in-art-definition/</p>
-                <p>Titian. (1583).<em> Venus of Urbino</em> [Painting]. Le Gallerie degli Uffizi, Florence, Italy.<a href="https://www.uffizi.it/en/video/venus-of-urbino-by-titian"></a>https://www.uffizi.it/en/video/venus-of-urbino-by-titian</p>
-                <p>Boecklin, A. (1872).<em> Self-Portrait with Death Playing the Fiddle</em> [Painting]. Alte Nationalgalerie Staatliche Museen zu Berlin.<a href="https://artsandculture.google.com/asset/qQFJu2y_sT8mlg"></a>https://artsandculture.google.com/asset/qQFJu2y_sT8mlg</p>
-                <p>Visual Arts Cork. (n.d.).<em> Colorito.</em><a href="http://www.visual-arts-cork.com/painting/colorito.html"></a>https://www.visual-arts-cork.com/painting/colorito.html</p>
-                <p>Millet, J.F. (1857-1859).<em> The Angelus</em> [Painting]. Musee d'Orsay, Paris, France. <a href="https://artsandculture.google.com/asset/CgHjAgexUzNOOw"></a>https://artsandculture.google.com/asset/CgHjAgexUzNOOw</p>
-                <p>Da Vinci, L. (1495-1498).<em> The Last Supper</em> [Painting]. Santa Maria delle Grazie, Milan, Italy. <a href="https://commons.wikimedia.org/wiki/File:The-Last-Supper-Restored-Da-Vinci_32x16.jpg"></a>https://commons.wikimedia.org/wiki/File:The-Last-Supper-Restored-Da-Vinci_32x16.jpg</p>
+                <p>Britannica Editors. (2025, December 6). <em> Chiaroscuro.  </em> Encyclopedia Britannica.<a href="https://www.britannica.com/art/chiaroscuro">https://www.britannica.com/art/chiaroscuro</a></p>
+                <p>Academy, W. A. (2018, June 15). <em>Painting techniques - Cangiante - Web Art Academy. </em>Web Art Academy.<a href="https://webartacademy.com/painting-techniques-cangiante">https://webartacademy.com/painting-techniques-cangiante</a></p>
+                <p>Britannica Editors. (2016, April 10). <em> Sfumato.</em> Encyclopedia Britannica. <a href="https://www.britannica.com/art/sfumato">https://www.britannica.com/art/sfumato</a></p>
+                <p>Alberts, M. (2018, May 16). <em> The four canonical painting styles from the Renaissance: 3. Unione. </em><a href="https://www.mikealbertsart.com/blog-6/the-four-canonical-styles-from-the-renaissance-3-unione">https://www.mikealbertsart.com/blog-6/the-four-canonical-styles-from-the-renaissance-3-unione</a></p>
+                <p>Visual Arts Cork. (n.d.). <em> Colorito.</em><a href=" http://www.visual-arts-cork.com/painting/colorito.html"> http://www.visual-arts-cork.com/painting/colorito.html</a></p>
+                <p>Lesso, R. (2023, March 8). <em> What Does the Art Term Contrapposto Mean? (7 Key Examples). </em>The Collector. <a href="https://www.thecollector.com/what-does-contrapposto-mean-with-examples/"> https://www.thecollector.com/what-does-contrapposto-mean-with-examples/</a></p>
+                <p>Blumberg, Naomi. (2025, May 3). <em>Linear Perspective. </em>Encyclopedia Britannica. <a href="https://www.britannica.com/art/linear-perspective ">https://www.britannica.com/art/linear-perspective </a></p>
+                <p>Deguzman, K. (2023, September 24). <em>What is Naturalism in Art– History, Style & Examples. </em><a href="https://www.studiobinder.com/blog/what-is-naturalism-in-art-definition/  ">https://www.studiobinder.com/blog/what-is-naturalism-in-art-definition/  </a></p>
+                <p>Caravaggio. (1601). <em> Supper at Emmaus </em> [Painting]. The National Gallery, London, UK.<a href="https://www.nationalgallery.org.uk/paintings/michelangelo-merisi-da-caravaggio-the-supper-at-emmaus ">https://www.nationalgallery.org.uk/paintings/michelangelo-merisi-da-caravaggio-the-supper-at-emmaus </a></p>
+                <p>Michelangelo. (1508–1512). <em>Sistine Chapel: The Prophet of Daniel </em> [Painting]. Vatican Museums, Vatican City. <a href="https://commons.wikimedia.org/wiki/File:Daniel_(Michelangelo).jpg ">https://commons.wikimedia.org/wiki/File:Daniel_(Michelangelo).jpg </a></p>
+                <p>Correggio. (1522–1530). <em> The  Holy Night</em> Old Masters Picture  Art  Gallery, Dresden State Art Museum, Dresden <a href="https://www.nationalgallery.org.uk/paintings/michelangelo-merisi-da-caravaggio-the-supper-at-emmaus">https://www.nationalgallery.org.uk/paintings/michelangelo-merisi-da-caravaggio-the-supper-at-emmaus</a></p>
+                <p>Raphael. (1507). <em> Saint Catherine of Alexandria </em> [Painting]. The National Gallery, London, UK. <a href="https://www.nationalgallery.org.uk/paintings/raphael-saint-catherine-of-alexandria">https://www.nationalgallery.org.uk/paintings/raphael-saint-catherine-of-alexandria</a></p>
+                <p>Botticelli, S. (1483–1485). <em> The Birth of Venus </em> [Painting]. Le Gallerie Degli Uffizi, Florence, Italy. <a href="https://artsandculture.google.com/asset/MQEeq50LABEBVg ">https://artsandculture.google.com/asset/MQEeq50LABEBVg </a></p>
+                <p>Raphael. (1509–1511). <em> School of Athens </em> [Painting]. Mvsei Vatican, Italy. <a href="https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/stanze-di-raffaello/stanza-della-segnatura/scuola-di-atene.html ">https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/stanze-di-raffaello/stanza-della-segnatura/scuola-di-atene.html </a></p>
+                <p>Titian. (1583). <em> Venus of Urbino </em> [Painting]. Le Gallerie degli Uffizi, Florence, Italy. <a href="https://www.uffizi.it/en/video/venus-of-urbino-by-titian ">https://www.uffizi.it/en/video/venus-of-urbino-by-titian </a></p>
+                <p>Boecklin, A. (1872). <em>Self-Portrait with Death Playing the Fiddle </em>[Painting]. Alte Nationalgalerie Staatliche Museen zu Berlin, <a href="https://artsandculture.google.com/asset/qQFJu2y_sT8mlg ">https://artsandculture.google.com/asset/qQFJu2y_sT8mlg </a></p>
+                <p>Millet, J.F. (1857-1859). <em> The Angelus </em> [Painting]. Musee d'Orsay, Paris, France.<a href="https://artsandculture.google.com/asset/CgHjAgexUzNOOw ">https://artsandculture.google.com/asset/CgHjAgexUzNOOw </a></p>
+                <p>Da Vinci, L. (1496–1498). <em>. The Last Supper </em> [Painting]. Santa Maria Delle Grazie, Milan, Italy. <a href="https://commons.wikimedia.org/wiki/File:The-Last-Supper-Restored-Da-Vinci_32x16.jpg">https://commons.wikimedia.org/wiki/File:The-Last-Supper-Restored-Da-Vinci_32x16.jpg</a></p>
+                <p>Da Vinci, L. (1489). <em> Lady with an Ermine </em> [Painting]. The National Museum in Krakow, Cracovie, Pologne. <a href="https://artsandculture.google.com/asset/lady-with-an-ermine/HwHUpggDy_HxNQ?hl=fr">https://artsandculture.google.com/asset/lady-with-an-ermine/HwHUpggDy_HxNQ?hl=fr</a></p>
+                <p>Sanzio, R. (1483-1520). <em> Study for the Disputation of the Holy Sacrament: twenty clerics and ecclesiastics discussing </em> [Painting]. Chateau de Chantilly, Chantilly, France. <a href="https://artsandculture.google.com/asset/study-for-the-disputation-of-the-holy-sacrament-twenty-clerics-and-ecclesiastics-discussing-raffaello-sanzio/VgHQHtJeyjYBZA">https://artsandculture.google.com/asset/study-for-the-disputation-of-the-holy-sacrament-twenty-clerics-and-ecclesiastics-discussing-raffaello-sanzio/VgHQHtJeyjYBZA</a></p>
+                <p>Michelangelo. (1508–1512). <em> Sistine Chapel: The Creation of Adam </em>[Painting]. Vatican Museums, Vatican City. <a href="https://commons.wikimedia.org/wiki/File:Michelangelo_-_Creation_of_Adam_(cropped).jpg">https://commons.wikimedia.org/wiki/File:Michelangelo_-_Creation_of_Adam_(cropped).jpg </a></p>
             </div>
 
             <!--Column 2: History -->
             <div class="col2">
                 <h2> History </h2>
-                <p> dhskdhakjdhajkdhaskjdhasjhashjdakdhkjadshkjdahjsadkjhsdahkj</p>
+                <p>Britannica Editors. (2025, December 3). <em> Renaissance Art. </em>Britannica.<a href="https://www.britannica.com/art/Renaissance-art ">https://www.britannica.com/art/Renaissance-art </a></p>
+                <p>Britannica Editors. (2025, November 15). <em> Renaissance. </em> In Encyclopedia Britannica. Retrieved November 12, 2025, from<a href=" https://www.britannica.com/event/Renaissance"> https://www.britannica.com/event/Renaissance</a></p>
+                <p> The Editors of Encyclopaedia Britannica. (n.d.). <em> Renaissance Causes and Effects. </em>. Retrieved November 12, 2025, from <a href="https://www.britannica.com/summary/Renaissance-Causes-and-Effects">https://www.britannica.com/summary/Renaissance-Causes-and-Effects</a></p>
+                <p>Medici family. (n.d.). <em> The Medici Family.</em><a href="https://themedicifamily.com/">https://themedicifamily.com/</a></p>
+                <p>Encyclopedia Britannica. (2025, December 14). <em> Petrarch, engraving </em> [Photo]. Britannica.<a href="https://www.britannica.com/biography/Petrarch#/media/1/454103/16662">https://www.britannica.com/biography/Petrarch#/media/1/454103/16662</a></p>
+                <h2>Artists</h2>
+                <p>Caravaggio. (n.d.). <em> Caravaggio.</em><a href="https://www.caravaggio.org/">https://www.caravaggio.org/</a></p>
+                <p>Caravaggio, M. (1593). <em>Young Sick Bacchus </em> [Painting]. Galleria Borghese, Rome, Italy.<a href="https://commons.wikimedia.org/wiki/File:Young_Sick_Bacchus-Caravaggio_(1593).jpg ">https://commons.wikimedia.org/wiki/File:Young_Sick_Bacchus-Caravaggio_(1593).jpg </a></p>
+                <p>Caravaggio, M. (1605). <em> David With The Head of Goliath</em> [Painting]. Galleria Borghese, Rome, Italy. <a href="https://commons.wikimedia.org/wiki/File:David_with_the_Head_of_Goliath-Caravaggio_(1610).jpg ">https://commons.wikimedia.org/wiki/File:David_with_the_Head_of_Goliath-Caravaggio_(1610).jpg </a></p>
+                <p>Caravaggio, M. (1599). <em>Narcissus</em> [Painting].  Galleria Nationale D’Arte Antica, Rome, Italy. <a href="https://commons.wikimedia.org/wiki/File:Narcissus-Caravaggio_(1594-96)_edited.jpg"></a>https://commons.wikimedia.org/wiki/File:Narcissus-Caravaggio_(1594-96)_edited.jpg</p>
+                <p>Sanzio, R. (1512–1513). <em>The Sistine Madonna</em> [Painting]. Old Masters Picture Gallery, Dresden State Museums, Dresden, Alemania.<a href="https://artsandculture.google.com/asset/CgEiMJRg7ZS6DA?hl=es">https://artsandculture.google.com/asset/CgEiMJRg7ZS6DA?hl=es</a></p>
+                <p>Sanzio, R. (1516–1520). <em>The Transifiguration</em> [Painting]. Vatican Pinacoteca, Vatican City.<a href="https://commons.wikimedia.org/wiki/File:Transfiguration_Raphael.jpg">https://commons.wikimedia.org/wiki/File:Transfiguration_Raphael.jpg</a></p>
+                <p>Sanzio, R. (1512–1515). <em> La Donna Velata </em> [Painting]. Galleria Palatina, Florence, Italy.<a href="https://en.wikipedia.org/wiki/La_velata#/media/File:La_donna_velata_v2.jpg"> https://en.wikipedia.org/wiki/La_velata#/media/File:La_donna_velata_v2.jpg</a></p>
+                <p>Sanzio, R. (1504–1506). <em>Raphael: Self-Portrait</em> [Painting]. Uffizi Gallery, Florence, Italy.<a href="https://en.wikipedia.org/wiki/Self-portrait_(Raphael)#/media/File:Raffaello_Sanzio.jpg">https://en.wikipedia.org/wiki/Self-portrait_(Raphael)#/media/File:Raffaello_Sanzio.jpg  </a></p>
+                <h2>MiniQuiz</h2>
+                <p>Rubens, P. P. (1636–1637). <em>The Feast of Venus </em> [Painting]. Kunsthistorisches Museum Wien, Vienna, Austria. <a href="https://artsandculture.google.com/asset/the-feast-of-venus-peter-paul-rubens/XgGjucvfTejNUg ">https://artsandculture.google.com/asset/the-feast-of-venus-peter-paul-rubens/XgGjucvfTejNUg </a></p>
+                <p>Rubens, P. P. (1614–1616) <em>Daniel in The Lions’ Den</em> [Painting]. National Gallery of Art, Washington, DC, United States.<a href="https://artsandculture.google.com/asset/daniel-in-the-lions-den-sir-peter-paul-rubens/qgE_ZHxscNNGbA ">https://artsandculture.google.com/asset/daniel-in-the-lions-den-sir-peter-paul-rubens/qgE_ZHxscNNGbA </a></p>
+                <p>Couture, T. (1847). <em>Romans during the Decadence </em> [Paintings]. Musee D’Orsay Paris, Paris, France. <a href="https://artsandculture.google.com/asset/romans-during-the-decadence/3wFuj2upOc4OxA ">https://artsandculture.google.com/asset/romans-during-the-decadence/3wFuj2upOc4OxA </a></p>
             </div>
         </div>
     </div>
