@@ -12,9 +12,10 @@
     <script src="script.js"defer></script>
 
     <style>
-        .artist1-works img{
+        .artist1-works img, .artist2-works img {
             display: flex;
             border-radius: 10px;
+            width: 100%;
         }
 
         .flex-container {
@@ -28,6 +29,7 @@
             padding: 0 0 3rem 0;
             margin: 5px;
             text-align: center;
+            align-items:center;
 
         }
 
@@ -81,7 +83,7 @@
         <section class="artist1">
             <div class="artist1-info" style="text-align: right;">
                 <img style="float: left; margin: 0 1.5rem 0.2rem 0;" src="../img/painting-frames/caravaggio-frame.png" alt="Caravaggio by Simon Vouet"/>
-                <h2 style="margin-top: 0; text-align: left; font-style: italic; font-size: 2.5rem;"> Michelangelo Merisi da Caravaggio </h2>
+                <h2 style="margin: 0 0 -0.8rem 0; text-align: left; font-style: italic; font-size: 2.4rem;"> Michelangelo Merisi da Caravaggio </h2>
                 <p>
                     Michelangelo Merisi da Caravaggio, or simply Caravaggio, was an Italian Painter born in Milan, Italy, on September 29, 1571 until 
                     passing later on July 18, 1610. As an artist, Caravaggio was known as a revolutionary 
@@ -103,18 +105,18 @@
             </div>
             
             <div class="artist1-works" style=" display: flex; flex-direction: column; max-width:1000px">
-                <h1 style="display: block;"> Famous Art Works Include... </h1>
+                <h1 style="font-style: italic; text-align: center;"> Famous Art Works Include... </h1>
                 <div class="flex-container">
-                    <div class="column" style=" align-items: center; ">
-                        <img src="../img/painting-no-frame/narcissus.png" style="width: 100%;"; alt="Narcissus"/> <h2> Narcissus </h2>
+                    <div class="column">
+                        <img src="../img/painting-no-frame/narcissus.png" alt="Narcissus"/> <h2> Narcissus </h2>
                         <p>(1597-1599)</p>
                     </div>
-                    <div class="column" style=" align-items: center; ">
-                        <img src="../img/painting-no-frame/bacchus.png"  style="width: 100%; " alt="Young Sick Bacchus"> <h2> Young Sick Bacchus </h2>
+                    <div class="column">
+                        <img src="../img/painting-no-frame/bacchus.png" alt="Young Sick Bacchus"> <h2> Young Sick Bacchus </h2>
                         <p>(1593-1594)</p>
                     </div>
                     <div class="column">
-                        <img src="../img/painting-no-frame/david.png"   style="width: 100%;"; alt="David with the head of Goliath"/> <h2> David with the head of Goliath </h2>
+                        <img src="../img/painting-no-frame/david.png"  alt="David with the head of Goliath"/> <h2> David with the head of Goliath </h2>
                         <p>(1609-1610)</p>
                     </div>
                 </div>
@@ -125,21 +127,44 @@
         <section class="artist">
             <div class="artist2-info" style="text-align: left;">
                 <img style="float: right; margin: 0 0 1rem 1.5rem;" src="../img/painting-frames/raphael-frame.png" style="width:426px"; alt="Artist 2 Picture"/>
-                <h2 style="margin-top: 0; text-align: right; font-style: italic; font-size: 2.5rem;"> Raffaelo Sanzio (Raphael) </h2>
+                <h2 style="margin: 0 0 -0.8rem 0; text-align: left; font-style: italic; font-size: 2.5rem;"> Raffaelo Sanzio (Raphael) </h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien 
                     vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus 
                     leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus 
                     bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut 
                     hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia 
+                    nostra inceptos himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien 
+                    vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus 
+                    leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus 
+                    bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut 
+                    hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia 
+                    nostra inceptos himenaeos. Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien 
+                    vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus 
+                    leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus 
+                    bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut 
+                    hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia 
+                    nostra inceptos himenaeos. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut 
+                    hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia 
                     nostra inceptos himenaeos.
                 </p>
             </div>
-            <div class="artist2-works">
-                <h1> Famous Art Works Include... </h1>
-                <img src="../img/painting-no-frame/sistine-madonna.jpg" alt="Sistine Madonna Painting"/> <h2> Sistine Madonna </h2>
-                <img src="../img/painting-no-frame/transfiguration.jpg" alt="Transfiguration Painting"/> <h2> Transfiguration </h2>
-                <img src="../img/painting-no-frame/sistine-madonna.jpg" alt=""/> <h2> School of Athens </h2>
+            <div class="artist2-works" style=" display: flex; flex-direction: column; max-width:1000px">
+                <h1 style="font-style: italic; text-align: center;"> Famous Art Works Include... </h1>
+                <div class="flex-container">
+                    <div class="column">
+                        <img src="../img/painting-no-frame/sistine-madonna.jpg" alt="Sistine Madonna Painting"/> <h2> Sistine Madonna </h2>
+                    </div>
+                    <div class="column">
+                        <img src="../img/painting-no-frame/transfiguration.jpg" alt="Transfiguration Painting"/> <h2> The Transfiguration </h2>
+                    </div>
+                    <div class="column">
+                        <img src="../img/painting-no-frame/donna-velata.jpg" alt="La Donna Velata Painting"/> <h2> La Donna Velata </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
     <footer>
         <div class="left-footer">
             <p> Nikki Magbanua: b2029nmmagbanua@pshs.edu.ph </p>
