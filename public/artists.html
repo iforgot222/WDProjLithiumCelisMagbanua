@@ -9,9 +9,7 @@
     <title>Artists</title>
     <link rel="stylesheet" href="themes.css">
     <link rel="icon" href="../asset/logo-project.png" sizes="32x32" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Yesteryear&display=swap" rel="stylesheet">
+    <script src="script.js"defer></script>
 
     <style>
     /*Artist and Description Section*/
@@ -26,17 +24,6 @@
         .artist1-info img, .artist2-info img { 
             height: 500px; 
             width: auto;
-        .paintings-style :hover {
-            transform: scale(1.05);
-            opacity: 0.8;
-            transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-        }
-
-        body {
-            margin: 0;
-            padding-inline: 2rem;  
-            font-size: 16px;       /* base font size */
-            background-color: rgb(94, 94, 94);
         }
 
         /*clearing floats*/
@@ -44,15 +31,6 @@
             content: "";
             display: block;
             clear: both;
-        /* Header layout */
-        #artists {
-            font-family: Sekuya;
-        }
-        header {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding-top: 2rem;
         }
 
     /*Artist's Work Section*/
@@ -85,34 +63,6 @@
             margin-top: -1rem;
         }
 
-            display: flex; 
-            justify-content: space-around;
-            padding: 0px;
-        }
-        .column {
-            flex: 1;
-            padding: 0px;
-            margin: 5px;
-            align-items: center; 
-            border: 1px solid rgb(0, 0, 0);
-        }
-        .artist1-info {
-            display: flex;
-            align-items: flex-start;
-        }
-        #caravaggio {
-            margin-right: 20px;
-        }
-        #name {
-            font-family: 'Yesteryear', cursive;
-            font-size: 40px;
-            margin:0;
-        }
-        p {
-            font-family: 'Tinos', serif;
-            font-size: 20px;
-            text-indent: 40px;
-        }
     </style>
 
 </head>
@@ -183,46 +133,6 @@
                     </div>
                 </div>
             </div>
-    
-    <h1 id="artists"> Artists </h1>
-    <section class="artist1">
-        <div class="artist1-info">
-            <img src="../img/caravaggio.png" id="caravaggio" alt="Artist 1 Picture"/>
-            <div class="a1-text">
-                <strong><h2 id="name"> Michelangelo Merisi da Caravaggio (Caravaggio) </h2></strong>
-                <b><p>
-                    Caravaggio was an Italian Painter born in Milan, Italy, on September 29, 1571 until passing later on July 18, 1610. 
-                    As an artist, Caravaggio was known as a revolutionary painter for the time of the renaissance as, unlike other artists 
-                    who depicted the idealization of humans and religious experience, he painted in intense realism and strong contrasts 
-                    between light and dark, or namely chiaroscuro. He was one of the first painters to use and master the technique, 
-                    chiaroscuro, which later became the inspiration for Baroque art. Additionally, he is known for the unsettling atmosphere 
-                    and realism in his style in painting the stories of the bible. However, Caravaggio was not only limited to painting 
-                    Biblical themes, but depictions of death and sexual themes– which made his works to be rejected and considered vulgar and 
-                    controversial by the church. While the many oeuvres he created were seen as crude and sold for little, Caravaggio continued 
-                    to paint in his own distinctive style, which was revolutionary in itself as no other artist was as bold as him. 
-                </p></b>
-                <p><b>
-                    Caravaggio’s first major piece was The Fortune Teller, and was introduced as a new style to other Roman artists; albeit 
-                    became the footprint for artistic ranges in Roman Art. Whilst, Caravaggio’s most famous work is The Calling Of Saint 
-                    Matthew, depicting the biblical event when Jesus calls Saint Matthew to become his apostle (Caravaggio.org, n.d.).
-                </p></b>
-            </div>
-        </div>
-        
-        <div class="artist1-works" style=" display: flex; flex-direction: column;">
-            <h1 style="display: block; text-align: center;"> Famous Art Works Include... </h1>
-            <div class="flex-container">
-            <div class="column" style=" align-items: center; ">
-                <img src="../img/narcissus.png" style="width: 100%;"; alt="Narcissus"/> <h2> Narcissus </h2>
-            </div>
-            <div class="column" style=" align-items: center; ">
-                    <img src="../img/bacchus.png"  style="width: 100%; " alt="Young Sick Bacchus"><h2> Young Sick Bacchus </h2>
-            </div>
-            <div class="column">
-                <img src="../img/david.png"   style="width: 100%;"; alt="David with the head of Goliath"/><h2> David with the head of Goliath </h2>
-            </div>
-            </div>
-        </div>
 
         </section>
         <!--Content: Raphael Information-->
@@ -272,28 +182,6 @@
             </div>
         </section>
     </div>
-    </section>
-
-    <section class="artist">
-        <div class="artist2-info">
-            <img src="../img/raphael.png" style="width:426px"; alt="Artist 2 Picture"/>
-            <h2 id="name"> Raffaelo Sanzio (Raphael) </h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien 
-                vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus 
-                leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus 
-                bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut 
-                hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia 
-                nostra inceptos himenaeos.
-            </p>
-        </div>
-        <div class="artist2-works">
-            <h1> Famous Art Works Include... </h1>
-            <img src="../../img/artist2.png" alt="Artist 2 Picture"/> <h2> Title of Artwork </h2>
-            <img src="../../img/artist2.png" alt="Artist 2 Picture"/> <h2> Title of Artwork </h2>
-            <img src="../../img/artist2.png" alt="Artist 2 Picture"/> <h2> Title of Artwork </h2>
-        </div>
-    </section>
 
     <!--Footer Content-->
     <footer>
@@ -305,4 +193,6 @@
         <div class="right-footer"><p> <a href="sources.html">Sources </a></p></div>
     </footer>
 </body>
+
+
 </html>
