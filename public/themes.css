@@ -1,4 +1,4 @@
-
+/* General Body and Content Styles */
 body {
     /*
     background-image: url('../asset/bg1.png');
@@ -9,25 +9,32 @@ body {
     margin: 0;
 }
 
+/*Text Content Styles for All Pages*/
 .content{
     display: flex;
-    margin: 0;
+    margin: 0 auto;
     padding-inline: 2rem;  
     font-size: 18px;       /* base font size */
-    flex-direction: column;
-    /*TEXT FORMAT*/
+    flex-direction: column; 
     font-family: 'Times New Roman', Times, serif;
     /*color: #f7e371;*/
 }
-/* Paintings Animation */
 
+/*Image Animation */
 .paintings-style :hover {
     transform: scale(1.08);
     opacity: 0.8;
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
 
-/* Header layout */
+/*Image Animation for Artstyles Subpages: Zoom In Effect*/
+.imganimation {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%
+}
+
+/* Header layout and Content*/
 header {
     display: flex;
     align-items: center;
@@ -57,7 +64,7 @@ header .right {
     font-family: serif;
 }
 
-/*footer layout*/
+/*Footer layout and Content*/
 
 footer {
     display: flex;
@@ -81,7 +88,7 @@ footer .right {
     text-align: right;
 }
 
-/*text content for art style and theme pages */
+/*Text Content Layout for All Pages*/
 
 .content {
     padding: 2rem 9rem 3rem 9rem;
@@ -97,4 +104,6 @@ footer .right {
     font-size: 3.9rem;
     font-style: italic;
     margin-bottom: -0.7rem;
+    margin-left: -7rem;
 }
+
