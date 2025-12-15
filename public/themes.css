@@ -1,12 +1,12 @@
 /* General Body and Content Styles */
 body {
-    /*
-    background-image: url('../asset/bg1.png');
+    background-image: url('../asset/indexbg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed; */
+    background-attachment: fixed; 
     margin: 0;
+    color: #fff2e1;
 }
 
 /*Text Content Styles for All Pages*/
@@ -17,7 +17,7 @@ body {
     font-size: 18px;       /* base font size */
     flex-direction: column; 
     font-family: 'Times New Roman', Times, serif;
-    /*color: #f7e371;*/
+    padding: 2rem 9rem 3rem 9rem;
 }
 
 /*Image Animation */
@@ -47,7 +47,7 @@ header {
     display: flex;
     align-items: center;
     gap: 1rem;
-    background-color:gray; /*placeholder*/
+    background-color:#090705;
     padding: 1em 2rem 0rem 2rem;
     margin-bottom: 0rem;
 }
@@ -60,7 +60,7 @@ header .right {
     display: flex;
     padding: 0.5rem 1rem 0.5rem 1rem;
     justify-content: center;
-    background-color: rgb(189, 189, 189); /*placeholder*/
+    background-color: #29241f;
 }
 
 .navigation-bar a {
@@ -68,7 +68,7 @@ header .right {
     padding: 0rem 2rem;;
     font-size: 1.1rem;
     font-style: bold;
-    color: black;
+    color: #fff2e1;
     font-family: serif;
 }
 
@@ -79,7 +79,7 @@ footer {
     justify-content: space-between;
     align-items: center;            
     padding: 10px;
-    background-color:gray; /*placeholder*/
+    background-color:#090705;
     padding: 1em 2rem 1rem 2rem;
 }
 
@@ -98,9 +98,7 @@ footer .right {
 
 /*Text Content Layout for All Pages*/
 
-.content {
-    padding: 2rem 9rem 3rem 9rem;
-}
+
 
 .content > p {
     font-size: 1.2rem;
