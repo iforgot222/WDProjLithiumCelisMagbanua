@@ -12,6 +12,9 @@
     <script src="script.js"defer></script>
 
     <style>
+        body {
+            background-image: url('../asset/artistbg.png');
+        }
     /*Artist and Description Section*/
         /*text formatting*/
         .artist1-info, .artist2-info {
@@ -37,36 +40,30 @@
 
     /*Artist's Work Section*/
         /*image formatting of the artist's famous works*/
-        .artist1-works img, .artist2-works img {
-            flex: 1;
-            flex-direction: column;
-            display: block;
-            border-radius: 10px;
-            width: 100%;
-            align-items: center;
-        }
-
-        /*flexbox for arranging the famous works*/
         .flex-container {
-            display: flex; 
+            display: flex;
             justify-content: center;
-            padding: 0px;
+            gap: 2rem;
         }
 
-        /*individual column for each famous work*/
         .column {
-            flex: 0 0 300px;
-            padding: 0 0 3rem 0;
-            margin: 5px;
+            width: 300px;
             text-align: center;
-            align-items:center;
-            max-width: 350px;
         }
+
+        .column img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 12px;
+        }
+
 
         /*minor adjustment to the description spacing*/
         .column > p {
             margin-top: -1rem;
         }
+
     </style>
 
 </head>
@@ -85,7 +82,7 @@
     <nav class="navigation-bar"> 
         <div>  
             <b><a href="./artstyle-theme/art-style.html"> ART STYLE </a>
-            <a href="artists.html">ARTISTS </a>
+            <a style="#f3cb63" href="artists.html">ARTISTS </a>
             <a href="History.html"> HISTORY </a>
             <a href="mini-quiz/mini-quiz.html"> MINI QUIZ </a>
             <a href="sources.html"> SOURCES </a></b>
@@ -96,7 +93,7 @@
     <div class="content">
         <!--Content: Caravaggio Information-->
         <section class="artist1">
-            <div class="artist1-info" style="text-align: right;">
+            <div class="artist1-info" style="text-align: right; background-color: rgba(255, 242, 225, 0.22); padding: 1rem; border-radius: 13px;">
                 <img style="float: left; margin: 0 1.5rem 0.2rem 0;" src="../img/painting-frames/caravaggio-frame.png" alt="Caravaggio by Simon Vouet"/> <!--Image Wrapping-->
                 <h2 style="margin: 0 0 -0.8rem 0; text-align: left; font-style: italic; font-size: 2.4rem;"> Michelangelo Merisi da Caravaggio </h2> <!--Artist Name-->
                 <p>
@@ -120,7 +117,7 @@
             </div>
 
             <!--Content: Famous Art Works Include... -->
-            <div class="artist1-works" style=" display:flex; flex-direction: column; max-width:1000px;"> <!--Formatting Image Layout-->
+            <div class="artist1-works"> <!--Formatting Image Layout-->
                 <h1 style="font-style: italic; text-align: center;"> Famous Art Works Include... </h1>
                 <div class="flex-container">
                     <div class="column">
@@ -141,7 +138,7 @@
         </section>
         <!--Content: Raphael Information-->
         <section class="artist">
-            <div class="artist2-info" style="text-align: left;">
+            <div class="artist2-info" style="text-align: left; background-color: rgba(255, 242, 225, 0.22); padding: 1rem; border-radius: 13px;">
                 <img style="float: right; margin: 0 0 1rem 1.5rem;" src="../img/painting-frames/raphael-frame.png" style="width:426px"; alt="Artist 2 Picture"/> <!--Image Wrapping-->
                 <h2 style="margin: 0 0 -0.8rem 0; text-align: left; font-style: italic; font-size: 2.5rem;"> Raffaelo Sanzio (Raphael) </h2> <!--Artist Name Formatting-->
                 <p>
@@ -167,7 +164,7 @@
                 </p>
             </div>
             <!--Content: Famous Art Works Include... -->
-            <div class="artist2-works" style=" display: flex; flex-direction: column; max-width:1000px"> <!--Formatting Image Layout-->
+            <div class="artist2-works"> <!--Formatting Image Layout-->
                 <h1 style="font-style: italic; text-align: center;"> Famous Art Works Include... </h1>
                 <div class="flex-container">
                     <div class="column">
