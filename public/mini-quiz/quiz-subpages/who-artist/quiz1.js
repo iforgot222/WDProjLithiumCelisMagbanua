@@ -2,6 +2,7 @@
 const questions = [
     {
         question: "What is Renaissance translated to in French?",
+        image: "../../../../asset/logo-project.png",
         answers: [
             { text: "REVIVAL", correct: false},
             { text: "RENEWAL", correct: false},
@@ -51,6 +52,7 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
+const questionImage = document.getElementById("question-img");
 
 //Variables that will track current question and score
 let currentQuestionIndex = 0;
@@ -78,6 +80,14 @@ function showQuestion(){
         button.innerHTML = answer.text;
         button.classList.add("btn");
         answerButtons.appendChild(button);
+
+        // Show image 
+        if (currentQuestion.image) {
+            questionImage.src = currentQuestion.image;
+            questionImage.style.display = "block";
+        } else {
+            questionImage.style.display = "none";
+        }
         
         //Mark correct answer
         if(answer.correct) {

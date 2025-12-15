@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('../../../../asset/miniquizbg.png');
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    background-color: rgba(255, 242, 225, 0.25);
+    width: 90%;
+    max-width: 49rem;
+    margin: 3.5rem auto 5rem;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.content h1 {
+    font-size: 40px;
+    border-bottom: 2px solid #f3cb63; /*placeholder*/
+    padding-bottom: 2rem;
+    margin-top: -1rem;
+    color:#f3cb63;
+}
+
+
+.quiz-main {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr; 
+    grid-template-rows: repeat(4, auto); 
+    gap: 10px;
+}
+
+#question {
+    grid-column: 1 / 4;  
+    grid-row: 1 / 2;     
+    margin: 10px 0 10px 0; 
+}
+
+
+#question-img {
+    grid-row: 2 / span 5;
+    grid-column: 1 / 2;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+#answer-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px;
+    grid-column: 2 / 4; 
+    grid-row: 2 / 4; 
+}
+
+
+#next-btn-wrapper {
+    grid-column: 2 / 4; 
+    grid-row: 4 / 5;
+    display: flex;
+    justify-content: center;
+}
+.quiz-main h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    border: none;
+    padding: 35px 20px 35px 20px;
+    margin: 10px 0 0 0;
+    font-weight: bolder;
+    border-radius: 19px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 26px;
+    font-family:'Times New Roman', Times, serif;
+    background-color:  rgba(255, 242, 225, 0.30);
+    color: white;
+
+    display: flex;
+    align-items: center;     
+    justify-content: center;
+}
+
+.btn:hover:not([disabled]) {
+    background: black; 
+    color:#ffffff;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    background: rgb(0, 0, 0);
+    color: white;
+    width: 200px;
+    border: 0;
+    padding: 20px;
+    border-radius: 25px;
+    cursor: pointer;  
+    display: none;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 20px;
+
+    display: block;
+    margin: 0;
+}
+
+.correct {
+    background: rgba(206, 255, 160, 0.445);
+}
+
+.incorrect {
+    background: rgba(206, 81, 50, 0.445);
+}
+
