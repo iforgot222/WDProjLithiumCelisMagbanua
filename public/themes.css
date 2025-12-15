@@ -52,6 +52,10 @@ header {
     margin-bottom: 0rem;
 }
 
+header > h1 {
+    color: #f3cb63;
+}
+
 header .right {
     margin-left: auto;
 }
