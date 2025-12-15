@@ -2,10 +2,10 @@ const questions = [
     {
         question: "What is Renaissance translated to in French?",
         answers: [
-            { text: "Revival", correct: false},
-            { text: "Renewal", correct: false},
-            { text: "Rebirth", correct: true},
-            { text: "Restore", correct: false},
+            { text: "REVIVAL", correct: false},
+            { text: "RENEWAL", correct: false},
+            { text: "REBIRTH", correct: true},
+            { text: "RESTORE", correct: false},
         ]
     },
     {
@@ -56,7 +56,7 @@ let score = 0;
 function startQuiz(){
     currentQuestionIndex = 0;
     score = 0;
-    nextButton.innerHTML = "Next";
+    nextButton.innerHTML = "NEXT";
     showQuestion();
 }
 
@@ -109,7 +109,7 @@ function showScore() {
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.
         length}!`;
-        nextButton.innerHTML = "play Again";    
+        nextButton.innerHTML = "PLAY AGAIN";    
         nextButton.style.display = "block";
 }
 
