@@ -1,54 +1,54 @@
 //array that stores all the questions and answers
 const questions = [
     {
-        question: "Who is the artist behind the Mona Lisa- one of the most famous paintings from the Renaissance?",
+        question: "What is the English title of this painting: 'Amor Vincit Omnia' by Caravaggio?",
         image: "../../../../asset/title1.png",
         answers: [
-            { text: "Donato di Niccolò di Betto Bardi", correct: false},
-            { text: "Sandro Boticelli ", correct: false},
-            { text: "Michelangelo Buonarroti", correct: false},
-            { text: "Leonardo Da Vinci", correct: true},
+            { text: "Victor's Cupid", correct: false},
+            { text: "Cupid as Victor", correct: true},
+            { text: "Angel of Victor", correct: false},
+            { text: "Victor's Angel", correct: false},
         ]
     },
     {
-        question: "Which French Renaissance painter is known for painting the portraits of the court, especially of Francis I?",
+        question: "What is the title of this painting made by Albrecht Durer?",
         image: "../../../../asset/title2.png",
         answers: [
-            { text: "Nicolas Poussin", correct: false},
-            { text: "Jean Clouet", correct: true},
-            { text: "Jacques-Louis David", correct: false},
-            { text: "Simon Vouet", correct: false},
+            { text: "The Bunny", correct: false},
+            { text: "The Hare", correct: true},
+            { text: "Hase", correct: true},
+            { text: "Rabbit", correct: false},
         ]
     },
     {
-        question: "Which painter is associated with the style of elegant, elongated figures found in many rooms of the Château de Fontainebleau?",
+        question: "What is the title of this painting made by Raphael?",
         image: "../../../../asset/title3.png",
         answers: [
-            { text: "Jean Fouquet", correct: false},
-            { text: "Antoine Caron", correct: false},
-            { text: "Rosso Fiorentino", correct: true},
-            { text: "Pierre Mignard", correct: false},
+            { text: "Madonna of the Golden Angel", correct: false},
+            { text: "Madonna of the Golden Light", correct: false},
+            { text: "Modonna of the Goldfish", correct: false},
+            { text: "Madonna of the Goldfinch", correct: true},
         ]
     },
     {
-        question: "This artist was one of the greatest figures in the German Renaissance, and was especially influential in the art medium of Woodcut and Engraving. Who am I?",
+        question: "What is the title of this painting made by Raphael?",
         image: "../../../../asset/title4.png",
         answers: [
-            { text: "Georg Pencz", correct: false},
-            { text: "Hans Holbein the Younger", correct: false},
-            { text: "Albrecht Durer", correct: true},
-            { text: "Christoph Weiditz", correct: false},
+            { text: "Saint Catherine of Athens", correct: false},
+            { text: "Saint Catherine of Alexandria", correct: true},
+            { text: "Saint Catherine of Siena", correct: false},
+            { text: "Saint Catherine of Bologna", correct: false},
         ]
     },
     {
         //Albrecht Durer / Quentin Matsys / Hans Hemling / Hans Holbein the Younger
-        question: "The Ambassadors,” with its well-known hidden  skull, was painted by who?",
+        question: "What is the title of this painting made by Caravaggio?",
         image: "../../../../asset/title5.png",
         answers: [
-            { text: "Albrecht Durer", correct: false},
-            { text: "Quentin Matsys", correct: false},
-            { text: "Hans Hemling", correct: false},
-            { text: "Hans Holbein the Younger", correct: true},
+            { text: "The Burial of Christ", correct: false},
+            { text: "The Resurrection of Christ", correct: false},
+            { text: "The Sacrifice of Christ", correct: false},
+            { text: "The Entombment of Christ", correct: true},
         ]
     }
 ];
