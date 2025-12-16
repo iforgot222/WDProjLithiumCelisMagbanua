@@ -2,7 +2,7 @@
 const questions = [
     {
         question: "Who is the artist behind the Mona Lisa- one of the most famous paintings from the Renaissance?",
-        image: "../../../../asset/logo-project.png",
+        image: "../../../../asset/title1.png",
         answers: [
             { text: "Donato di Niccolò di Betto Bardi", correct: false},
             { text: "Sandro Boticelli ", correct: false},
@@ -11,39 +11,44 @@ const questions = [
         ]
     },
     {
-        question: "Which known family were crucial patrons in the Renaissance?",
+        question: "Which French Renaissance painter is known for painting the portraits of the court, especially of Francis I?",
+        image: "../../../../asset/title2.png",
         answers: [
-            { text: "Medici Family", correct: true},
-            { text: "Sforza Family", correct: false},
-            { text: "Este Family", correct: false},
-            { text: "Gonzaga Family", correct: false},
+            { text: "Nicolas Poussin", correct: false},
+            { text: "Jean Clouet", correct: true},
+            { text: "Jacques-Louis David", correct: false},
+            { text: "Simon Vouet", correct: false},
         ]
     },
     {
-        question: "Who was given the title: “Father of the Renaissance”?",
+        question: "Which painter is associated with the style of elegant, elongated figures found in many rooms of the Château de Fontainebleau?",
+        image: "../../../../asset/title3.png",
         answers: [
-            { text: "Dante Alighieri", correct: false},
-            { text: "Francesco Petrarch", correct: true},
-            { text: "Giotto Di Bondone", correct: false},
-            { text: "Leonardo Da Vinci", correct: false},
+            { text: "Jean Fouquet", correct: false},
+            { text: "Antoine Caron", correct: false},
+            { text: "Rosso Fiorentino", correct: true},
+            { text: "Pierre Mignard", correct: false},
         ]
     },
     {
-        question: "Where was the birthplace of the Renaissance?",
+        question: "This artist was one of the greatest figures in the German Renaissance, and was especially influential in the art medium of Woodcut and Engraving. Who am I?",
+        image: "../../../../asset/title4.png",
         answers: [
-            { text: "Florence, Italy", correct: true},
-            { text: "Paris, France", correct: false},
-            { text: "Berlin, Germany", correct: false},
-            { text: "Madrid, Spain", correct: false},
+            { text: "Georg Pencz", correct: false},
+            { text: "Hans Holbein the Younger", correct: false},
+            { text: "Albrecht Durer", correct: true},
+            { text: "Christoph Weiditz", correct: false},
         ]
     },
     {
-        question: "Which of the Four Canonical Painting Modes emphasized light and shadow?",
+        //Albrecht Durer / Quentin Matsys / Hans Hemling / Hans Holbein the Younger
+        question: "The Ambassadors,” with its well-known hidden  skull, was painted by who?",
+        image: "../../../../asset/title5.png",
         answers: [
-            { text: "Unione", correct: false},
-            { text: "Cangiante", correct: false},
-            { text: "Chiaroscuro", correct: true},
-            { text: "Sfumato", correct: false},
+            { text: "Albrecht Durer", correct: false},
+            { text: "Quentin Matsys", correct: false},
+            { text: "Hans Hemling", correct: false},
+            { text: "Hans Holbein the Younger", correct: true},
         ]
     }
 ];
@@ -136,6 +141,7 @@ function showScore() {
         length}!`;
         nextButton.innerHTML = "PLAY AGAIN";    
         nextButton.style.display = "block";
+        questionImage.style.display = "none";
 }
 
 //handles moving to the next question
