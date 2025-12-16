@@ -41,11 +41,8 @@ body {
     margin: 10px 0 10px 0; 
 }
 
-
-
-
 #question-img {
-    grid-row: 2 / span 5;
+    margin-top: 1.5rem;
     grid-column: 1 / 2;
     width: 100%;
     border-radius: 10px;
