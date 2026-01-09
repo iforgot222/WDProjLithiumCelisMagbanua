@@ -41,3 +41,18 @@ This webpage will showcase different masterpieces across Europe during the renai
 
 ### Sources
 ### ![Sources](./asset/sources.png "sources")
+
+## How will HTML forms be added to our webpage?
+1. **What kind of HTML form are we using?:** The kind of HTML form we are using is the input type wherin the user will be asked to type within a single-line textbox. 
+2. **How will the HTML form be used?:** Considering the fact that our webpage contains a numerous amount of sources and all of different types (image, article, etc.), this HTML form would assist users in finding what source we used by having a search bar (in the sources page) where they can search a topic or painting before being redirected to the source links, how we used them, and where they are being used.
+3. **What is its purpose?:** The purpose of this is to make our website, while artistic, more academic and credible given how most of the information displayed on the website came from different sources. Additionally, it may help users when they will be citing our website or search how we were able to obtain the images for the paintings that we displayed in the webpages.
+
+### Wireframes
+### Page1: Collecting Data
+### ![Webpage1](./asset/sources1.1.png "sources1.1")
+
+### Page2: Saving Data
+### ![Webpage2](./asset/sources1.2.png "sources1.2")
+
+### Page3: Using the saved Data
+### ![Webpage3](./asset/sources1.3.png "sources1.3")
