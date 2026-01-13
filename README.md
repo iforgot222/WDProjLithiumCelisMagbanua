@@ -43,9 +43,10 @@ This webpage will showcase different masterpieces across Europe during the renai
 ### ![Sources](./asset/sources.png "sources")
 
 ## How will HTML forms be added to our webpage?
-1. **What kind of HTML form are we using?:** The kind of HTML form we are using is the input type wherin the user will be asked to type within a single-line textbox. 
-2. **How will the HTML form be used?:** Considering the fact that our webpage contains a numerous amount of sources and all of different types (image, article, etc.), this HTML form would assist users in finding what source we used by having a search bar (in the sources page) where they can search a topic or painting before being redirected to the source links, how we used them, and where they are being used.
-3. **What is its purpose?:** The purpose of this is to make our website, while artistic, more academic and credible given how most of the information displayed on the website came from different sources. Additionally, it may help users when they will be citing our website or search how we were able to obtain the images for the paintings that we displayed in the webpages.
+1. **How will the HTML form be used?:** In the home page, we will include a simple comment system that allows users to submit comments, feedback, or questions, about the website. This form (using text area) will allow users to choose whether they want to stay anonymous or enter their name to post a comment message. 
+2. **What is its purpose?:** The purpose of this is to make our website, while artistic, more interactive and academic through the use of feedback between users visiting our webpage. Additionally, if the user has questions on Renaissance, art, and other topics concerning our website, we will be able to respond and provide answers rather than keeping the webpage purely informational.
+3. **How will data be saved?** Once the comment is submitted, the input data will be processed using JavaScript and saved in the user’s computer using the browser’s local storage. As the data is being processed, the JavaScript will get the input values and store them as part of an array of objects. Each object will contain relevant fields such as the user’s name (or anonymous) and comment message.
+
 
 ### Wireframes
 ### Page1: Collecting Data
