@@ -49,11 +49,19 @@ This webpage will showcase different masterpieces across Europe during the renai
 
 
 ### Wireframes
-### Page1: Collecting Data
-### ![Webpage1](./asset/sources1.1.png "sources1.1")
+### ![Webpage1](./asset/comment1.png "comment1")
 
-### Page2: Saving Data
-### ![Webpage2](./asset/sources1.2.png "sources1.2")
+### ![Webpage2](./asset/comment2.png "comment2")
 
-### Page3: Using the saved Data
-### ![Webpage3](./asset/sources1.3.png "sources1.3")
+### ![Webpage3](./asset/comment3.png "comment3")
+
+### ![Webpage4](./asset/comment4.png "comment4")
+
+### ![Webpage5](./asset/comment5.png "comment5")
+
+### ![Webpage6](./asset/comment6.png "comment6")
+
+### ![Webpage7](./asset/comment7.png "comment7")
+
+### ![Webpage8](./asset/comment8.png "comment8")
+
