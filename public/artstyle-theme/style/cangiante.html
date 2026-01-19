@@ -21,6 +21,60 @@
             padding: 1rem 0 1rem 2rem 1rem;
             margin-top: -1.8rem;
         }
+
+        .frame {
+            width: 600px;
+            height: auto;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #333;
+        }
+
+        .frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+            /* the clickable symbol */
+        .dot {
+            position: absolute;
+            cursor: pointer;
+            font-size: 18px;
+            z-index: 2;
+        }
+
+        .dot img {
+            height: 20px;
+            width: auto;
+
+        }
+
+        .dot img:hover {
+            transform: scale(1.5);
+            rotate: 45deg;
+            opacity: 0.8;
+            transition: transform 0.5s ease, opacity 0.5s ease;
+        }
+
+            /* the text box */
+        .note {
+            position: absolute;
+            background: white;
+            border: 1px solid #333;
+            padding: 6px;
+            display: none;
+            font-size: 14px;
+            z-index: 3;
+        }
+
+        #dot1 { top: 40%; left: 25%; }
+        #note1 { top: 39%; left: 30%; }
+
+        #dot2 { top: 20%; left: 60%; }
+        #note2 { top: 57%; left: 75%; }
+
     </style>
 </head>
 
@@ -61,10 +115,18 @@
     <div class="content">
         <h1 style="font-style: italic; margin-bottom: -0.8rem; margin-left: -3rem;"> Sistine Chapel: The Prophet Daniel (1508–1512) by Michelangelo </h1>
         <p> Click the Buttons to Analyze! </p>
-        <!--Hi Ma'am, this section will be updated with a zoom-in animation (similarly to the f1 Website) 
-        that would incorporate JS and what we'll learn in the 3rd Quarter. There will be Additional Text 
-        content once the animations are added.-->
-        <img class="imganimation" src="../../../img/painting-no-frame/daniel.png" alt="Daniel" height="600rem"/>
+        <div class="frame">
+            <img class="imganimation" src="../../../img/painting-no-frame/daniel.png" id=img alt="Daniel"/>
+            <div class="dot" id="dot1">
+                <img src="/asset/marker_placeholder.png"/>
+            </div>
+            <div class="note" id="note1"> This is a detail abt the painting. </div>
+
+            <div class="dot" id="dot2">
+                <img src="/asset/marker_placeholder.png"/>
+            </div>
+            <div class="note" id="note2"> This is a detail abt the painting. </div>
+        </div>
     </div>
 
     <!--Footer Content-->
@@ -77,3 +139,28 @@
         <div class="right-footer"><p> <a href="../../sources.html">Sources </a></p></div>
     </footer>
 </body>
+
+
+<script>
+    const img = document.getElementById("img");
+    
+    function reset() {
+      img.style.transform = "scale(1) translate(0, 0)";
+      document.querySelectorAll(".note").forEach(n => n.style.display = "none");
+    }
+    
+    document.getElementById("dot1").onclick = () => {
+      reset();
+      img.style.transform = "scale(2.5) translate(14%, 4%)";
+      document.getElementById("note1").style.display = "block";
+    };
+    
+    document.getElementById("dot2").onclick = () => {
+      reset();
+      img.style.transform = "scale(2) translate(-5%, 15%)";
+      document.getElementById("note2").style.display = "block";
+    };
+    
+    // click image to reset
+    img.onclick = reset;
+    </script>
