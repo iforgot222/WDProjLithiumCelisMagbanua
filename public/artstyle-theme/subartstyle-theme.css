@@ -1,0 +1,42 @@
+/*Main CSS*/
+body {
+    background-image: url('../../../asset/artstylebg.png');
+}
+
+.content {
+    max-width: 900px;
+    padding: 1rem 1rem 2rem 1rem;
+    margin-top: -1.8rem;
+}
+
+
+/*Image formatting for other works section*/
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: rgba(255, 242, 225, 0.22);
+    padding: 1rem;
+    border-radius: 13px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.column {
+    width: 300px;
+    text-align: center;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.column > p {
+    margin-top: -1rem;
+}
+
+
+    
