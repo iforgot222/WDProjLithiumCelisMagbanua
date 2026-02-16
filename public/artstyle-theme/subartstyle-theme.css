@@ -14,16 +14,15 @@ body {
 .flex-container {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
     background-color: rgba(255, 242, 225, 0.22);
     padding: 1rem;
     border-radius: 13px;
-    max-width: 900px;
     margin: 0 auto;
 }
 
 .column {
-    width: 300px;
+    width: 17rem;
     text-align: center;
 }
 
