@@ -11,7 +11,6 @@
     <link rel="icon" href="asset/logo-project.png" sizes="32x32" type="image/png" />
     <script src="script.js"defer></script>
     <style> 
-
         .Content {
             max-width: 56rem;
             margin: 0 auto;
@@ -41,6 +40,79 @@
             gap: 3rem;
         }
 
+        /*Comment Section CSS*/
+
+        .comment-wrapper {
+            width: 40rem;
+            border-radius: 10px;
+            background-color: rgba(255, 242, 225, 0.25);
+            padding: 2rem;
+            margin: 0 auto 2rem auto;
+        }
+
+        .comment-header {
+            font-weight: bold;
+            margin: 1rem 1rem 1rem 1.5rem;
+            font-size: 1.6rem;
+            color:#f3cb63;
+        }
+
+        .comment-box {
+            height: 18rem;
+            overflow-y: auto; 
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .comment {
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+            border-radius: 5px;
+            background-color: rgba(255, 242, 225, 0.3);
+            font-size: 1.2rem;
+        }
+
+        .comment-user {
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 1.4rem;
+        }
+
+        .no-comments {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            margin-top: 80px;
+            font-size: 1.2rem;
+        }
+
+        .input-area {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .input-area input {
+            flex: 1;
+            padding: 1rem;
+            background-color: rgb(0, 0, 0);
+            border: none;
+            color:#fffaf4;
+            border-radius: 10px;
+            height: 1.2rem; 
+            font-size: 1rem;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .input-area button {
+            padding: 0.8rem 1.2rem;
+            cursor: pointer;
+            background-color: #f3cb63;
+            border: none;
+            color:#2c2924;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
     </style>
 </head>
 
@@ -100,8 +172,22 @@
             </a>
     </div>
 
-    
+    <!--Comment Section-->
+    <div class="comment-wrapper">
+        <div class="comment-header">
+        <span id="commentCount">0</span> COMMENTS
+        </div>
+        <hr style="border: 1.5px solid #f3cb63;">
 
+        <div class="comment-box" id="commentBox">
+            <div class="no-comments" id="noComments"> Be the first to comment! </div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="commentInput" placeholder="Enter a comment">
+            <button onclick="addComment()"> Post </button>
+        </div>
+    </div>
 
 
     <!--Footer Content-->
@@ -114,4 +200,64 @@
         <div class="right-footer"><p> <a href="./public/sources.html">Sources </a></p></div>
     </footer>
 </body>
+
+<script>
+    const commentBox = document.getElementById("commentBox");
+    const commentInput = document.getElementById("commentInput");
+    const commentCount = document.getElementById("commentCount");
+    const noComments = document.getElementById("noComments");
+
+    let comments = JSON.parse(localStorage.getItem("comments")) || [];
+
+    function renderComments() {
+        commentBox.innerHTML = "";
+
+        if (comments.length === 0) {
+            commentBox.appendChild(noComments);
+            commentCount.textContent = 0;
+            return;
+        }
+
+        comments.forEach(comment => {
+            const commentDiv = document.createElement("div");
+            commentDiv.classList.add("comment");
+
+            const userDiv = document.createElement("div");
+            userDiv.classList.add("comment-user");
+            userDiv.textContent = comment.name;
+
+            const textDiv = document.createElement("div");
+            textDiv.textContent = comment.text;
+
+            commentDiv.appendChild(userDiv);
+            commentDiv.appendChild(textDiv);
+
+            commentBox.appendChild(commentDiv);
+        });
+
+        commentCount.textContent = comments.length;
+    }
+
+    function addComment() {
+        const text = commentInput.value.trim();
+        if (text === "") return;
+
+        const name = prompt("Enter your name:");
+        if (!name || name.trim() === "") return;
+
+        const newComment = {
+            name: name.trim(),
+            text: text
+        };
+
+        comments.push(newComment);
+        localStorage.setItem("comments", JSON.stringify(comments));
+
+        commentInput.value = "";
+        renderComments();
+    }
+
+    renderComments();
+</script>
+
 </html>
