@@ -13,6 +13,38 @@
     <script src="script.js"defer></script>
     <style>
         /*Specific Layout Fomatting for Themes Page*/
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .base-img,
+        .overlay-img {
+            border-radius: 8px;
+            width: 100%;
+            height: 100%
+        }
+
+        .base-img {
+            display: block;
+        }
+
+        .overlay-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            cursor: pointer;
+        }
+
+        .overlay-active .overlay-img {
+            opacity: 1;
+        }
+
+        .overlay-active .note {
+            opacity: 1;
+        }
 
     </style>
 </head>
@@ -39,15 +71,17 @@
             on the horizon line of a composition.
         </p>
     </div>
+    
     <div class="content">
         <h1 style="font-style: italic; margin-bottom: -0.8rem; margin-left: -3rem;"> School of Athens (1509-1511) by Raphael </h1>
-        <p> Click the Buttons to Analyze! </p>
-        <!--Hi Ma'am, this section will be updated with a zoom-in animation (similarly to the f1 Website) 
-        that would incorporate JS and what we'll learn in the 3rd Quarter. There will be Additional Text 
-        content once the animations are added.-->
-        <img class="imganimation" src="../../../img/painting-no-frame/school-of-athens.jpg" alt="School of Athens Painting"/>
-        <!--AN EFFECT WILL BE ADDED WHERE THE SECOND IMAGE WILL OVERLAY ON THE FIRST IMAGE-->
-        <img class="imganimation" src="../../../img/painting-no-frame/school-of-athens-edited.png" alt="School of Athens Painting Edited"/> 
+        <p>Click the Buttons to Analyze!</p>
+
+        <div class="image-container">
+            <img class="base-img" src="../../../img/painting-no-frame/school-of-athens.jpg" alt="School of Athens Painting"/>
+            <img class="overlay-img" src="../../../img/painting-no-frame/school-of-athens-edited.png" alt="School of Athens Painting Edited"/>
+        </div>
+
+        <button onclick="showOverlay()">Analyze</button>
     </div>
 
     <div class="content">
@@ -78,5 +112,19 @@
         <div class="right-footer"><p> <a href="../../sources.html">Sources </a></p></div>
     </footer>
 </body>
+
+<script>
+    function showOverlay() {
+        document.querySelector('.image-container')
+            .classList.add('overlay-active');
+    }
+
+    document.querySelector('.overlay-img').addEventListener('click', function() {
+        document.querySelector('.image-container')
+            .classList.remove('overlay-active');
+    });
+</script>
+
+
 </html>
 
