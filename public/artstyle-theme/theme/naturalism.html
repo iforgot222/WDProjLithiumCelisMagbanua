@@ -28,6 +28,17 @@
             width: auto;     
         }
 
+        #dot1 { top: 40%; left: 25%; }
+        #note1 { top: 39%; left: 0%; }
+
+        #dot2 { top:20%; left: 60%; }
+        #note2 { top: 45%; left: 20%; }
+
+        /*IF YOU WANT TO REMOVE DOT 3, delete from this section onwards*/
+
+        #dot3 { top:1%; left: 60%; }
+        #note3 { top: 45%; left: 90%; }
+
     </style>
 </head>
 
@@ -69,13 +80,41 @@
     </div>
 
     <!--Naturalism Image Section-->
-    <div class="content"> 
-        <h1 style="font-style: italic; margin-bottom: -0.8rem; margin-left: -3rem;"> Venus of Urbino (1538) by Titian </h1>
+    <div class="content">
+        <h1 style="font-style: italic; margin-bottom: -0.8rem; margin-left: -3rem;">  Venus of Urbino (1538) by Titian  </h1>
         <p> Click the Buttons to Analyze! </p>
-        <img class="imganimation" src="../../../img/painting-no-frame/venus-of-urbino.jpg" alt=" Venus of Urbino" />
-        <!--Hi Ma'am, this section will be updated with a zoom-in animation (similarly to the f1 Website) 
-        that would incorporate JS and what we'll learn in the 3rd Quarter. There will be Additional Text 
-        content once the animations are added.-->
+        <div class="frame">
+            <img class="imganimation" src="../../../img/painting-no-frame/venus-of-urbino.jpg" id=img alt="Venus of Urbino"/>
+            
+            <!--Dot 1-->
+            <div class="dot" id="dot1">
+                <img src="../../../asset/marker-light.png"/>
+            </div>
+            <div class="note" id="note1"> 
+                <!--Add the photo here.-->
+                <img src="../../../asset/placeholder.png" alt="Example" style="width: 30rem; height: auto;"/>
+            </div>
+
+            <!--Dot 2-->
+            <div class="dot" id="dot2">
+                <img src="../../../asset/marker-light.png" />
+            </div>
+            <div class="note" id="note2">  
+                <!--Add the photo here.-->
+                <img src="../../../asset/placeholder.png" alt="Example" style="width: 30rem; height: auto;"/>
+            </div>
+
+            <!--IF YOU WANT TO REMOVE DOT 3, delete from this section onwards-->
+
+            <!--Dot 3-->
+            <div class="dot" id="dot3">
+                <img src="../../../asset/marker-light.png"/>
+            </div>
+            <div class="note" id="note3">  
+                <!--Add the photo here.-->
+                <img src="../../../asset/placeholder.png" alt="Example" style="width: 30rem; height: auto;"/>
+            </div>
+        </div>
     </div>
 
     <div class="content">
@@ -106,4 +145,45 @@
         <div class="right-footer"><p> <a href="../../sources.html">Sources </a></p></div>
     </footer>
 </body>
+
+<script>
+    const img = document.getElementById("img");
+    const dots = document.querySelectorAll(".dot");
+
+    function reset() {
+      img.style.transform = "scale(1) translate(0, 0)";
+      document.querySelectorAll(".note").forEach(n => n.style.display = "none");
+      dots.forEach(d => d.style.display = "block"); 
+    }
+    
+    /*THE ZOOM IN*/
+    /*dot 1*/
+    document.getElementById("dot1").onclick = () => {
+      dots.forEach(d => d.style.display = "none");
+
+      img.style.transform = "scale(2.5) translate(14%, 4%)";
+      document.getElementById("note1").style.display = "block";
+    };
+    
+    /*dot 2*/
+    document.getElementById("dot2").onclick = () => {
+      dots.forEach(d => d.style.display = "none");
+      
+      img.style.transform = "scale(2) translate(-5%, 15%)";
+      document.getElementById("note2").style.display = "block";
+    };
+
+    /*IF YOU WANT TO REMOVE DOT 3, delete from this section onwards*/
+
+    /*dot 3*/
+    document.getElementById("dot3").onclick = () => {
+      dots.forEach(d => d.style.display = "none");
+      
+      img.style.transform = "scale(2) translate(-10%, 20%)";
+      document.getElementById("note3").style.display = "block";
+    };
+    
+    img.onclick = reset;
+</script>
+
 </html>
