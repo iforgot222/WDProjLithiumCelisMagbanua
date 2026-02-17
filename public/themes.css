@@ -9,6 +9,24 @@ body {
     color: white;
 }
 
+/*Scrollbar Styling*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f3cb63;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f3ca63b0;
+}
+
 /*Text Content Styles for All Pages*/
 .content{
     display: flex;
