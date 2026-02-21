@@ -30,10 +30,6 @@
         #dot2 { top:20%; left: 60%; }
         #note2 { top: 45%; left: 20%; }
 
-        /*IF YOU WANT TO REMOVE DOT 3, delete from this section onwards*/
-
-        #dot3 { top:1%; left: 60%; }
-        #note3 { top: 45%; left: 90%; }
     </style>
 </head>
 
@@ -72,7 +68,7 @@
             </div>
             <div class="note" id="note1"> 
                 <!--Add the photo here.-->
-                <img src="../../../asset/placeholder.png" alt="Example" style="width: 30rem; height: auto;"/>
+                <img src="../../../asset/UnioneNote2.png" alt="Example" style="width: 30rem; height: auto;"/>
             </div>
 
             <!--Dot 2-->
@@ -81,18 +77,7 @@
             </div>
             <div class="note" id="note2">  
                 <!--Add the photo here.-->
-                <img src="../../../asset/placeholder.png" alt="Example" style="width: 30rem; height: auto;"/>
-            </div>
-
-            <!--IF YOU WANT TO REMOVE DOT 3, delete from this section onwards-->
-
-            <!--Dot 3-->
-            <div class="dot" id="dot3">
-                <img src="../../../asset/marker-white.png"/>
-            </div>
-            <div class="note" id="note3">  
-                <!--Add the photo here.-->
-                <img src="../../../asset/placeholder.png" alt="Example" style="width: 30rem; height: auto;"/>
+                <img src="../../../asset/UnioneNote1.png" alt="Example" style="width: 30rem; height: auto;"/>
             </div>
         </div>
     </div>
@@ -152,16 +137,6 @@
       
       img.style.transform = "scale(2) translate(-5%, 15%)";
       document.getElementById("note2").style.display = "block";
-    };
-
-    /*IF YOU WANT TO REMOVE DOT 3, delete from this section onwards*/
-
-    /*dot 3*/
-    document.getElementById("dot3").onclick = () => {
-      dots.forEach(d => d.style.display = "none");
-      
-      img.style.transform = "scale(2) translate(-10%, 20%)";
-      document.getElementById("note3").style.display = "block";
     };
 
     img.onclick = reset;
