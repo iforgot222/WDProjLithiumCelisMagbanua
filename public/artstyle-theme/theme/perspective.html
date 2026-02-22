@@ -46,6 +46,38 @@
             opacity: 1;
         }
 
+        button {
+            background-color: rgba(255, 242, 225, 0.25);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 0.6rem;
+            font-size: 1rem;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /*Layout for other artworks section*/
+        .row {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            margin-bottom: 1rem;
+        }
+
+        .row > img {
+            width: 50rem;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .perspective-works {
+            background-color: rgba(255, 242, 225, 0.22);
+            border-radius: 13px;
+            padding: 1rem 1rem;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -81,23 +113,20 @@
             <img class="overlay-img" src="../../../img/painting-no-frame/school-of-athens-edited.png" alt="School of Athens Painting Edited"/>
         </div>
 
-        <button onclick="showOverlay()">Analyze</button>
+        <button onclick="showOverlay()">ANALYZE</button>
     </div>
 
     <div class="content">
         <h1 style="font-style: italic; text-align: center;"> Other Artworks that use Perspective... </h1>
-        <div class="flex-container">
-            <div class="column">
-                <img src="../../../img/painting-no-frame/" alt=""/> <h2></h2>
-                <p></p>
+        <div class="perspective-works">
+            <h2>Delivery of the Keys to Saint Peter (1481) by Perugino</h2>
+            <div class="row">
+                <img src="../../../img/painting-no-frame/perspective1.png" alt=""/>
             </div>
-            <div class="column">
-                <img src="../../../img/painting-no-frame/" alt=""> <h2></h2>
-                <p></p>
-            </div>
-            <div class="column">
-                <img src="../../../img/painting-no-frame/"  alt=""/> <h2></h2>
-                <p></p>
+
+            <h2>The Healing of the Cripple and the Raising of Tabitha (1425) by Masolino</h2>
+            <div class="row">
+                <img src="../../../img/painting-no-frame/perspective2.jpg" alt=""> 
             </div>
         </div>
     </div>
