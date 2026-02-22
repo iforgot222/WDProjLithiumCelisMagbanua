@@ -112,26 +112,26 @@
     const dots = document.querySelectorAll(".dot");
 
     function reset() {
-      img.style.transform = "scale(1) translate(0, 0)";
-      document.querySelectorAll(".note").forEach(n => n.style.display = "none");
-      dots.forEach(d => d.style.display = "block"); 
+        img.style.transform = "scale(1) translate(0, 0)";
+        document.querySelectorAll(".note").forEach(n => n.style.display = "none");
+        dots.forEach(d => d.style.display = "block"); 
     }
     
     /*THE ZOOM IN*/
     /*dot 1*/
     document.getElementById("dot1").onclick = () => {
-      dots.forEach(d => d.style.display = "none");
+        dots.forEach(d => d.style.display = "none");
 
-      img.style.transform = "scale(2) translate(-10%, 5%)";
-      document.getElementById("note1").style.display = "block";
+        img.style.transform = "scale(2) translate(-10%, 5%)";
+        document.getElementById("note1").style.display = "block";
     };
     
     /*dot 2*/
     document.getElementById("dot2").onclick = () => {
-      dots.forEach(d => d.style.display = "none");
+        dots.forEach(d => d.style.display = "none");
       
-      img.style.transform = "scale(2) translate(-15%, -6%)";
-      document.getElementById("note2").style.display = "block";
+        img.style.transform = "scale(2) translate(-15%, -6%)";
+        document.getElementById("note2").style.display = "block";
     };
 
     /*IF YOU WANT TO REMOVE DOT 3, delete from this section onwards*/

@@ -13,11 +13,8 @@
     <script src="script.js"defer></script>
     <style>
         /*Specific Layout Fomatting for Themes Page*/
-        #dot1 { top: 40%; left: 25%; }
-        #note1 { top: 39%; left: 0%; }
-
-        #dot2 { top:20%; left: 60%; }
-        #note2 { top: 45%; left: 20%; }
+        #dot1 { top: 40%; left: 46%; } #note1 { top: 40%; left: 40%; }
+        #dot2 { top:20%; left: 55%; } #note2 { top: 25%; left: 48%; }
 
     </style>
 </head>
@@ -107,28 +104,28 @@
     const dots = document.querySelectorAll(".dot");
 
     function reset() {
-      img.style.transform = "scale(1) translate(0, 0)";
-      document.querySelectorAll(".note").forEach(n => n.style.display = "none");
-      dots.forEach(d => d.style.display = "block"); 
+        img.style.transform = "scale(1) translate(0, 0)";
+        document.querySelectorAll(".note").forEach(n => n.style.display = "none");
+        dots.forEach(d => d.style.display = "block"); 
     }
     
     /*THE ZOOM IN*/
     /*dot 1*/
     document.getElementById("dot1").onclick = () => {
-      dots.forEach(d => d.style.display = "none");
+        dots.forEach(d => d.style.display = "none");
 
-      img.style.transform = "scale(2.5) translate(14%, 4%)";
-      document.getElementById("note1").style.display = "block";
+        img.style.transform = "scale(2.5) translate(-5%, 5%)";
+        document.getElementById("note1").style.display = "block";
     };
     
     /*dot 2*/
     document.getElementById("dot2").onclick = () => {
-      dots.forEach(d => d.style.display = "none");
+        dots.forEach(d => d.style.display = "none");
       
-      img.style.transform = "scale(2) translate(-5%, 15%)";
-      document.getElementById("note2").style.display = "block";
+        img.style.transform = "scale(2) translate(-5%, 20%)";
+        document.getElementById("note2").style.display = "block";
     };
-    
+  
     img.onclick = reset;
 </script>
 
