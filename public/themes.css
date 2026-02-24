@@ -60,7 +60,7 @@ body {
     height: 100%
 }
 
-/* Header layout and Content*/
+/*Header layout and Content*/
 header {
     display: flex;
     align-items: center;
@@ -121,8 +121,6 @@ footer .right {
 }
 
 /*Text Content Layout for All Pages*/
-
-
 
 .content > p {
     font-size: 1.2rem;

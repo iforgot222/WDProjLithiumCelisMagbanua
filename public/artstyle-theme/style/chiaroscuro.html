@@ -13,6 +13,7 @@
     <script src="script.js"defer></script>
 
     <style>
+        /*button and note positioning*/
         #dot1 { top: 22%; left: 53%; } #note1 { top: 25%; left: 46%; }
         #dot2 { top:36%; left: 79.5%; } #note2 { top: 35%; left: 40%; }
         #dot3 { top:10%; left: 38%; } #note3 { top: 28.5%; left: 45%; }
@@ -41,6 +42,7 @@
         </p>
     </div>
 
+    <!--Zoom-In Analysis Section-->
     <div class="content">
         <h1 style="font-style: italic; margin-bottom: -0.8rem; margin-left: -3rem;"> Supper at Emmaus (1601) by Caravaggio </h1>
         <p> Click the Buttons to Analyze! </p>
@@ -52,7 +54,6 @@
                 <img src="../../../asset/marker-white.png"/>
             </div>
             <div class="note" id="note1"> 
-                <!--Add the photo here.-->
                 <img src="../../../asset/ChiaroscuroNote1.png" alt="Example" style="width: 30rem; height: auto;"/>
             </div>
 
@@ -61,7 +62,6 @@
                 <img src="../../../asset/marker-white.png" />
             </div>
             <div class="note" id="note2">  
-                <!--Add the photo here.-->
                 <img src="../../../asset/ChiaroscuroNote2.png" alt="Example" style="width: 30rem; height: auto;"/>
             </div>
 
@@ -72,12 +72,12 @@
                 <img src="../../../asset/marker-white.png"/>
             </div>
             <div class="note" id="note3">  
-                <!--Add the photo here.-->
                 <img src="../../../asset/ChiaroscuroNote3.png" alt="Example" style="width: 30rem; height: auto;"/>
             </div>
         </div>
     </div>
 
+    <!--Other Artworks Content-->
     <div class="content">
         <h1 style="font-style: italic; text-align: center;"> Other Artworks that use Chiaroscuro... </h1>
         <div class="flex-container">
@@ -112,6 +112,7 @@
     const dots = document.querySelectorAll(".dot");
 
     function reset() {
+        //reset the image to its original state and make the buttons visible again
         img.style.transform = "scale(1) translate(0, 0)";
         document.querySelectorAll(".note").forEach(n => n.style.display = "none");
         dots.forEach(d => d.style.display = "block"); 
@@ -120,16 +121,20 @@
     /*THE ZOOM IN*/
     /*dot 1*/
     document.getElementById("dot1").onclick = () => {
+        //hides other buttons when clicked
         dots.forEach(d => d.style.display = "none");
 
+        //formatting for the zoom in and zoom in position
         img.style.transform = "scale(2) translate(-10%, 5%)";
         document.getElementById("note1").style.display = "block";
     };
     
     /*dot 2*/
     document.getElementById("dot2").onclick = () => {
+        //hides other buttons when clicked
         dots.forEach(d => d.style.display = "none");
       
+        //formatting for the zoom in and zoom in position
         img.style.transform = "scale(2) translate(-15%, -6%)";
         document.getElementById("note2").style.display = "block";
     };
@@ -138,10 +143,12 @@
 
     /*dot 3*/
     document.getElementById("dot3").onclick = () => {
-      dots.forEach(d => d.style.display = "none");
+        //hides other buttons when clicked
+        dots.forEach(d => d.style.display = "none");
       
-      img.style.transform = "scale(1.6) translate(10%, 20%)";
-      document.getElementById("note3").style.display = "block";
+        //formatting for the zoom in and zoom in position
+        img.style.transform = "scale(1.6) translate(10%, 20%)";
+        document.getElementById("note3").style.display = "block";
     };
 
     img.onclick = reset;

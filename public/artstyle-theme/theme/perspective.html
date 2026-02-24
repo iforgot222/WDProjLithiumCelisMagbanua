@@ -12,7 +12,7 @@
     <link rel="icon" href="../../../asset/logo-project.png" sizes="32x32" type="image/png" />
     <script src="script.js"defer></script>
     <style>
-        /*Specific Layout Fomatting for Themes Page*/
+        /*CSS for the fade-in image effect*/
         .image-container {
             position: relative;
             display: inline-block;
@@ -45,6 +45,8 @@
         .overlay-active .note {
             opacity: 1;
         }
+
+        /*button formatting*/
 
         button {
             background-color: rgba(255, 242, 225, 0.25);
@@ -116,6 +118,7 @@
         <button onclick="showOverlay()">ANALYZE</button>
     </div>
 
+    <!--Other Artworks Content-->
     <div class="content">
         <h1 style="font-style: italic; text-align: center;"> Other Artworks that use Perspective... </h1>
         <div class="perspective-works">
@@ -143,11 +146,13 @@
 </body>
 
 <script>
+    //Function to show the overlay image and notes when the button is clicked
     function showOverlay() {
         document.querySelector('.image-container')
             .classList.add('overlay-active');
     }
 
+    //Function to hide the overlay image and notes when the overlay image is clicked
     document.querySelector('.overlay-img').addEventListener('click', function() {
         document.querySelector('.image-container')
             .classList.remove('overlay-active');

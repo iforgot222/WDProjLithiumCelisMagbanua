@@ -11,6 +11,7 @@
     <link rel="icon" href="asset/logo-project.png" sizes="32x32" type="image/png" />
     <script src="script.js"defer></script>
     <style> 
+    /*Homepage CSS and Layout*/
         .Content {
             max-width: 56rem;
             margin: 0 auto;
@@ -40,8 +41,7 @@
             gap: 3rem;
         }
 
-        /*Comment Section CSS*/
-
+    /*Comment Section CSS*/
         .comment-wrapper {
             width: 40rem;
             border-radius: 10px;
@@ -84,7 +84,7 @@
             margin-top: 80px;
             font-size: 1.2rem;
         }
-
+    /*Input area for comment section*/
         .input-area {
             display: flex;
             gap: 1rem;
@@ -202,57 +202,75 @@
 </body>
 
 <script>
+    //get HTML elements from ID
     const commentBox = document.getElementById("commentBox");
     const commentInput = document.getElementById("commentInput");
     const commentCount = document.getElementById("commentCount");
     const noComments = document.getElementById("noComments");
 
+    //convert said data into JSON string
+    //if no comments are stored, will use an empty array
     let comments = JSON.parse(localStorage.getItem("comments")) || [];
 
+    //function to render comments 
     function renderComments() {
+        //clear comment box before rendering
         commentBox.innerHTML = "";
 
+        //if there are no comments, display "Be the first to comment!" message and set comment count to 0
         if (comments.length === 0) {
             commentBox.appendChild(noComments);
             commentCount.textContent = 0;
             return;
         }
 
+        //loop through each comment
         comments.forEach(comment => {
+            //creates container div for each comment
             const commentDiv = document.createElement("div");
             commentDiv.classList.add("comment");
 
+            //creates a div to show the user's name
             const userDiv = document.createElement("div");
             userDiv.classList.add("comment-user");
             userDiv.textContent = comment.name;
 
+            //creates a div to show the user's comment text
             const textDiv = document.createElement("div");
             textDiv.textContent = comment.text;
 
+            //add name and comment text to the comment container div
+            // then add the comment container div to the comment box
             commentDiv.appendChild(userDiv);
             commentDiv.appendChild(textDiv);
-
             commentBox.appendChild(commentDiv);
         });
 
+        //update comment count to the number of comments in the array
         commentCount.textContent = comments.length;
     }
 
+    //function to add a new comment
     function addComment() {
+        //trim from the input value and check if empty, if empty, stops the function
         const text = commentInput.value.trim();
         if (text === "") return;
 
+        //asks use to enter their name, if empty, stops the function
         const name = prompt("Enter your name:");
         if (!name || name.trim() === "") return;
 
+        //creates a new comment object with the user's name and comment text
         const newComment = {
             name: name.trim(),
             text: text
         };
 
+        // then adds (push) it to the comments array and saves it to localStorage
         comments.push(newComment);
         localStorage.setItem("comments", JSON.stringify(comments));
 
+        //clear input feild and re-render comments to show the new comment
         commentInput.value = "";
         renderComments();
     }

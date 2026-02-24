@@ -11,7 +11,7 @@ body {
 }
 
 
-/*Image formatting for other works section*/
+/*Image formatting for Other works section*/
 .flex-container {
     display: flex;
     justify-content: center;
@@ -38,7 +38,8 @@ body {
     margin-top: -1rem;
 }
 
-/** Zoom in analysis section*/
+/* Zoom in analysis section*/
+/*Image formatting for Analysis section*/
 .frame {
     width: 100%;
     height: auto;
@@ -55,7 +56,7 @@ body {
     object-fit: cover;
     transition: transform 0.5s ease;
 }
-
+/*Dot or buttons formatting for Analysis section*/
 .dot {
     position: absolute;
     cursor: pointer;
