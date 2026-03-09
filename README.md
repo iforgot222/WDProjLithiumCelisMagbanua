@@ -65,3 +65,25 @@ This webpage will showcase different masterpieces across Europe during the renai
 
 ### ![Webpage8](./asset/comment8.png "comment8")
 
+
+## How will CRUD be implemented to our webpage?
+1. **How will the HTML form be used?:** 
+2. **What is its purpose?:** 
+3. **How will the data in local storage be updated and removed?** 
+
+### Wireframes: DELETE
+### ![Webpage9](./asset/comment9.png "comment9")
+
+### ![Webpage10](./asset/comment10.png "comment10")
+
+### ![Webpage11](./asset/comment11.png "comment11")
+
+### Wireframes: UPDATE
+
+### ![Webpage12](./asset/comment12.png "comment12")
+
+### ![Webpage13](./asset/comment13.png "comment13")
+
+### ![Webpage14](./asset/comment14.png "comment14")
+
+
