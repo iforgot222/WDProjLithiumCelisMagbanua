@@ -135,4 +135,27 @@ footer .right {
     margin-left: -7rem;
 }
 
-
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        font-size: 9.8px;
+        padding: 2.5% 2.5%;
+        width: 100%;
+    }
+    .navigation-bar {
+        width: 100%;
+    }
+    header > h1 {
+        padding-top: 14px;
+    }
+    header > h2 {
+        padding-top: 10.7px;
+    }
+    a img {
+        padding-top: 0.35rem;
+        width: 58px;
+        height: 58px;
+    }
+}
