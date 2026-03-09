@@ -134,50 +134,6 @@ footer .right {
     margin-left: -7rem;
 }
 
-/*Device Responsiveness for Header Layout*/
-
-/*Mobile/Phone*/
-@media (max-width: 600px) {
-    header {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        font-size: 9.8px;
-        padding: 2.5% 1.5%;
-    }
-    header > h1 {
-        padding-top: 4.5px;
-    }
-    header > h2 {
-        padding-top: 9px;
-    }
-    a img {
-        width: 55px;
-        height: 55px;
-        justify-content: flex-start;
-    }
-    .navigation-bar {
-        display: flex;
-        justify-content: center;
-        background-color: #29241f;
-        border-radius: 0px;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        overflow-x:hidden;
-        padding: 5px 5px;
-    }
-    .navigation-bar a {
-        text-decoration: none;
-        font-style: bold;
-        color: #fff2e1;
-        font-family: serif;
-        padding: 0rem 0.62rem;
-        font-size: 0.65rem;
-        white-space: nowrap;
-        justify-content: center;
-    }
-}
-
 /*Tablet*/
 @media (min-width: 601px) and (max-width: 1024px) {
 }
