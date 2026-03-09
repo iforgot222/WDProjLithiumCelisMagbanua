@@ -135,6 +135,8 @@ footer .right {
     margin-left: -7rem;
 }
 
+/*CSS for Phone*/
+
 @media (max-width: 600px) {
     header {
         display: flex;
