@@ -142,20 +142,30 @@ footer .right {
         align-items: flex-start;
         font-size: 9.8px;
         padding: 2.5% 2.5%;
-        width: 100%;
+        justify-content: center;
+        overflow-x: hidden;
     }
     .navigation-bar {
         width: 100%;
+        display: flex;
+        padding: 6px 5px;
+        overflow-x: hidden;
+        justify-content: center;
+    }
+    .navigation-bar a {
+        font-size: 0.64rem;
+        padding: 0rem 0.5rem;
+        flex-wrap: nowrap;
     }
     header > h1 {
-        padding-top: 14px;
+        padding-top: 0.6rem;
     }
     header > h2 {
-        padding-top: 10.7px;
+        padding-top: 0.8rem;
     }
     a img {
-        padding-top: 0.35rem;
-        width: 58px;
-        height: 58px;
+        padding-top: 0.1rem;
+        width: 55px;
+        height: 55px;
     }
 }
