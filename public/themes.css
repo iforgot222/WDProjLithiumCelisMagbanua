@@ -135,4 +135,6 @@ footer .right {
     margin-left: -7rem;
 }
 
-
+@media (max-width: 600px) {
+    
+}
