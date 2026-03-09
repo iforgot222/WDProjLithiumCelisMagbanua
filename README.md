@@ -23,21 +23,26 @@ This webpage will showcase different masterpieces across Europe during the renai
 
 ### Wireframes
 ### Home
-### ![Homepage1](./asset/homepage.png "homepage1")
-### ![Homepage2](./asset/homepage-no-menu.png "homepage2")
+### ![Homepage](./asset/homepage.png "homepage")
 
 ### Art Style
-#### ![Themes](./asset/themes.png "themes")
+#### ![Themes1](./asset/themes-4-modes.png "themes1")
+#### ![Themes2](./asset/themes-disegno-colorito.png "themes2")
+#### ![Themes3](./asset/art-themes1.png "themes3")
+#### ![Themes4](./asset/art-themes2.png "themes4")
 
 ### Artists
-### ![Artists1](./asset/artists.png "artists1")
-### ![Artists2](./asset/artist-prev-next.png "artists2")
+### ![Artists1](./asset/artists-info.png "artists1")
+### ![Artists2](./asset/artists-works.png "artists2")
 
 ###  History
-### ![History](./asset/history.png "history")
+### ![History1](./asset/history1.png "history1")
+### ![History2](./asset/history2.png "history2")
 
 ### Quiz
-### ![Quiz](./asset/mini-quiz.png "mini quiz")
+### ![Quiz1](./asset/mini-quiz1.png "mini quiz1")
+### ![Quiz2](./asset/mini-quiz2.png "mini quiz2")
+### ![Quiz3](./asset/mini-quiz3.png "mini quiz3")
 
 ### Sources
 ### ![Sources](./asset/sources.png "sources")
