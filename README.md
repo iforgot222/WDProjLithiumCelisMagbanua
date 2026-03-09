@@ -70,7 +70,7 @@ This webpage will showcase different masterpieces across Europe during the renai
 
 ### ![Webpage8](./asset/comment8.png "comment8")
 
-
+# FINAL MODIFICATION PROPOSAL
 ## How will CRUD be implemented to our webpage? 
 1. **What is the purpose?** While users can already create and view comments, the addition of edit and delete features allows users to manage their previously submitted comments more effectively and generally completes the user experience and what is expected in a comment section system.  Firstly, the edit feature would allow the users to modify the content of an existing comment if they want to add information or change their comment. Whilst the delete feature gives users the ability to remove comments that are no longer relevant, were posted accidentally, or should no longer appear in the comment list. Overall, these features allow for a better user experience.
 2. **How will it be used?** Each comment displayed in the comment section will have an options button “⋮,” and when clicked, it will provide the users with two buttons: edit and delete. When a user clicks the edit button, the user will be able to edit the text within the same comment box, allowing the user to modify the content. After editing, the updated comment will replace the previous version in the comment list. When the delete button is clicked, the system will remove the selected comment from the list after confirming the action (an alert prompt will be made: “Are you sure you want to delete this comment?”).
