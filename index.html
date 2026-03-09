@@ -12,6 +12,7 @@
     <script src="script.js"defer></script>
     <style> 
     /*Homepage CSS and Layout*/
+
         .Content {
             max-width: 56rem;
             margin: 0 auto;
@@ -25,7 +26,10 @@
             font-style: italic;
             margin: -0.4rem 0 -1rem 0;
         }
-
+        .Content h2 {
+            font-size: 2rem; 
+            margin-bottom: -0.5rem;
+        }
         .Content p {
             font-size: 1.2rem;
             margin-top: 2rem;
@@ -113,6 +117,29 @@
             font-weight: bold;
             font-family: 'Times New Roman', Times, serif;
         }
+        @media (max-width: 600px) {
+            div {
+                justify-content: center;
+            }
+            .Content h2 {
+                font-size: 1.5rem;
+            }
+            .Content h1 {
+                margin-top: 2%;
+                font-size: 3rem;
+            }
+            .Content p {
+                font-size: 15px;
+                padding: 0;
+            }
+            .comment-wrapper {
+                padding: 0;
+            }
+            .row1-homep img, .row2-homep img, .paintings-style img {
+                display: block;
+                width:fit-content;
+            }
+        }
     </style>
 </head>
 
@@ -140,7 +167,7 @@
     <!--Homepage Content-->
     <div class="Content">
         <!--Title Text-->
-        <h2 style="font-size: 2rem; margin-bottom: -0.5rem;"> WELCOME to...</h2>
+        <h2> WELCOME to...</h2>
         <h1> Rebirth of Art! </h1>
         <p>
             This webpage will showcase different masterpieces across Europe during the renaissance 

@@ -23,21 +23,26 @@ This webpage will showcase different masterpieces across Europe during the renai
 
 ### Wireframes
 ### Home
-### ![Homepage1](./asset/homepage.png "homepage1")
-### ![Homepage2](./asset/homepage-no-menu.png "homepage2")
+### ![Homepage](./asset/homepage.png "homepage")
 
 ### Art Style
-#### ![Themes](./asset/themes.png "themes")
+#### ![Themes1](./asset/themes-4-modes.png "themes1")
+#### ![Themes2](./asset/themes-disegno-colorito.png "themes2")
+#### ![Themes3](./asset/art-themes1.png "themes3")
+#### ![Themes4](./asset/art-themes2.png "themes4")
 
 ### Artists
-### ![Artists1](./asset/artists.png "artists1")
-### ![Artists2](./asset/artist-prev-next.png "artists2")
+### ![Artists1](./asset/artists-info.png "artists1")
+### ![Artists2](./asset/artists-works.png "artists2")
 
 ###  History
-### ![History](./asset/history.png "history")
+### ![History1](./asset/history1.png "history1")
+### ![History2](./asset/history2.png "history2")
 
 ### Quiz
-### ![Quiz](./asset/mini-quiz.png "mini quiz")
+### ![Quiz1](./asset/mini-quiz1.png "mini quiz1")
+### ![Quiz2](./asset/mini-quiz2.png "mini quiz2")
+### ![Quiz3](./asset/mini-quiz3.png "mini quiz3")
 
 ### Sources
 ### ![Sources](./asset/sources.png "sources")
@@ -64,4 +69,26 @@ This webpage will showcase different masterpieces across Europe during the renai
 ### ![Webpage7](./asset/comment7.png "comment7")
 
 ### ![Webpage8](./asset/comment8.png "comment8")
+
+# FINAL MODIFICATION PROPOSAL
+## How will CRUD be implemented to our webpage? 
+1. **What is the purpose?** While users can already create and view comments, the addition of edit and delete features allows users to manage their previously submitted comments more effectively and generally completes the user experience and what is expected in a comment section system.  Firstly, the edit feature would allow the users to modify the content of an existing comment if they want to add information or change their comment. Whilst the delete feature gives users the ability to remove comments that are no longer relevant, were posted accidentally, or should no longer appear in the comment list. Overall, these features allow for a better user experience.
+2. **How will it be used?** Each comment displayed in the comment section will have an options button “⋮,” and when clicked, it will provide the users with two buttons: edit and delete. When a user clicks the edit button, the user will be able to edit the text within the same comment box, allowing the user to modify the content. After editing, the updated comment will replace the previous version in the comment list. When the delete button is clicked, the system will remove the selected comment from the list after confirming the action (an alert prompt will be made: “Are you sure you want to delete this comment?”).
+3. **How will data in localStorage be updated and removed?** All comments made are stored in the browser’s localStorage as an array of objects. When a user edits a comment, it updates the content of that comment in the array and saves the edited array back to localStorage, replacing the previous stored data. Whilst, when a user deletes a comment, the selected comment in the array would be removed using splice(). After the removal, the updated array is saved again to localStorage so that the deleted comment no longer appears when the page reloads. 
+
+### Wireframes: DELETE
+### ![Webpage9](./asset/comment9.png "comment9")
+
+### ![Webpage10](./asset/comment10.png "comment10")
+
+### ![Webpage11](./asset/comment11.png "comment11")
+
+### Wireframes: UPDATE
+
+### ![Webpage12](./asset/comment12.png "comment12")
+
+### ![Webpage13](./asset/comment13.png "comment13")
+
+### ![Webpage14](./asset/comment14.png "comment14")
+
 

@@ -134,6 +134,42 @@ footer .right {
     margin-left: -7rem;
 }
 
+/*CSS for Phone*/
+
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        font-size: 9.8px;
+        padding: 2.5% 2.5%;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+    .navigation-bar {
+        width: 100%;
+        display: flex;
+        padding: 6px 5px;
+        overflow-x: hidden;
+        justify-content: center;
+    }
+    .navigation-bar a {
+        font-size: 0.64rem;
+        padding: 0rem 0.5rem;
+        flex-wrap: nowrap;
+    }
+    header > h1 {
+        padding-top: 0.6rem;
+    }
+    header > h2 {
+        padding-top: 0.8rem;
+    }
+    a img {
+        padding-top: 0.1rem;
+        width: 55px;
+        height: 55px;
+    }
+}
 /*Tablet*/
 @media (min-width: 601px) and (max-width: 1024px) {
 }
