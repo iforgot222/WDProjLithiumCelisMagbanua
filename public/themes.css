@@ -85,7 +85,6 @@ header .right {
     background-color: #29241f;
     border-radius: 0px
 }
-
 .navigation-bar a {
     text-decoration: none;
     padding: 0rem 2rem;;
@@ -170,4 +169,12 @@ footer .right {
         width: 55px;
         height: 55px;
     }
+}
+/*Tablet*/
+@media (min-width: 601px) and (max-width: 1024px) {
+}
+
+/*Desktop*/
+@media (min-width: 1025px) {
+
 }
