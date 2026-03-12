@@ -24,6 +24,10 @@
             line-height: 1.6;
             font-size: 1.1rem;
             margin:0 auto;
+            text-align: right; 
+            background-color: rgba(255, 242, 225, 0.22); 
+            padding: 1rem; 
+            border-radius: 13px;
         }
 
         /*image formatting of the artist's self portraits*/
@@ -31,6 +35,20 @@
             height: 500px; 
             width: auto;
             margin:0 auto;
+        }
+
+        .artist1-info img {
+            margin: 0 0 -0.8rem 0; 
+            text-align: left; 
+            font-style: italic; 
+            font-size: 2.4rem;
+        }
+
+        .artist1-info h2 {
+            margin: 0 0 -0.8rem 0; 
+            text-align: left; 
+            font-style: italic; 
+            font-size: 2.4rem;
         }
 
         /*clearing floats*/
@@ -70,6 +88,34 @@
         .column > p {
             margin-top: -1rem;
         }
+        @media (max-width: 600px) {
+            .artist1-info {
+                justify-content: center;
+                margin-left: -130px;
+                margin-top: -20px;
+                padding: 160px;
+            }
+            .artist1-info > img {
+                width: 120px;
+                height: auto;
+                margin-left: -150px;
+                margin-top: -130px;
+                padding: 20px;
+            }
+            .artist1-info h2 {
+                font-size: 1.2rem;
+                margin-top: -160px;
+            }
+
+        }
+        /*@media (min-width: 992px) (max-width: 1200px) {
+            .artist1-info {
+                text-align: right; 
+                background-color: rgba(255, 242, 225, 0.22); 
+                padding: 1rem; 
+                border-radius: 13px;
+            }
+        }*/
 
     </style>
 
@@ -100,9 +146,9 @@
     <div class="content">
         <!--Content: Caravaggio Information-->
         <section class="artist1">
-            <div class="artist1-info" style="text-align: right; background-color: rgba(255, 242, 225, 0.22); padding: 1rem; border-radius: 13px;">
-                <img style="float: left; margin: 0 1.5rem 0.2rem 0;" src="../img/painting-frames/caravaggio-frame.png" alt="Caravaggio by Simon Vouet"/> <!--Image Wrapping-->
-                <h2 style="margin: 0 0 -0.8rem 0; text-align: left; font-style: italic; font-size: 2.4rem;"> Michelangelo Merisi da Caravaggio </h2> <!--Artist Name-->
+            <div class="artist1-info">
+                <img src="../img/painting-frames/caravaggio-frame.png" alt="Caravaggio by Simon Vouet"/> <!--Image Wrapping-->
+                <h2> Michelangelo Merisi da Caravaggio </h2> <!--Artist Name-->
                 <p>
                     Michelangelo Merisi da Caravaggio, or simply Caravaggio, was an Italian Painter born in Milan, Italy, on September 29, 1571 until 
                     passing later on July 18, 1610. As an artist, Caravaggio was known as a revolutionary 
@@ -128,15 +174,15 @@
                 <h1 style="font-style: italic; text-align: center;"> Famous Art Works Include... </h1>
                 <div class="flex-container">
                     <div class="column">
-                        <img src="../img/painting-no-frame/narcissus.png" alt="Narcissus"/> <h2> Narcissus </h2>
+                        <img src="../img/painting-no-frame/narcissus.jpg" alt="Narcissus"/> <h2> Narcissus </h2>
                         <p>(1597-1599)</p>
                     </div>
                     <div class="column">
-                        <img src="../img/painting-no-frame/bacchus.png" alt="Young Sick Bacchus"> <h2> Young Sick Bacchus </h2>
+                        <img src="../img/painting-no-frame/bacchus.jpg" alt="Young Sick Bacchus"> <h2> Young Sick Bacchus </h2>
                         <p>(1593-1594)</p>
                     </div>
                     <div class="column">
-                        <img src="../img/painting-no-frame/david.png"  alt="David with the head of Goliath"/> <h2> David with the head of Goliath </h2>
+                        <img src="../img/painting-no-frame/david.jpg"  alt="David with the head of Goliath"/> <h2> David with the head of Goliath </h2>
                         <p>(1609-1610)</p>
                     </div>
                 </div>

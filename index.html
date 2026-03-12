@@ -47,7 +47,7 @@
 
     /*Comment Section CSS*/
         .comment-wrapper {
-            width: 40rem;
+            width: 35%;
             border-radius: 10px;
             background-color: rgba(255, 242, 225, 0.25);
             padding: 2rem;
@@ -132,8 +132,31 @@
                 font-size: 15px;
                 padding: 0;
             }
+
+            .row1-homep,
+            .row2-homep {
+                flex-direction: column;   
+                align-items: center;     
+                gap: 1rem;             
+            }
+
+            .media-css img {
+                width: 90%;              
+                height: auto;        
+            }
+
+            /* Comment Section Responsiveness */
+            .input-area {
+                gap: 0.5rem;
+            }
+
+            .input-area input {
+                width: 90%;
+            }
+
             .comment-wrapper {
-                padding: 0;
+                width: 70%;
+                padding: 1.4rem;
             }
             .row1-homep img, .row2-homep img, .paintings-style img {
                 display: block;
@@ -179,25 +202,27 @@
         </p>
 
         <!--Image Layout-->
-        <div class="row1-homep">
-            <a class="paintings-style" href="./public/artstyle-theme/art-style.html">
-                <img src="asset/homep1.png" alt="styles-themes-btn" height="250px"/>
-            </a>
-            <a class="paintings-style" href="./public/artists.html">
-                <img src="asset/homep2.png" alt="artists-btn" height="250px"/>
-            </a>
+        <div class="media-css">
+            <div class="row1-homep">
+                <a class="paintings-style" href="./public/artstyle-theme/art-style.html">
+                    <img src="asset/homep1.png" alt="styles-themes-btn" height="250px"/>
+                </a>
+                <a class="paintings-style" href="./public/artists.html">
+                    <img src="asset/homep2.png" alt="artists-btn" height="250px"/>
+                </a>
+            </div>
+            <div class="row2-homep">
+                <a class="paintings-style" href="./public/History.html">
+                    <img src="asset/homep3.png" alt="history-btn" height="250px"/>
+                </a>
+                <a class="paintings-style" href="./public/mini-quiz/mini-quiz.html">
+                    <img src="asset/homep4.png" alt="mini-quiz-btn" height="250px"/>
+                </a>
+            </div>
+                <a class="paintings-style" href="./public/sources.html">
+                    <img src="asset/homep5.png" alt="sources-btn" height="250px"/>
+                </a>
         </div>
-        <div class="row2-homep">
-            <a class="paintings-style" href="./public/History.html">
-                <img src="asset/homep3.png" alt="history-btn" height="250px"/>
-            </a>
-            <a class="paintings-style" href="./public/mini-quiz/mini-quiz.html">
-                <img src="asset/homep4.png" alt="mini-quiz-btn" height="250px"/>
-            </a>
-        </div>
-            <a class="paintings-style" href="./public/sources.html">
-                <img src="asset/homep5.png" alt="sources-btn" height="250px"/>
-            </a>
     </div>
 
     <!--Comment Section-->
