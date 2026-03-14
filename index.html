@@ -47,7 +47,7 @@
 
     /*Comment Section CSS*/
         .comment-wrapper {
-            width: 35%;
+            width: 40%;
             border-radius: 10px;
             background-color: rgba(255, 242, 225, 0.25);
             padding: 2rem;
@@ -69,7 +69,7 @@
         }
 
         .comment {
-            padding: 0.8rem;
+            padding: 0.8rem 1rem 0.8rem 0.8rem;
             margin-bottom: 0.8rem;
             border-radius: 5px;
             background-color: rgba(255, 242, 225, 0.3);
@@ -117,6 +117,92 @@
             font-weight: bold;
             font-family: 'Times New Roman', Times, serif;
         }
+    
+    /*Comment Section: Edit, Delete, and CRUD Buttons Menu*/
+        .comment-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative; 
+        }
+
+        /* 3-dot button */
+        .options-btn {
+            background: transparent;
+            border: none;
+            font-size: 1.7rem;
+            cursor: pointer;
+            color: #000000;
+        }
+
+        /* dropdown menu */
+        .comment-menu {
+            display: none;
+            position: absolute;
+            right: 0;          /* align with button */
+            top: 50%;
+            transform: translateX(-30%) translateY(-40%);
+            background: rgb(0, 0, 0);
+            border-radius: 6px;
+            padding: 5px;
+        }
+
+        /* menu buttons */
+        .comment-menu button {
+            display: block;
+            width: 100%;
+            padding: 6px 12px;
+            background: transparent;
+            border: none;
+            color: rgb(228, 228, 228);
+            cursor: pointer;
+            text-align: left;
+            border-radius: 5px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .comment-menu button:hover {
+            background: rgba(255, 255, 255, 0.185);
+        }
+
+        /* edit input */
+        .edit-input {
+            width: 85%;
+            padding: 10px;
+            margin-bottom: 5px;
+            border: 3px dashed #000000b9;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.2);
+            color:#fffcf9;
+            font-size: 1.2rem;
+            font-family: 'Times New Roman', Times, serif;
+            resize: none;
+            overflow: hidden;
+        }
+
+        .comment-text {
+            margin-left: 5%;  
+            display: flex;
+            flex-direction: column; 
+            gap: 6px;
+        }
+
+        /* save button */
+        .post-btn {
+            width: fit-content;
+            padding: 0.6rem 1rem;
+            cursor: pointer;
+            background-color: #f3cb63;
+            border: none;
+            color:#2c2924;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }   
+
+    /* Responsiveness for homepage and comment section */
+
         @media (max-width: 600px) {
             div {
                 justify-content: center;
@@ -272,30 +358,110 @@
         }
 
         //loop through each comment
-        comments.forEach(comment => {
+        comments.forEach((comment, index) => {
             //creates container div for each comment
             const commentDiv = document.createElement("div");
             commentDiv.classList.add("comment");
+
+            const topBar = document.createElement("div");
+            topBar.classList.add("comment-top");
 
             //creates a div to show the user's name
             const userDiv = document.createElement("div");
             userDiv.classList.add("comment-user");
             userDiv.textContent = comment.name;
+            
+            //---------creates options button and menu for edit and delete--------//
 
-            //creates a div to show the user's comment text
+            const optionsBtn = document.createElement("button");
+            optionsBtn.textContent = "⋮";
+            optionsBtn.classList.add("options-btn");
+
+            const menu = document.createElement("div");
+            menu.classList.add("comment-menu");
+
+            const editBtn = document.createElement("button");
+            editBtn.textContent = "EDIT";
+
+            const deleteBtn = document.createElement("button");
+            deleteBtn.textContent = "DELETE";
+
+            menu.appendChild(editBtn);
+            menu.appendChild(deleteBtn);
+
+            optionsBtn.onclick = (e) => {
+                e.stopPropagation();
+                closeMenus();
+                menu.style.display = "block";
+            };
+
             const textDiv = document.createElement("div");
+            textDiv.classList.add("comment-text");
             textDiv.textContent = comment.text;
 
-            //add name and comment text to the comment container div
-            // then add the comment container div to the comment box
-            commentDiv.appendChild(userDiv);
+            //EDIT
+            editBtn.onclick = () => {
+
+                const editInput = document.createElement("textarea");
+                editInput.value = comment.text;
+                editInput.classList.add("edit-input");
+
+                editInput.addEventListener("input", function () {
+                    this.style.height = "auto";
+                    this.style.height = this.scrollHeight + "px";
+                });
+
+                const postBtn = document.createElement("button");
+                postBtn.textContent = "Post";
+                postBtn.classList.add("post-btn");
+
+                textDiv.innerHTML = "";
+                textDiv.appendChild(editInput);
+                textDiv.appendChild(postBtn);
+
+                postBtn.onclick = () => {
+                    const updatedText = editInput.value.trim();
+                    if (updatedText === "") return;
+
+                    comments[index].text = updatedText;
+
+                    localStorage.setItem("comments", JSON.stringify(comments));
+                    renderComments();
+                };
+            };
+
+            //DELETE
+            deleteBtn.onclick = () => {
+                if (confirm("Are you sure you want to delete this comment?")) {
+                    comments.splice(index, 1);
+
+                    localStorage.setItem("comments", JSON.stringify(comments));
+                    renderComments();
+                }
+            };
+
+            //---------CRUD: Delete and Edit--------//
+
+            topBar.appendChild(userDiv);
+            topBar.appendChild(optionsBtn);
+
+            commentDiv.appendChild(topBar);
+            topBar.appendChild(menu);
             commentDiv.appendChild(textDiv);
+
             commentBox.appendChild(commentDiv);
         });
 
         //update comment count to the number of comments in the array
         commentCount.textContent = comments.length;
     }
+
+    function closeMenus() {
+        const menus = document.querySelectorAll(".comment-menu");
+        menus.forEach(menu => menu.style.display = "none");
+    }
+
+    document.addEventListener("click", closeMenus);
 
     //function to add a new comment
     function addComment() {
