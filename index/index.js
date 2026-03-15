@@ -1,4 +1,4 @@
-// Doing external JS cause the .html file is so long
+//Doing external JS cause the .html file is so long
 
 //get HTML elements from ID
 const commentBox = document.getElementById("commentBox");
