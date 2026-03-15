@@ -15,6 +15,73 @@
         /*button and note positioning*/
         #dot1 { top: 50%; left: 60%; } #note1 { top: 39%; left: 40%; }
         #dot2 { top:10%; left: 70%; } #note2 { top: 15%; left: 40%; }
+
+        .content {
+            margin-bottom: -6rem
+        }
+        .content p {
+            font-size: 1.2rem;
+        }
+        .content .zoom {
+            font-style: italic; 
+            margin-bottom: -0.8rem; 
+            margin-left: -3rem;
+        }
+        @media (max-width: 600px) {
+            div.content {
+                margin-top: -2rem;
+                width: 15rem;
+                justify-content: center;
+            }
+            .content p {
+                margin-left: -5rem;
+                font-size: 1rem;
+                width: 19rem;
+                margin-left: -6rem;
+            }
+            .content h1 {
+                font-size: 2rem;
+                margin-left: -8rem;
+            }
+            .content > .values {
+                margin-left: -6.5rem;
+                justify-content: center;
+                align-items: center;
+                width: 19.5rem;
+                height: auto;
+            }
+            .content .frame {
+                margin-left: -8rem;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                width: 22rem;
+                height: 25rem;
+            }
+            .content .zoom {
+                margin-left: -6rem;
+                font-size: 1.5rem;
+            }
+            .content > .note {
+                height: auto;
+            }
+            .flex-container {
+                flex-direction: row;
+                margin-left: -6.5rem;
+                justify-content: center;
+                align-items: center;
+            }
+            .flex-container img {
+                width: 8rem;
+                height: auto;
+            }
+            .flex-container h2 {
+                font-size: 1rem;
+            }
+            .column {
+                margin-bottom: 0rem;
+            }
+        }
     </style>
 </head>
 
@@ -24,14 +91,14 @@
         <a class="paintings-style" href="../art-style.html">
             <img src="../../../asset/logo-project.png" alt="Logo" width="74rem" height="75rem" />
         </a>
-        <h1 style="font-size: 36px"> Rebirth of Art </h1>
+        <h1> Rebirth of Art </h1>
         <h2 class="right"> Art Styles: Cangiante </h2>
     </header>
 
     <!--Text Content-->
-    <div style="margin-bottom: -6rem" class="content">
+    <div class="content">
         <h1 class="title-style"> Cangiante </h1>
-        <p style="font-size: 1.2rem;">
+        <p>
             Cangainte is derived from the Italian word cangiare meaning “to change.” This painting mode is 
             characterized when a painter paints in a different hue when the original hue cannot be made darker or 
             lighter. This technique utilizes a concept of color theory when some hues naturally are 
@@ -45,16 +112,16 @@
 
     <!--Extra Text Content: Trivia-->
     <div style="margin-bottom: -4rem" class="content">
-        <h2 style="margin-left:-3rem; margin-bottom: -1rem"> What are values? </h2>
+        <h2 style="margin-left:-6rem; margin-bottom: -0.5rem"> What are values? </h2>
         <p>Notice how red, blue, and violet seem ”darker” than colors like yellow or cyan despite 
             all colors being fully saturated? Values (light or dark) come naturally with hues. 
         </p>
-        <img src="../../../asset/values.png" alt="Values" />
+        <img class="values" src="../../../asset/values.png" alt="Values" />
     </div>
 
     <!--Zoom-In Analysis Section-->
     <div class="content">
-        <h1 style="font-style: italic; margin-bottom: -0.8rem; margin-left: -3rem;"> Sistine Chapel: Delphic Sibyl (1508–1512) by Michelangelo </h1>
+        <h1 class="zoom"> Sistine Chapel: Delphic Sibyl (1508–1512) by Michelangelo </h1>
         <p> Click the Buttons to Analyze! </p>
         <div class="frame">
             <img class="imganimation" src="../../../img/painting-no-frame/delphic-sibyl.jpg" id=img alt="Daniel"/>
