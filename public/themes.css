@@ -137,7 +137,11 @@ footer .right {
 /*CSS for Phone*/
 
 @media (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
     header {
+        width: auto;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -147,7 +151,7 @@ footer .right {
         overflow-x: hidden;
     }
     .navigation-bar {
-        width: 100%;
+        width: auto;
         display: flex;
         padding: 6px 5px;
         overflow-x: hidden;
@@ -169,12 +173,15 @@ footer .right {
         width: 55px;
         height: 55px;
     }
-}
-/*Tablet*/
-@media (min-width: 601px) and (max-width: 1024px) {
-}
-
-/*Desktop*/
-@media (min-width: 1025px) {
-
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 0.8rem;
+        color: white;
+    }
+    .left-footer, .center-footer, .right-footer {
+        margin: -0.1rem;
+    }
 }

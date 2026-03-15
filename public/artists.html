@@ -36,6 +36,13 @@
             padding: 1rem; 
             border-radius: 13px;
         }
+        .artist2-info {
+            text-align: left; 
+            background-color: rgba(255, 242, 225, 0.22); 
+            padding: 1rem; 
+            border-radius: 13px; 
+            margin-top: 3rem
+        }
         /*image formatting of the artist's self portraits*/
         .artist1-info img, .artist2-info img { 
             height: 500px; 
@@ -58,6 +65,18 @@
             font-size: 2.4rem;
         }
 
+        .artist2-info h2 {
+            margin: 0 0 -0.8rem 0; 
+            text-align: left; 
+            font-style: italic; 
+            font-size: 2.5rem;
+        }
+
+        .artist2-info img {
+            float: right; 
+            margin: 0 0 1rem 1.5rem;
+            width:426px;
+        }
         /*clearing floats*/
         .artist1-info::after, .artist2-info::after {
             content: "";
@@ -95,35 +114,96 @@
         .column > p {
             margin-top: -1rem;
         }
+
+        /*Media responsiveness for Phone*/        
         @media (max-width: 600px) {
-            .artist1-info {
+            .artist1-info, .artist2-info {
                 justify-content: center;
-                margin-left: -130px;
+                margin-left: -125px;
                 margin-top: -20px;
-                padding: 160px;
-            }
-            .artist1-info > img {
-                width: 120px;
-                height: auto;
-                margin-left: -150px;
-                margin-top: -130px;
+                width: 19rem;
                 padding: 20px;
             }
+            .artist1-info img {
+                margin-top: -1.3rem;
+                margin-left: -1.1rem;
+                float: center;
+                width: 19rem;
+                height: auto;
+                padding: 20px;
+            }
+            .artist2-info img {
+                margin: -1.3rem 0 0 -1.2rem;
+                float: left;
+                width: 19rem;
+                height: auto;
+                padding: 20px;
+            }
+            .artist2-info h2 {
+                text-align: center;
+                font-size: 1.5rem;
+                margin: 0.3rem 0 0.1rem 0rem;
+            }
             .artist1-info h2 {
-                font-size: 1.2rem;
-                margin-top: -160px;
+                text-align: center;
+                font-size: 1.25rem;
+                margin: 0.7rem 0 0.1rem 0rem;
             }
-
+            .artist1-info p, .artist2-info p {
+                text-align: justify;
+                font-size: 0.875rem;
+                margin-top: 10px;
+            }
+            .artist1-works h1, .artist2-works h1 {
+                font-size: 1.5rem;
+                text-align: center;
+                margin-left: -6rem;
+            }
+            .artist1-works > .flex-container {
+                text-align: center;
+                flex-direction: flex-start;
+                align-items: center;
+                width: 20rem;
+                margin: 0 50px 2.5rem -130px;
+                padding: 15px;
+                height: 11.5rem;
+            }
+            .artist2-works > .flex-container {
+                text-align: center;
+                flex-direction: flex-start;
+                width: 20rem;
+                margin: 0 50px 2.5rem -130px;
+                height: 13rem;
+            }
+            .column {
+                width: 100%;
+                margin-bottom: 1rem;
+                height: 10.5rem;
+            }
+            .column h2, .column p {
+                align-items: middle;
+                font-size: 1rem;
+                justify-content: center;
+            }
+            .column img {
+                align-items: center;
+                display: flex;
+            }
+            .artist2-works > .column {
+                height: 8rem;
+                width: auto;
+            }
+            footer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                font-size: 0.8rem;
+            }
+             .left-footer, .center-footer, .right-footer {
+                margin: -0.1rem;
+            }
         }
-        /*@media (min-width: 992px) (max-width: 1200px) {
-            .artist1-info {
-                text-align: right; 
-                background-color: rgba(255, 242, 225, 0.22); 
-                padding: 1rem; 
-                border-radius: 13px;
-            }
-        }*/
-
     </style>
 
 </head>
@@ -131,7 +211,7 @@
 <body>
     <!--Header Content-->
     <header>
-        <a class="paintings-style" href="../index.html">
+        <a class="logo" href="../index.html">
             <img src="../asset/logo-project.png" alt="Logo" width="74rem" height="74rem" />
         </a>
         <h1>Rebirth of Art</h1>
@@ -155,7 +235,7 @@
         <section class="artist1">
             <div class="artist1-info">
                 <img src="../img/painting-frames/caravaggio-frame.png" alt="Caravaggio by Simon Vouet"/> <!--Image Wrapping-->
-                <h2> Michelangelo Merisi da Caravaggio </h2> <!--Artist Name-->
+                <h2> Michelangelo Merisi&nbsp;da Caravaggio </h2> <!--Artist Name-->
                 <p>
                     Michelangelo Merisi da Caravaggio, or simply Caravaggio, was an Italian Painter born in Milan, Italy, on September 29, 1571 until 
                     passing later on July 18, 1610. As an artist, Caravaggio was known as a revolutionary 
@@ -178,7 +258,7 @@
 
             <!--Content: Famous Art Works Include... -->
             <div class="artist1-works"> <!--Formatting Image Layout-->
-                <h1 style="font-style: italic; text-align: center;"> Famous Art Works Include... </h1>
+                <h1 style="font-style: italic; text-align: center;"> Famous&nbsp;Art&nbsp;Works&nbsp;Include... </h1>
                 <div class="flex-container">
                     <div class="column">
                         <img src="../img/painting-no-frame/narcissus.jpg" alt="Narcissus"/> <h2> Narcissus </h2>
@@ -198,9 +278,9 @@
         </section>
         <!--Content: Raphael Information-->
         <section class="artist">
-            <div class="artist2-info" style="text-align: left; background-color: rgba(255, 242, 225, 0.22); padding: 1rem; border-radius: 13px; margin-top: 3rem">
-                <img style="float: right; margin: 0 0 1rem 1.5rem;" src="../img/painting-frames/raphael-frame.png" style="width:426px"; alt="Artist 2 Picture"/> <!--Image Wrapping-->
-                <h2 style="margin: 0 0 -0.8rem 0; text-align: left; font-style: italic; font-size: 2.5rem;"> Raffaelo Sanzio (Raphael) </h2> <!--Artist Name Formatting-->
+            <div class="artist2-info">
+                <img src="../img/painting-frames/raphael-frame.png" alt="Artist 2 Picture"/> <!--Image Wrapping-->
+                <h2> Raffaelo Sanzio (Raphael) </h2> <!--Artist Name Formatting-->
                 <p>
                     Raffaelo Sanzio da Urbino, most known as Raphael, was a renowned Italian painter 
                     born in Urbino on April 6, 1483 and later on passed April 6, 1520. Raphael was the 
@@ -226,7 +306,7 @@
             </div>
             <!--Content: Famous Art Works Include... -->
             <div class="artist2-works"> <!--Formatting Image Layout-->
-                <h1 style="font-style: italic; text-align: center;"> Famous Art Works Include... </h1>
+                <h1 style="font-style: italic; text-align: center;"> Famous&nbsp;Art&nbsp;Works&nbsp;Include... </h1>
                 <div class="flex-container">
                     <div class="column">
                         <img src="../img/painting-no-frame/sistine-madonna.jpg" alt="Sistine Madonna Painting"/> <h2> Sistine Madonna </h2>
@@ -252,7 +332,7 @@
             <p> Sabrielle Ellise Celis: b2029sercelis@pshs.edu.ph </p>
         </div>
         <div class="center-footer"></div><p>© 2025 Rebirth of Art. All rights reserved. Note: All images in this website are NOT ORIGINAL CONTENT.</p></div>
-        <div class="right-footer"><p> <a href="sources.html">Sources </a></p></div>
+        <div class="right-footer"><p><b><a href="sources.html">Sources</a></b></p></div>
     </footer>
 </body>
 </html>
