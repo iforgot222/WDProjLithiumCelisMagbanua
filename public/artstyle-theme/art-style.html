@@ -59,6 +59,88 @@
         .disegno-colorito div { /*minor desc. formatting*/
             text-align: center;
         }
+
+        .artstyles h1 {
+            font-size: 3rem; 
+            font-style: italic; 
+            margin-top: -1rem
+        }
+
+        .themes {
+            font-size: 3rem; 
+            font-style: italic;
+        }
+        @media (max-width: 600px) {
+            .content {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            .artstyles-nav {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1.5rem;
+                justify-items: center;
+                margin-bottom: 2rem;
+            }
+            .artstyles-nav div img {
+                width: 100%;
+                height: auto;
+            }
+            .artstyles h1 {
+                font-size: 2.4rem;
+                font-style: italic;
+            }
+            .artstyles-nav h2 {
+                font-size: 1.2rem;
+            }
+            .artstyles-nav p {
+                font-size: 0.875rem;
+                text-align: left;
+            }
+            .disegno-colorito {
+                display: block;
+                justify-items: center;
+            }
+             .disegno-colorito div img {
+                width: 100%;
+                height: auto;
+            }
+            .disegno-colorito div p {
+                font-size: 0.9rem;
+                text-align: center;
+            }
+            .disegno-colorito img {
+                margin-bottom: -1rem;
+            }
+            .disegno-colorito h2 {
+                margin-bottom: -0.5rem;
+            }
+            .themes {
+                margin-top: -1.2rem;
+                text-align: left;
+                font-size: 1.25rem;
+            }
+            .themes nav:first-of-type, .themes nav:last-of-type {
+                display: block;
+                justify-items: center;
+            }
+            .themes nav:first-of-type div img {
+                margin: 10px;
+                width: 100%;
+                height: auto;
+            }
+             .themes nav:first-of-type p, .themes nav:last-of-type p {
+                font-size: 0.9rem;
+                text-align: left;
+            }
+            .themes nav:last-of-type div img {
+                align-items: center;
+                justify-items: center;
+                margin: 10px;
+                width: 100%;
+                height: auto;
+            }
+        }
     </style>
 </head>
 
@@ -87,10 +169,10 @@
     <div class="content">
         <!--ARTSTYLES SECTION-->
         <section class="artstyles">
-            <h1 style="font-size: 3rem; font-style: italic; margin-top: -1rem">Four Canonical Painting Modes</h1> <!--Additional Title Formatting-->
+            <h1>Four Canonical Painting Modes</h1> <!--Additional Title Formatting-->
             
             <!--ARTSTYLES SECTION: Four Canonical Modes of Painting-->
-            <nav>
+            <nav class="artstyles-nav">
                 <!--Content: Cangiante-->
                 <div>
                     <a class="paintings-style" href="style/cangiante.html">
@@ -164,7 +246,7 @@
 
         <!--ART THEMES SECTION-->
         <section class="themes">
-            <h1 style="font-size: 3rem; font-style: italic;">Art Themes</h1>
+            <h1>Art Themes</h1>
             <!--ROW1: Perspective, Potraiture, and Religious-->
             <nav>
                 <!--Content: Linear Perspective-->
@@ -190,7 +272,7 @@
                     </p>
                 </div>
                 <!--Content: Religious-->
-                <div>
+                <div class="religious">
                     <a class="paintings-style" href="theme/religious.html">
                         <img src="../../img/painting-frames/last-supper-frame.png" alt="Last Supper Painting"/>
                     </a>
