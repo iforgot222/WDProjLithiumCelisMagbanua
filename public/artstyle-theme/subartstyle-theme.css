@@ -81,6 +81,8 @@ header > h1 {
     display: none;
 }
 
+/* Phone Media Responsiveness Header */
+
 @media (max-width: 600px) {
     header {
         width: 100%;

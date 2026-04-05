@@ -135,7 +135,7 @@ footer .right {
     margin-left: -7rem;
 }
 
-/*CSS for Phone*/
+/* Phone Media Responsiveness for Header and Navigation Bar */
 
 @media (max-width: 600px) {
     body {
@@ -173,6 +173,53 @@ footer .right {
         padding-top: 0.1rem;
         width: 55px;
         height: 55px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 0.8rem;
+        color: white;
+    }
+    .left-footer, .center-footer, .right-footer {
+        margin: -0.1rem;
+    }
+}
+
+/*Tablet Media Responsiveness for Navbar and Header [PORTRAIT] */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* * {
+        outline: 1px solid red;
+    } */
+    header > h1 {
+        font-size: 1.6rem;
+    }
+    header > h2 {
+        margin-top: 22px;
+        font-size: 1.2rem;
+    }
+     a img {
+        width: 3.5rem;
+        height: auto;
+    }
+     header {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .navigation-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 1rem;
+    }
+    .navigation-bar a {
+        font-size: 1rem;
+        padding: 0.5rem 0.5rem;
+        flex-wrap: nowrap;
+        gap: 0.7rem;
     }
     footer {
         display: flex;

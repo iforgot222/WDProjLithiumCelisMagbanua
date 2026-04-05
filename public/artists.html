@@ -109,37 +109,46 @@
             border-radius: 12px;
         }
 
-
         /*minor adjustment to the description spacing*/
         .column > p {
             margin-top: -1rem;
         }
 
-        /*Media responsiveness for Phone*/        
+        /*Media responsiveness for Phone*/  
+   
         @media (max-width: 600px) {
+
+            /* Override Parent */
+
+            .content {
+                padding: 15px;
+                margin: 0;
+                max-width: 1000px;
+            }
+
+            body {
+                margin: 0;
+            }
+
+            /* Artist Info Section */
+
             .artist1-info, .artist2-info {
                 justify-content: center;
                 align-items: center;
                 justify-items: center;
-                margin-left: -125px;
-                margin-top: 10px;
-                width: 19rem;
+                width: 100%;
+                max-width: 100%;
                 padding: 20px;
+                margin: 10px auto;
+                box-sizing:border-box;
             }
-            .artist1-info img {
-                margin-top: -1.3rem;
-                margin-left: -1.1rem;
-                float: center;
-                width: 19rem;
+            .artist1-info img, .artist2-info img {
+                 margin: 0 auto;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
                 height: auto;
-                padding: 20px;
-            }
-            .artist2-info img {
-                margin: -1.3rem 0 0 -1.2rem;
-                float: left;
-                width: 19rem;
-                height: auto;
-                padding: 20px;
+                margin-bottom: 10px;
             }
             .artist2-info h2 {
                 text-align: center;
@@ -159,29 +168,37 @@
             .artist1-works h1, .artist2-works h1 {
                 font-size: 1.5rem;
                 text-align: center;
-                margin-left: -6rem;
+                align-items: center;
             }
 
         /* Artist Works Section */
 
+            /* * {
+                outline: 1px solid red;
+            } */
+
+            .column {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+
             .artist1-works > .flex-container {
                 margin-bottom: 4rem;
-
             }
 
             .flex-container {
+                margin-left: 0;
                 display: block;
-                margin: 0 auto;
-                width: 300px;
-                margin-left: -7.5rem;
-                padding-top: 2rem;
+                width: 100%;
+                margin: 0;
+                box-sizing: border-box;
             }
 
             .column img {
-                width: 80%;
                 margin: 0 auto;
+                height:auto;
+                width: 100%;
             }
-
 
             footer {
                 display: flex;
@@ -194,6 +211,10 @@
             .left-footer, .center-footer, .right-footer {
                 margin: -0.1rem;
             }
+        }
+
+        /* Tablet Media Responsiveness [PORTRAIT] */
+        @media (min-width: 768px) and (max-width: 1024px) {
 
         }
     </style>
