@@ -72,6 +72,7 @@
             }
             
         }
+        /*Tablet Media Responsiveness for Navbar and Header */
         @media (min-width: 768px) and (max-width: 1024px) {
             /* General Content Styling */
             .Content h2 {
@@ -85,19 +86,26 @@
                 font-size: 19px;
                 margin-left: 8px;
                 margin-right: 8px;
-                margin-bottom: 0;
+                margin-bottom: 10px;
             }
             .row1-homep,
             .row2-homep {
                 align-items: center;
-                flex-direction: column;  
                 justify-content: center;
-                gap: 1.2rem;             
+                gap: 1.4rem;             
             }
              .media-css img {
                 width: 100%; 
-                max-width: 400px;             
+                max-width: 340px;             
                 height: auto;    
+                display: block;
+                align-items: center;
+                justify-content: center;
+            }
+            .media-css {
+                
+                justify-content: center;
+                align-items: center;
             }
             /* Comment Section Responsiveness */
             .input-area {
@@ -111,6 +119,7 @@
                 font-size: 1.2rem;
             }
         }
+
 
     </style>
 </head>
@@ -153,7 +162,7 @@
         <div class="media-css">
             <div class="row1-homep">
                 <a class="paintings-style" href="./public/artstyle-theme/art-style.html">
-                    <img src="./asset/homep1.png" alt="styles-themes-btn" height="250px" style="margin-bottom:-20px;"/>
+                    <img src="./asset/homep1.png" alt="styles-themes-btn" height="250px"/>
                 </a>
                 <a class="paintings-style" href="./public/artists.html">
                     <img src="./asset/homep2.png" alt="artists-btn" height="250px"/>
@@ -161,7 +170,7 @@
             </div>
             <div class="row2-homep">
                 <a class="paintings-style" href="./public/History.html">
-                    <img src="./asset/homep3.png" alt="history-btn" height="250px" style="margin-bottom:-20px;"/>
+                    <img src="./asset/homep3.png" alt="history-btn" height="250px"/>
                 </a>
                 <a class="paintings-style" href="./public/mini-quiz/mini-quiz.html">
                     <img src="./asset/homep4.png" alt="mini-quiz-btn" height="250px"/>
