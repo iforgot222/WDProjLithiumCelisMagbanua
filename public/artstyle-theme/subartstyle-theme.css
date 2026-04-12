@@ -94,4 +94,9 @@ header > h1 {
         font-size: 20px;
     }
 }
+
+/* Phone Responsiveness for homepage and comment section */
+
+@media (min-width: 768px) and (max-width: 1024px) {
     
+}

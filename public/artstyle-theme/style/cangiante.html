@@ -25,74 +25,108 @@
         .content .zoom {
             font-style: italic; 
             margin-bottom: -0.8rem; 
-            margin-left: -3rem;
+        }
+        .trivia {
+            margin-bottom: -4rem
+        }
+        .content h2 {
+            margin-left:-6rem; 
+            margin-bottom: -0.5rem
+        }
+        .flex-container {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            text-align: center;
+            align-items: flex-start;
+        }
+        .column {
+            width: 250px;
+        }
+        .column h2,
+        .column p {
+            text-align: center;
         }
 
         @media (max-width: 600px) {
             /*note: del margins and add more padding; 
             set width: 100%; make the adjustments more 
             practical and responsiveness more versatile*/
-            header {
+            * {
+                box-sizing: border-box;
                 overflow-x: hidden;
+            }
+            .content {
+                max-width: 100%;
                 width: 100%;
+                padding: 0.5rem;
+                margin: 10px;
+                text-align: center;
+                box-sizing: border-box;
+                overflow-y: hidden;
             }
-            div.content {
-                margin-top: -2rem;
-                width: 15rem;
-                justify-content: center;
-                overflow-x: hidden;
-            }
-            .content p {
-                margin-left: -5rem;
+            .content p, .trivia p {
                 font-size: 1rem;
-                width: 19rem;
-                margin-left: -6rem;
+                width: 90%;
+                margin: 5px;
+                text-align: justify;
             }
-            .content h1 {
+            .content h1, .content h2 {
                 text-align: left;
                 font-size: 2rem;
-                margin-left: -8rem;
+                margin: 0;
             }
-            .content > .values {
-                margin-left: -6.5rem;
-                justify-content: center;
-                align-items: center;
-                width: 19.5rem;
+            .content h2 {
+                margin: 0.1rem;
+                margin-bottom: 0.2rem;
+                font-size: 1.6rem;
+                text-align: left;
+            }
+            .analysis .content  {
+                padding: 2px;
+            }
+            .values {
+                width: 90%;
                 height: auto;
-            }
-            .content .frame {
-                margin-left: -8rem;
-                justify-content: center;
+                margin-bottom: 3rem;
                 align-items: center;
+            }
+            .analysis .frame {
+                align-items: center;
+                width: 90%;
+                height: auto;
+                margin: 1rem 1rem -1rem 1rem;
+            }
+            .zoom h1 {
+                text-align: left;
+                margin: 1rem 1rem;
                 padding: 0;
-                width: 22rem;
-                height: 25rem;
+                max-width: 100%;
             }
-            .content .zoom {
-                margin-left: -6rem;
-                font-size: 1.5rem;
-            }
-            .content > .note {
-                height: auto;
+            .analysis p {
+                margin-top: 1rem;
             }
             .flex-container {
+                margin: 1rem 1rem -1rem 1rem;
+                width: 90%;
                 flex-direction: column;
-                margin-left: -6.5rem;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
             }
             .content .other1 {
                 text-align: center;
-                margin-top: 2rem;
                 font-size: 1.45rem;
+                margin-bottom: 0;
             }
             .flex-container img {
                 height: auto;
+                width: 100%;
             }
             .flex-container h2 {
+                margin-top: 1rem;
                 font-size: 1rem;
-                align-items: center;
+                text-align: center;
             }
             .column {
                 margin-bottom: 0rem;
@@ -109,6 +143,7 @@
                 margin: -0.1rem;
             }
         }
+
     </style>
 </head>
 
@@ -138,8 +173,8 @@
     </div>
 
     <!--Extra Text Content: Trivia-->
-    <div style="margin-bottom: -4rem" class="content">
-        <h2 style="margin-left:-6rem; margin-bottom: -0.5rem"> What are values? </h2>
+    <div style="margin-bottom: -4rem;" class="content">
+        <h2> What are values? </h2>
         <p>Notice how red, blue, and violet seem ”darker” than colors like yellow or cyan despite 
             all colors being fully saturated? Values (light or dark) come naturally with hues. 
         </p>
@@ -147,8 +182,9 @@
     </div>
 
     <!--Zoom-In Analysis Section-->
+    <div class="analysis">
     <div class="content">
-        <h1 class="zoom"> Sistine Chapel: Delphic Sibyl (1508–1512) by Michelangelo </h1>
+        <h1 class="zoom"> Sistine Chapel: Delphic Sibyl (1508–1512) by Michelangelo</h1>
         <p> Click the Buttons to Analyze! </p>
         <div class="frame">
             <img class="imganimation" src="../../../img/painting-no-frame/delphic-sibyl.jpg" id=img alt="Daniel"/>
@@ -170,6 +206,7 @@
             </div>
 
         </div>
+    </div>
     </div>
 
     <!--Other Artworks Content-->
