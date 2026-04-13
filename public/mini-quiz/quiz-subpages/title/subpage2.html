@@ -11,6 +11,78 @@
     <link rel="stylesheet" href="quiz2.css">
     <link rel="icon" href="../../../../asset/logo-project.png" sizes="32x32" type="image/png" />
     <script src="quiz2.js"defer></script>
+    <style>
+        @media (max-width: 600px) {
+        .quiz-main {
+            display:block;
+            margin-bottom: 1.5rem;
+        }
+        .content div {
+            margin: 0;
+        }
+        .content h1 {
+            font-size: 2rem;
+            padding-bottom: 10px;
+        }
+        .content h2 {
+            font-size: 1.4rem;
+        }
+        #question-img {
+            max-width: 450px;
+            align-self: center;
+            width: 100%;
+            height: auto;
+            margin-bottom: 2rem;
+        }
+        #answer-buttons {
+            display: block;
+        }
+        #answer-buttons .btn {
+            width: 100%;
+            font-size: 1.3rem;
+            padding: 1.5rem;
+        }
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-size: 0.8rem;
+            color: white;
+        }
+        .left-footer, .center-footer, .right-footer {
+            margin: 0.25rem;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .quiz-main {
+            margin-bottom: 1rem;
+        }
+        .content h1 {
+            font-size: 2rem;
+            padding-bottom: 10px;
+        }
+        #answer-buttons .btn {
+            width: 100%;
+            font-size: 1.5rem;
+            padding: 0.2rem;
+        }
+        #question img {
+            margin:0;
+        }
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-size: 0.8rem;
+            color: white;
+        }
+        .left-footer, .center-footer, .right-footer {
+            margin: 0.25rem;
+        }
+    }
+    </style>
 </head>
 
 <body>
@@ -37,7 +109,7 @@
 
     <!--Text Content-->
     <div class="content">
-        <h1>Who is this artist?</h1>
+        <h1>What is the title of this artwork?</h1>
         <div class="quiz-main">
             <h2 id="question">Question Goes Here</h2>
             <img id="question-img" alt="quesiton image">
