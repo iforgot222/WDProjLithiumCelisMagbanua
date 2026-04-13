@@ -171,11 +171,7 @@
                 align-items: center;
             }
 
-        /* Artist Works Section */
-
-            /* * {
-                outline: 1px solid red;
-            } */
+            /* Artist Works Section */
 
             .column {
                 width: 100%;
@@ -215,8 +211,23 @@
 
         /* Tablet Media Responsiveness */
         @media (min-width: 768px) and (max-width: 1024px) {
+            
+            /* Override Parent */
+            
+            .content {
+                padding: 15px;
+                margin: 0;
+                max-width: 1000px;
+            }
+
+            body {
+                margin: 0;
+            }
+            
+            /* Artist Info Section */
+
             .artist1-info, .artist2-info {
-                max-width: 700px;
+                max-width: 900px;
                 justify-content: center;
                 align-items: center;
                 justify-items: center;
@@ -226,25 +237,27 @@
                 box-sizing:border-box;
             }
             .artist1-info img, .artist2-info img {
-                 margin: 0 auto;
+                margin-right: 0.5rem;
+                max-width: 330px;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
                 height: auto;
             }
             .artist2-info h2 {
-                text-align: center;
-                font-size: 1.5rem;
+                width: 100%;
+                text-align: left;
+                font-size: 2rem;
                 margin: 0.3rem 0 0.1rem 0rem;
             }
             .artist1-info h2 {
-                text-align: center;
-                font-size: 1.25rem;
+                width: 100%;
+                text-align: left;
+                font-size: 1.9rem;
                 margin: 0.7rem 0 0.1rem 0rem;
             }
             .artist1-info p, .artist2-info p {
-                text-align: justify;
-                font-size: 0.875rem;
+                font-size: 1rem;
                 margin-top: 10px;
             }
             .artist1-works h1, .artist2-works h1 {
@@ -253,11 +266,20 @@
                 align-items: center;
             }
              .flex-container {
+                max-width: 700px;
+                display: grid;
+                grid-template-columns: 1fr 1fr; 
+                gap: 20px;
                 align-items: center;
                 font-size: 1rem;
-                display: block;
+                
+            }
+            .col3 {
+                margin-left: 11rem;
+            }
+            .col3-h, .col3-text {
                 width: 100%;
-                margin-bottom: 1rem;
+                margin-left: 11rem;
             }
             .column {
                 width: 100%;
@@ -295,7 +317,7 @@
         <section class="artist1">
             <div class="artist1-info">
                 <img src="../img/painting-frames/caravaggio-frame.png" alt="Caravaggio by Simon Vouet"/> <!--Image Wrapping-->
-                <h2> Michelangelo Merisi&nbsp;da Caravaggio </h2> <!--Artist Name-->
+                <h2> Michelangelo Merisi da&nbsp;Caravaggio </h2> <!--Artist Name-->
                 <p>
                     Michelangelo Merisi da Caravaggio, or simply Caravaggio, was an Italian Painter born in Milan, Italy, on September 29, 1571 until 
                     passing later on July 18, 1610. As an artist, Caravaggio was known as a revolutionary 
@@ -329,8 +351,8 @@
                         <p>(1593-1594)</p>
                     </div>
                     <div class="column">
-                        <img src="../img/painting-no-frame/david.jpg"  alt="David with the head of Goliath"/> <h2> David with the head of Goliath </h2>
-                        <p>(1609-1610)</p>
+                        <img class ="col3" src="../img/painting-no-frame/david.jpg"  alt="David with the head of Goliath"/> <h2 class ="col3-h"> David with the head of Goliath </h2>
+                        <p class="col3-text">(1609-1610)</p>
                     </div>
                 </div>
             </div>
@@ -377,8 +399,8 @@
                         <p>(1520)</p>
                     </div>
                     <div class="column">
-                        <img src="../img/painting-no-frame/donna-velata.jpg" alt="La Donna Velata Painting"/> <h2> La Donna Velata </h2>
-                        <p>(1516)</p>
+                        <img class="col3" src="../img/painting-no-frame/donna-velata.jpg" alt="La Donna Velata Painting"/> <h2 class="col3-h"> La Donna Velata </h2>
+                        <p class="col3-text">(1516)</p>
                     </div>
                 </div>
             </div>
