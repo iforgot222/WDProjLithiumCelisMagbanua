@@ -99,12 +99,14 @@ header .right {
 
 footer {
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;            
     padding: 0.8rem;
     margin-top: 4rem;
     background-color:#090705;
     padding: 1em 2rem 1rem 2rem;
+    bottom: 0;
 }
 
 footer .left {
