@@ -16,6 +16,213 @@
         #dot1 { top: 40%; left: 25%; }  #note1 { top: 39%; left: 30%; }
         #dot2 { top:49%; left: 62%; } #note2 { top: 45%; left: 30%; }
 
+        .content {
+            margin-bottom: -6rem
+        }
+        .content p {
+            font-size: 1.2rem;
+        }
+        .analysis {
+            font-style: italic; 
+            margin-bottom: -0.8rem; 
+            margin-left: -3rem;
+        }
+
+        /* Phone Media Responsiveness */
+        @media (max-width: 600px) {
+
+            /* To avoid overflow */
+            * {
+                box-sizing: border-box;
+            }
+
+            /* Content Styling */
+            .content {
+                width: 100%;
+                max-width: 100%;
+                margin: 5px auto;
+                text-align: center;
+                padding: 2rem;
+            }
+            .content p, .trivia p {
+                font-size: 1rem;
+                width: 100%;
+                margin: 10px;
+                text-align: justify;
+            }
+            .content h1, .content h2 {
+                text-align: left;
+                font-size: 2rem;
+                margin: 0;
+            }
+            .content h2 {
+                margin: 0.1rem;
+                margin-bottom: 0.2rem;
+                font-size: 1.6rem;
+                text-align: left;
+            }
+
+            /* Analysis Section */
+            .analysis .content {
+                margin-top: -3rem;
+                margin-left: 1.8rem;
+                padding-right: 2rem;
+                width: 100%;
+                padding: 2rem;
+            }
+            .frame {
+                align-items: center;
+                width: 100%;
+                margin: 1rem auto;
+            }
+            .zoom h1 {
+                text-align: left;
+                margin: 1rem 1rem;
+                padding: 0;
+                max-width: 100%;
+            }
+            .analysis p {
+                margin-top: 1rem;
+            }
+            .flex-container {
+                margin: 1rem 1rem -1rem 1rem;
+                width: 90%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .content .other1 {
+                text-align: center;
+                font-size: 1.45rem;
+                margin-bottom: 0;
+            }
+            .flex-container img {
+                height: auto;
+                width: 100%;
+            }
+            .flex-container h2 {
+                margin-top: 1rem;
+                font-size: 1.25rem;
+                text-align: center;
+            }
+            .flex-container p {
+                font-size: 1.3rem;
+                text-align: center;
+            }
+            .column {
+                margin-bottom: 0rem;
+            }
+
+            /* Footer Styling */
+            footer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                font-size: 0.8rem;
+                width: 100%;
+            }
+             .left-footer, .center-footer, .right-footer {
+                margin: -0.1rem;
+            }
+        }
+
+        /* Tablet Media Responsiveness */
+
+        @media (min-width: 601px) and (max-width: 1024px) {
+
+            /* To avoid overflow */
+
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                overflow-x: hidden;
+            }
+
+            /* Content Styling */
+
+            .content {
+                width: 100%;
+                max-width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                padding: 2rem;
+            }
+            .content p {
+                font-size: 1.25rem;
+                width: 100%;
+                margin: 0.5rem 0;
+                text-align: justify;
+            }
+            .content h1 {
+                font-size: 2.5rem;
+                text-align: left;
+                margin: 0.5rem 0;
+            }
+            .content h2 {
+                margin-top: -1rem;
+                margin-left: 0.08rem;
+                font-size: 2rem;
+                text-align: left;
+                margin-bottom: 0.3rem;
+            }
+
+            /* Analysis Section */
+            .analysis .content {
+                margin-top: -3rem;
+                margin-left: 2rem;
+                padding: 2rem;
+                padding-right: 3rem;
+            }
+            .analysis .frame {
+                max-width: 800px;
+                width: 100%;
+                margin: 1rem auto;
+            }
+            .analysis {
+                margin-bottom: -4rem;
+            }
+            .flex-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2rem;
+            }
+            .column {
+                width: 45%; 
+                max-width: 300px;
+            }
+            .flex-container img {
+                width: 100%;
+                height: auto;
+            }
+            .flex-container h2 {
+                font-size: 1.2rem;
+                text-align: center;
+                margin-top: 0.5rem;
+            }
+            .flex-container p {
+                font-size: 1.3rem;
+                text-align: center;
+            }
+            .content .other1 {
+                padding: 1rem;
+                text-align: center;
+                font-size: 2rem;
+            }
+            footer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                font-size: 1rem;
+            }
+                .left-footer, .center-footer, .right-footer {
+                margin: -0.1rem;
+            }   
+        }
     </style>
 </head>
 
@@ -30,9 +237,9 @@
     </header>
 
     <!--Text Content-->
-    <div class="content" style="margin-bottom: -6rem">
+    <div class="content">
         <h1 class="title-style"> Sfumato </h1>
-        <p style="font-size: 1.2rem;">
+        <p>
             Derived from Italian word sfumare, meaning to “tone down” or “to evaporate like smoke” 
             (Brittanica, n.d.). It is an art technique that utilizes indistinct and fine shading that 
             creates a smoky or soft effect  on the plane where light meets dark. Paintings that use 
@@ -43,8 +250,9 @@
     </div>
 
     <!--Zoom-In Analysis Section-->
+    <div class="analysis">
     <div class="content">
-        <h1 style="font-style: italic; margin-bottom: -0.8rem; margin-left: -3rem;"> The Holy Night (1522-1530) by Correggio </h1>
+        <h1> The Holy Night (1522-1530) by Correggio </h1>
         <p> Click the Buttons to Analyze! </p>
         <div class="frame">
             <img class="imganimation" src="../../../img/painting-no-frame/holy-night.jpg" id=img alt="Holy Night"/>
@@ -66,7 +274,7 @@
             </div>
         </div>
     </div>
-
+    </div>
     <!--Other Artworks Content-->
     <div class="content">
         <h1 style="font-style: italic; text-align: center;"> Other Artworks that use Sfumato... </h1>

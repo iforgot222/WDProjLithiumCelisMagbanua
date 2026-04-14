@@ -97,6 +97,15 @@ header > h1 {
 
 /* Phone Responsiveness for homepage and comment section */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        width: 100%;
+    }
+    header > h2 {
+        font-size: 1.25rem;
+    }
+    header > h1 {
+        font-size: 2rem;
+    }
     
 }
