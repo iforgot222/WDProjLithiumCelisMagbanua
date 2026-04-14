@@ -80,6 +80,223 @@
             padding: 1rem 1rem;
             text-align: center;
         }
+
+        /* Phone Media Responsiveness */
+        @media (max-width: 600px) {
+
+            /* To avoid overflow */
+            * {
+                box-sizing: border-box;
+                overflow-x: hidden;
+            }
+
+            /* Content Styling */
+            .content {
+                width: 100%;
+                max-width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                padding: 2rem;
+            }
+            .content p {
+                font-size: 1rem;
+                width: 100%;
+                margin: 0;
+                text-align: justify;
+            }
+            .content h1, .content h2 {
+                text-align: left;
+                font-size: 2rem;
+                margin: 0;
+            }
+            .content h2 {
+                margin: 0.1rem;
+                margin-bottom: 0.2rem;
+                font-size: 1.6rem;
+                text-align: left;
+            }
+
+            /* Analysis Section */
+            .analysis .content {
+                margin-top: -2rem;
+                padding: 2rem;
+            }
+            .frame {
+                align-items: center;
+                width: 100%;
+                height: auto;
+                margin: 1rem 1rem -1rem 0rem;
+            }
+            .analysis p {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                font-size: 1rem;
+            }
+
+            /* Other Works */
+            .flex-container {
+                margin: 1rem 1rem -1rem 1rem;
+                width: 90%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .content .other1 {
+                text-align: center;
+                font-size: 1.45rem;
+                margin-bottom: 0;
+            }
+            .flex-container img {
+                height: auto;
+                width: 100%;
+            }
+            .flex-container h2 {
+                margin-top: 1rem;
+                font-size: 1.25rem;
+                text-align: center;
+            }
+            .flex-container p {
+                font-size: 1.3rem;
+                text-align: center;
+            }
+            .column {
+                margin-bottom: 0rem;
+            }
+            .perspective-works h2 {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            /* Footer Styling */
+            footer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                font-size: 0.8rem;
+                width: 100%;
+            }
+             .left-footer, .center-footer, .right-footer {
+                margin: -0.1rem;
+            }
+        }
+
+        /* Tablet Media Responsiveness */
+
+        @media (min-width: 601px) and (max-width: 1024px) {
+
+            /* To avoid overflow */
+
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                overflow-x: hidden;
+            }
+
+            /* Content Styling */
+
+            .content {
+                width: 100%;
+                max-width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                padding: 2rem;
+                margin-bottom: -2rem;
+            }
+            .content p {
+                font-size: 1.25rem;
+                width: 100%;
+                margin: 0.5rem 0;
+                text-align: justify;
+            }
+            .content h1 {
+                font-size: 2.5rem;
+                text-align: left;
+                margin: 0.5rem 0;
+            }
+            .content h2 {
+                margin-top: -1rem;
+                margin-left: 0.08rem;
+                font-size: 2rem;
+                text-align: left;
+                margin-bottom: 0.3rem;
+            }
+
+            /* Analysis Section */
+            .analysis .content {
+                padding: 2rem;
+            }
+            .analysis .frame {
+                max-width: 800px;
+                width: 100%;
+                margin: 1rem auto;
+            }
+            .analysis {
+                margin-bottom: 1rem;
+            }
+
+            /* Other Works */
+            .flex-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2rem;
+            }
+            .column {
+                width: 45%; 
+                max-width: 300px;
+            }
+            .flex-container img {
+                width: 100%;
+                height: auto;
+            }
+            .flex-container h2 {
+                font-size: 1.2rem;
+                text-align: center;
+                margin-top: 0.5rem;
+            }
+            .flex-container p {
+                font-size: 1.3rem;
+                text-align: center;
+            }
+            .content .other1 {
+                padding: 1rem;
+                text-align: center;
+                font-size: 2rem;
+            }
+            .perspective-works img {
+                width: 600px;
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+            }
+            .perspective-works h2 {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            .other1 h1 {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
+            /* Footer Styling */
+            footer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                font-size: 1rem;
+            }
+                .left-footer, .center-footer, .right-footer {
+                margin: -0.1rem;
+            }   
+        }
     </style>
 </head>
 
@@ -94,7 +311,7 @@
     </header>
 
     <!--Text Content-->
-    <div class="content" style="margin-bottom: -6rem">
+    <div class="content">
         <h1 class="title-style">  Linear Perspective </h1>
         <p style="font-size: 1.2rem;">
              Linear perspective was thought to be first employed in 1415 by Italian 
@@ -106,8 +323,9 @@
         </p>
     </div>
     
+    <div class="analysis">
     <div class="content">
-        <h1 style="font-style: italic; margin-bottom: -0.8rem; margin-left: -3rem;"> School of Athens (1509-1511) by Raphael </h1>
+        <h1> School of Athens (1509-1511) by Raphael </h1>
         <p>Click the Button to Analyze!</p>
 
         <div class="image-container">
@@ -117,10 +335,11 @@
 
         <button onclick="showOverlay()">ANALYZE</button>
     </div>
+    </div>
 
     <!--Other Artworks Content-->
     <div class="content">
-        <h1 style="font-style: italic; text-align: center;"> Other Artworks that use Perspective... </h1>
+        <h1 class="other1" style="font-style: italic; text-align: center;"> Other Artworks that use Perspective... </h1>
         <div class="perspective-works">
             <h2>Delivery of the Keys to Saint Peter (1481) by Perugino</h2>
             <div class="row">
