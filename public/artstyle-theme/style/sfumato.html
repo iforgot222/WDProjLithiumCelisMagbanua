@@ -28,69 +28,57 @@
             margin-left: -3rem;
         }
 
-        /* Phone Media Responsiveness */
+                        /* Phone Media Responsiveness */
         @media (max-width: 600px) {
 
-            /* To avoid overflow */
+            /*To avoid overflow of elements*/
             * {
                 box-sizing: border-box;
             }
 
-            /* Content Styling */
+            /*General Content Styling*/
             .content {
-                width: 100%;
-                max-width: 100%;
-                margin: 5px auto;
-                text-align: center;
-                padding: 2rem;
+                padding: 1rem;
             }
-            .content p, .trivia p {
+            .content p {
                 font-size: 1rem;
-                width: 100%;
-                margin: 10px;
-                text-align: justify;
             }
             .content h1, .content h2 {
-                text-align: left;
                 font-size: 2rem;
-                margin: 0;
-            }
-            .content h2 {
-                margin: 0.1rem;
-                margin-bottom: 0.2rem;
-                font-size: 1.6rem;
-                text-align: left;
+                margin-left: 0.1rem;
             }
 
             /* Analysis Section */
-            .analysis .content {
-                margin-top: -3rem;
-                margin-left: 1.8rem;
-                padding-right: 2rem;
-                width: 100%;
-                padding: 2rem;
-            }
-            .frame {
-                align-items: center;
-                width: 100%;
-                margin: 1rem auto;
-            }
-            .zoom h1 {
-                text-align: left;
-                margin: 1rem 1rem;
-                padding: 0;
-                max-width: 100%;
-            }
-            .analysis p {
-                margin-top: 1rem;
-            }
-            .flex-container {
-                margin: 1rem 1rem -1rem 1rem;
+            .analysis .frame {
                 width: 90%;
-                flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                text-align: center;
+                aspect-ratio: 1/1 !important;
+                margin-left: 3rem;
+                margin-bottom: 5rem;
+            }
+            .analysis h1 {
+                text-align: left;
+                margin-top: 4rem;
+                max-width: 100%;
+                margin-bottom: 0;
+                margin-left: 3rem;
+            }
+            .analysis p {
+                margin-left: 3rem;
+                margin-top: 0;
+            }
+            #note1, #note2 {
+                width: 50%;
+                top: 40%;
+                left: 5%;
+            }
+
+            /* Other Works */
+            .flex-container {
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 2rem;
             }
             .content .other1 {
                 text-align: center;
@@ -103,18 +91,13 @@
             }
             .flex-container h2 {
                 margin-top: 1rem;
+                margin-bottom: 1rem;
                 font-size: 1.25rem;
                 text-align: center;
             }
-            .flex-container p {
-                font-size: 1.3rem;
-                text-align: center;
-            }
             .column {
-                margin-bottom: 0rem;
+                width: 90%;
             }
-
-            /* Footer Styling */
             footer {
                 display: flex;
                 flex-direction: column;
@@ -137,9 +120,6 @@
             * {
                 box-sizing: border-box;
             }
-            body {
-                overflow-x: hidden;
-            }
 
             /* Content Styling */
 
@@ -148,42 +128,62 @@
                 max-width: 100%;
                 margin: 0 auto;
                 text-align: center;
-                padding: 2rem;
+                padding: 1rem;
             }
             .content p {
-                font-size: 1.25rem;
+                font-size: 1.1rem;
                 width: 100%;
-                margin: 0.5rem 0;
                 text-align: justify;
             }
             .content h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
                 text-align: left;
                 margin: 0.5rem 0;
             }
             .content h2 {
                 margin-top: -1rem;
                 margin-left: 0.08rem;
-                font-size: 2rem;
+                font-size: 1.5rem;
                 text-align: left;
                 margin-bottom: 0.3rem;
             }
 
             /* Analysis Section */
-            .analysis .content {
-                margin-top: -3rem;
-                margin-left: 2rem;
-                padding: 2rem;
-                padding-right: 3rem;
+            .zoom {
+                font-size: 1.5rem;
+                text-align: left;
             }
             .analysis .frame {
-                max-width: 800px;
-                width: 100%;
-                margin: 1rem auto;
+                width: 90%;
+                justify-content: center;
+                align-items: center;
+                aspect-ratio: 1 / 1 !important;
+                margin-bottom: 2rem;
+                margin-left: 4rem;
+            }
+            .analysis h1, .analysis p {
+                margin-left: 3rem;
+                margin-bottom: 0;
+            }
+            .analysis p {
+                margin-bottom: 1rem;
             }
             .analysis {
                 margin-bottom: -4rem;
             }
+            #note1, #note2, #note3 {
+                width: 100%;
+                height: auto;
+                bottom: 40%;
+                left: 0;
+            }
+            #note2 {
+                left: -2%;
+                top: 40%;
+            }
+
+
+            /*Other Works*/
             .flex-container {
                 display: flex;
                 flex-wrap: wrap;
@@ -194,6 +194,9 @@
                 width: 45%; 
                 max-width: 300px;
             }
+            .flex-container p {
+                text-align: center;
+            }
             .flex-container img {
                 width: 100%;
                 height: auto;
@@ -202,10 +205,7 @@
                 font-size: 1.2rem;
                 text-align: center;
                 margin-top: 0.5rem;
-            }
-            .flex-container p {
-                font-size: 1.3rem;
-                text-align: center;
+                margin-bottom: 1rem;
             }
             .content .other1 {
                 padding: 1rem;
@@ -252,7 +252,7 @@
     <!--Zoom-In Analysis Section-->
     <div class="analysis">
     <div class="content">
-        <h1> The Holy Night (1522-1530) by Correggio </h1>
+        <h1 class="zoom"> The Holy Night (1522-1530) by Correggio </h1>
         <p> Click the Buttons to Analyze! </p>
         <div class="frame">
             <img class="imganimation" src="../../../img/painting-no-frame/holy-night.jpg" id=img alt="Holy Night"/>

@@ -50,50 +50,42 @@
 
         /* Phone Media Responsiveness */
         @media (max-width: 600px) {
+
+            /*To avoid overflow of elements*/
             * {
                 box-sizing: border-box;
-                overflow-x: hidden;
             }
+
+            /*General Content Styling*/
             .content {
-                max-width: 100%;
-                width: 100%;
-                padding: 0.5rem;
-                margin: 10px 10px 5px 10px;
-                text-align: center;
-                box-sizing: border-box;
-                overflow-y: hidden;
+                padding: 1rem;
             }
-            .content p, .trivia p {
+            .content p {
                 font-size: 1rem;
-                width: 100%;
-                margin: 10px;
-                text-align: justify;
             }
             .content h1, .content h2 {
-                text-align: left;
                 font-size: 2rem;
-                margin: 0;
+                margin-left: 0.1rem;
             }
             .content h2 {
-                margin: 0.1rem;
-                margin-bottom: 0.2rem;
-                font-size: 1.6rem;
+                margin-top: 3.5rem;
+                font-size: 1.3rem;
                 text-align: left;
             }
-            .analysis .content  {
-                padding: 2px;
-            }
             .values {
-                width: 90%;
+                width: 100%;
                 height: auto;
-                margin-bottom: 4rem;
+                margin-bottom: 1rem;
                 align-items: center;
             }
+
+            /* Analysis Section */
             .analysis .frame {
                 align-items: center;
-                width: 90%;
+                width: 100%;
                 height: auto;
-                margin: 1rem 1rem -1rem 1rem;
+                aspect-ratio: 1/1 !important;
+                margin-bottom: 5rem;
             }
             .zoom h1 {
                 text-align: left;
@@ -104,13 +96,21 @@
             .analysis p {
                 margin-top: 1rem;
             }
+            #note1, #note2 {
+                width: 50%;
+                bottom: 50%;
+                left: -2%;
+            }
+            #note2 {
+                left: -2%;
+                top: 40%;
+            }
+
+            /* Other Works */
             .flex-container {
-                margin: 1rem 1rem -1rem 1rem;
-                width: 90%;
                 flex-direction: column;
-                justify-content: center;
                 align-items: center;
-                text-align: center;
+                margin-bottom: 2rem;
             }
             .content .other1 {
                 text-align: center;
@@ -123,11 +123,12 @@
             }
             .flex-container h2 {
                 margin-top: 1rem;
+                margin-bottom: 1rem;
                 font-size: 1.25rem;
                 text-align: center;
             }
             .column {
-                margin-bottom: 0rem;
+                width: 90%;
             }
             footer {
                 display: flex;
@@ -159,29 +160,29 @@
                 max-width: 100%;
                 margin: 0 auto;
                 text-align: center;
-                padding: 2rem;
+                padding: 1rem;
             }
             .content p {
-                font-size: 1.25rem;
+                font-size: 1.1rem;
                 width: 100%;
-                margin: 0.5rem 0;
                 text-align: justify;
             }
             .content h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
                 text-align: left;
                 margin: 0.5rem 0;
             }
             .content h2 {
                 margin-top: -1rem;
                 margin-left: 0.08rem;
-                font-size: 2rem;
+                font-size: 1.5rem;
                 text-align: left;
                 margin-bottom: 0.3rem;
             }
             .values {
-                width: 80%;
-                margin: 2rem auto;
+                width: 100%;
+                justify-content: center;
+                margin-bottom: 2rem;
             }
 
             /* Analysis Section */
@@ -194,12 +195,27 @@
             }
             .analysis .frame {
                 width: 100%;
-                max-width: 500px;
                 margin: 1rem auto;
+                align-items: center;
+                aspect-ratio: 1 / 1 !important;
+                margin-bottom: 2rem;
             }
             .analysis {
                 margin-bottom: -4rem;
             }
+            #note1, #note2 {
+                width: 100%;
+                height: auto;
+                bottom: 50%;
+                left: 0;
+            }
+            #note2 {
+                left: -2%;
+                top: 40%;
+            }
+
+
+            /*Other Works*/
             .flex-container {
                 display: flex;
                 flex-wrap: wrap;
@@ -218,6 +234,7 @@
                 font-size: 1.2rem;
                 text-align: center;
                 margin-top: 0.5rem;
+                margin-bottom: 1rem;
             }
             .content .other1 {
                 padding: 1rem;

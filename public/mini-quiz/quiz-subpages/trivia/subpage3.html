@@ -12,7 +12,28 @@
     <link rel="icon" href="../../../../asset/logo-project.png" sizes="32x32" type="image/png" />
     <script src="quiz3.js"defer></script>
     <style>
+        /*Fix General Format*/
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1;
+        }
+        header, .navigation-bar, footer {
+            flex-shrink: 0;
+        }
+
         @media (max-width: 600px) {
+
+        /*Quiz Styling*/
+        .content {
+            justify-content: center;
+        }
         .quiz-main {
             display:block;
             margin-bottom: 1.5rem;
@@ -34,20 +55,10 @@
             width: 100%;
             font-size: 1.5rem;
             padding: 2rem;
+            min-height: 100px;
         }
-        footer {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            font-size: 0.8rem;
-            color: white;
-        }
-        .left-footer, .center-footer, .right-footer {
-            margin: 0.25rem;
-        }
-    }
-    @media (min-width: 768px) and (max-width: 1024px) {
+
+        /* Footer Styling */
         footer {
             display: flex;
             flex-direction: column;
@@ -61,6 +72,11 @@
         }
     }
     @media (min-width: 601px) and (max-width: 1024px) {
+
+        /* Quiz Styling */
+        .content {
+            justify-content: center;
+        }
         .quiz-main {
             margin-bottom: 1rem;
         }
@@ -73,6 +89,8 @@
             font-size: 1.5rem;
             padding: 2.5rem;
         }
+
+        /*Footer Styling*/
         footer {
             display: flex;
             flex-direction: column;
