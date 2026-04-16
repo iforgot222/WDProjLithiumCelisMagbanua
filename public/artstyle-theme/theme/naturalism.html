@@ -36,6 +36,9 @@
             font-size: 1.2rem; 
             margin-top: -1rem;
         }
+        .content h1 {
+            margin-bottom: 1rem;
+        }
         /*button and note positioning*/
         #dot1 { top: 40%; left: 25%; } #note1 { top: 27%; left: 45%; }
         #dot2 { top:25%; left: 73.5%; } #note2 { top: 3%; left:3%; }
@@ -55,12 +58,12 @@
                 max-width: 100%;
                 margin: 0 auto;
                 text-align: center;
-                padding: 2rem;
+                padding: 1rem;
             }
             .content p {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 width: 100%;
-                margin: 10px;
+                margin-top: -0.1rem;
                 margin-bottom: 20px;
                 text-align: justify;
             }
@@ -88,15 +91,15 @@
                 width: 100%;
                 height: 400px;
                 margin: 1rem 1rem -1rem 0rem;
-                aspect-ratio: 1/1 !important;
+                aspect-ratio: 4/3 !important;
             }
             .analysis p {
                 margin-top: 1rem;
             }
             #note1, #note2 {
-                width: 100%;
                 top: 40%;
-                left: 2%;
+                left: -10%;
+                transform: scale(0.8);
             }
 
             /* Other Works */
@@ -256,7 +259,7 @@
     <!--Header Content-->
     <header>
         <a class="paintings-style" href="../art-style.html">
-            <img src="../../../asset/logo-project.png" alt="Logo" width="74rem" height="75rem" />
+            <img class="logo" src="../../../asset/logo-project.png" alt="Logo" width="74rem" height="75rem" />
         </a>
         <h1 style="font-size: 36px"> Rebirth of Art </h1>
         <h2 class="right"> Art Themes: Naturalism </h2>
