@@ -92,6 +92,8 @@
             /* To avoid overflow */
             * {
                 box-sizing: border-box;
+            }
+            body {
                 overflow-x: hidden;
             }
 
@@ -154,29 +156,31 @@
             }
 
             /* Other Works */
-            .flex-container {
-                margin: 1rem 1rem -1rem 1rem;
-                width: 90%;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
+            .perspective-works {
+                width: 100%;
+                max-width: 100%;
+                padding: 1rem;
+            }
+            .row {
+                display: block;
+                margin-bottom: 1rem;
+            }
+            .row img {
+                width: 100%;
+                height: auto;
+                max-width: 500px;
             }
             .content .other1 {
                 text-align: center;
                 font-size: 1.45rem;
                 margin-bottom: 0;
             }
-            .flex-container img {
-                height: auto;
-                width: 100%;
-            }
-            .flex-container h2 {
+            .perspective-works h2 {
                 margin-top: 1rem;
                 font-size: 1.25rem;
                 text-align: center;
             }
-            .flex-container p {
+            .perspective-works p {
                 font-size: 1.3rem;
                 text-align: center;
             }
